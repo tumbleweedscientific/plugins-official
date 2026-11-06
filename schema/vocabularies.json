@@ -1,0 +1,749 @@
+{
+  "$schema": "./vocabularies.schema.json",
+  "$comment": "Controlled vocabularies of research metadata (ADR 0041). Terms are permanent once a plugin uses them: add freely, and raise `version` when one is removed or renamed. Tools are package or command names as the toolchain image's tools.json lists them.",
+  "version": 1,
+  "domains": [
+    {
+      "id": "genomics",
+      "title": "Genomics"
+    },
+    {
+      "id": "variant-interpretation",
+      "title": "Variant interpretation"
+    },
+    {
+      "id": "transcriptomics",
+      "title": "Transcriptomics"
+    },
+    {
+      "id": "single-cell",
+      "title": "Single-cell"
+    },
+    {
+      "id": "spatial",
+      "title": "Spatial omics"
+    },
+    {
+      "id": "epigenomics",
+      "title": "Epigenomics"
+    },
+    {
+      "id": "proteomics",
+      "title": "Proteomics"
+    },
+    {
+      "id": "metabolomics",
+      "title": "Metabolomics"
+    },
+    {
+      "id": "microbiome",
+      "title": "Microbiome"
+    },
+    {
+      "id": "immunology",
+      "title": "Immunology"
+    },
+    {
+      "id": "structural-biology",
+      "title": "Structural biology"
+    },
+    {
+      "id": "protein-design",
+      "title": "Protein design"
+    },
+    {
+      "id": "cheminformatics",
+      "title": "Cheminformatics"
+    },
+    {
+      "id": "medicinal-chemistry",
+      "title": "Medicinal chemistry"
+    },
+    {
+      "id": "computational-chemistry",
+      "title": "Computational chemistry"
+    },
+    {
+      "id": "molecular-dynamics",
+      "title": "Molecular dynamics"
+    },
+    {
+      "id": "docking",
+      "title": "Docking"
+    },
+    {
+      "id": "admet",
+      "title": "ADMET"
+    },
+    {
+      "id": "pharmacology",
+      "title": "Pharmacology"
+    },
+    {
+      "id": "clinical",
+      "title": "Clinical"
+    },
+    {
+      "id": "literature",
+      "title": "Literature"
+    },
+    {
+      "id": "imaging",
+      "title": "Imaging"
+    },
+    {
+      "id": "lab-data",
+      "title": "Lab data"
+    },
+    {
+      "id": "visualization",
+      "title": "Visualization"
+    },
+    {
+      "id": "writing",
+      "title": "Writing"
+    }
+  ],
+  "dataSources": [
+    {
+      "id": "ensembl",
+      "title": "Ensembl"
+    },
+    {
+      "id": "ncbi-gene",
+      "title": "NCBI Gene"
+    },
+    {
+      "id": "ncbi-nucleotide",
+      "title": "NCBI Nucleotide"
+    },
+    {
+      "id": "dbsnp",
+      "title": "dbSNP"
+    },
+    {
+      "id": "clinvar",
+      "title": "ClinVar"
+    },
+    {
+      "id": "ucsc",
+      "title": "UCSC Genome Browser"
+    },
+    {
+      "id": "gnomad",
+      "title": "gnomAD"
+    },
+    {
+      "id": "uniprot",
+      "title": "UniProt"
+    },
+    {
+      "id": "interpro",
+      "title": "InterPro"
+    },
+    {
+      "id": "pdb",
+      "title": "RCSB PDB"
+    },
+    {
+      "id": "alphafold-db",
+      "title": "AlphaFold DB"
+    },
+    {
+      "id": "chembl",
+      "title": "ChEMBL"
+    },
+    {
+      "id": "pubchem",
+      "title": "PubChem"
+    },
+    {
+      "id": "pubmed",
+      "title": "PubMed"
+    },
+    {
+      "id": "pmc",
+      "title": "PubMed Central"
+    },
+    {
+      "id": "europe-pmc",
+      "title": "Europe PMC"
+    },
+    {
+      "id": "biorxiv",
+      "title": "bioRxiv"
+    },
+    {
+      "id": "medrxiv",
+      "title": "medRxiv"
+    },
+    {
+      "id": "openalex",
+      "title": "OpenAlex"
+    },
+    {
+      "id": "crossref",
+      "title": "Crossref"
+    },
+    {
+      "id": "open-targets",
+      "title": "Open Targets"
+    },
+    {
+      "id": "clinicaltrials-gov",
+      "title": "ClinicalTrials.gov"
+    },
+    {
+      "id": "openfda",
+      "title": "openFDA"
+    },
+    {
+      "id": "geo",
+      "title": "GEO"
+    },
+    {
+      "id": "sra",
+      "title": "SRA"
+    },
+    {
+      "id": "gtex",
+      "title": "GTEx"
+    },
+    {
+      "id": "hpa",
+      "title": "Human Protein Atlas"
+    },
+    {
+      "id": "cellxgene",
+      "title": "CELLxGENE"
+    },
+    {
+      "id": "reactome",
+      "title": "Reactome"
+    },
+    {
+      "id": "string",
+      "title": "STRING"
+    },
+    {
+      "id": "quickgo",
+      "title": "QuickGO"
+    },
+    {
+      "id": "encode-screen",
+      "title": "ENCODE SCREEN"
+    },
+    {
+      "id": "jaspar",
+      "title": "JASPAR"
+    },
+    {
+      "id": "kegg",
+      "title": "KEGG"
+    },
+    {
+      "id": "drugbank",
+      "title": "DrugBank"
+    },
+    {
+      "id": "depmap",
+      "title": "DepMap"
+    },
+    {
+      "id": "gwas-catalog",
+      "title": "GWAS Catalog"
+    },
+    {
+      "id": "synapse",
+      "title": "Synapse"
+    }
+  ],
+  "formats": [
+    {
+      "id": "h5ad",
+      "title": "AnnData (.h5ad)"
+    },
+    {
+      "id": "mtx",
+      "title": "Matrix Market (.mtx)"
+    },
+    {
+      "id": "10x-h5",
+      "title": "10x Genomics HDF5"
+    },
+    {
+      "id": "loom",
+      "title": "Loom"
+    },
+    {
+      "id": "rds",
+      "title": "R data (.rds)"
+    },
+    {
+      "id": "csv",
+      "title": "CSV"
+    },
+    {
+      "id": "tsv",
+      "title": "TSV"
+    },
+    {
+      "id": "xlsx",
+      "title": "Excel"
+    },
+    {
+      "id": "txt",
+      "title": "Plain text"
+    },
+    {
+      "id": "json",
+      "title": "JSON"
+    },
+    {
+      "id": "fastq",
+      "title": "FASTQ"
+    },
+    {
+      "id": "fasta",
+      "title": "FASTA"
+    },
+    {
+      "id": "bam",
+      "title": "BAM"
+    },
+    {
+      "id": "cram",
+      "title": "CRAM"
+    },
+    {
+      "id": "sam",
+      "title": "SAM"
+    },
+    {
+      "id": "vcf",
+      "title": "VCF"
+    },
+    {
+      "id": "bed",
+      "title": "BED"
+    },
+    {
+      "id": "gff",
+      "title": "GFF"
+    },
+    {
+      "id": "gtf",
+      "title": "GTF"
+    },
+    {
+      "id": "bw",
+      "title": "bigWig"
+    },
+    {
+      "id": "pdb",
+      "title": "PDB structure"
+    },
+    {
+      "id": "mmcif",
+      "title": "mmCIF structure"
+    },
+    {
+      "id": "sdf",
+      "title": "SDF"
+    },
+    {
+      "id": "mol",
+      "title": "MOL"
+    },
+    {
+      "id": "mol2",
+      "title": "MOL2"
+    },
+    {
+      "id": "smiles",
+      "title": "SMILES"
+    },
+    {
+      "id": "pdf",
+      "title": "PDF"
+    },
+    {
+      "id": "docx",
+      "title": "Word"
+    },
+    {
+      "id": "png",
+      "title": "PNG image"
+    },
+    {
+      "id": "jpg",
+      "title": "JPEG image"
+    },
+    {
+      "id": "tiff",
+      "title": "TIFF image"
+    },
+    {
+      "id": "svg",
+      "title": "SVG"
+    },
+    {
+      "id": "html",
+      "title": "HTML"
+    },
+    {
+      "id": "ipynb",
+      "title": "Jupyter notebook"
+    },
+    {
+      "id": "report",
+      "title": "A written report"
+    }
+  ],
+  "tools": [
+    {
+      "id": "scanpy",
+      "title": "scanpy"
+    },
+    {
+      "id": "anndata",
+      "title": "anndata"
+    },
+    {
+      "id": "squidpy",
+      "title": "squidpy"
+    },
+    {
+      "id": "scrublet",
+      "title": "scrublet"
+    },
+    {
+      "id": "harmonypy",
+      "title": "harmonypy"
+    },
+    {
+      "id": "leidenalg",
+      "title": "leidenalg"
+    },
+    {
+      "id": "umap-learn",
+      "title": "umap-learn"
+    },
+    {
+      "id": "gseapy",
+      "title": "gseapy"
+    },
+    {
+      "id": "pydeseq2",
+      "title": "pydeseq2"
+    },
+    {
+      "id": "seurat",
+      "title": "seurat"
+    },
+    {
+      "id": "deseq2",
+      "title": "deseq2"
+    },
+    {
+      "id": "edger",
+      "title": "edger"
+    },
+    {
+      "id": "limma",
+      "title": "limma"
+    },
+    {
+      "id": "clusterprofiler",
+      "title": "clusterprofiler"
+    },
+    {
+      "id": "cellchat",
+      "title": "cellchat"
+    },
+    {
+      "id": "pandas",
+      "title": "pandas"
+    },
+    {
+      "id": "polars",
+      "title": "polars"
+    },
+    {
+      "id": "numpy",
+      "title": "numpy"
+    },
+    {
+      "id": "scipy",
+      "title": "scipy"
+    },
+    {
+      "id": "scikit-learn",
+      "title": "scikit-learn"
+    },
+    {
+      "id": "statsmodels",
+      "title": "statsmodels"
+    },
+    {
+      "id": "matplotlib",
+      "title": "matplotlib"
+    },
+    {
+      "id": "seaborn",
+      "title": "seaborn"
+    },
+    {
+      "id": "plotly",
+      "title": "plotly"
+    },
+    {
+      "id": "openpyxl",
+      "title": "openpyxl"
+    },
+    {
+      "id": "pypdf",
+      "title": "pypdf"
+    },
+    {
+      "id": "pypdfium2",
+      "title": "pypdfium2"
+    },
+    {
+      "id": "reportlab",
+      "title": "reportlab"
+    },
+    {
+      "id": "biopython",
+      "title": "biopython"
+    },
+    {
+      "id": "pysam",
+      "title": "pysam"
+    },
+    {
+      "id": "duckdb",
+      "title": "duckdb"
+    },
+    {
+      "id": "requests",
+      "title": "requests"
+    },
+    {
+      "id": "samtools",
+      "title": "samtools"
+    },
+    {
+      "id": "bcftools",
+      "title": "bcftools"
+    },
+    {
+      "id": "bedtools",
+      "title": "bedtools"
+    },
+    {
+      "id": "seqkit",
+      "title": "seqkit"
+    },
+    {
+      "id": "csvtk",
+      "title": "csvtk"
+    },
+    {
+      "id": "fastp",
+      "title": "fastp"
+    },
+    {
+      "id": "cutadapt",
+      "title": "cutadapt"
+    },
+    {
+      "id": "minimap2",
+      "title": "minimap2"
+    },
+    {
+      "id": "bwa",
+      "title": "bwa"
+    },
+    {
+      "id": "bowtie2",
+      "title": "bowtie2"
+    },
+    {
+      "id": "star",
+      "title": "star"
+    },
+    {
+      "id": "salmon",
+      "title": "salmon"
+    },
+    {
+      "id": "subread",
+      "title": "subread"
+    },
+    {
+      "id": "gatk4",
+      "title": "gatk4"
+    },
+    {
+      "id": "blast",
+      "title": "blast"
+    },
+    {
+      "id": "mafft",
+      "title": "mafft"
+    },
+    {
+      "id": "muscle",
+      "title": "muscle"
+    },
+    {
+      "id": "iqtree",
+      "title": "iqtree"
+    },
+    {
+      "id": "hmmer",
+      "title": "hmmer"
+    },
+    {
+      "id": "sra-tools",
+      "title": "sra-tools"
+    },
+    {
+      "id": "entrez-direct",
+      "title": "entrez-direct"
+    },
+    {
+      "id": "rdkit",
+      "title": "rdkit"
+    },
+    {
+      "id": "openbabel",
+      "title": "openbabel"
+    },
+    {
+      "id": "vina",
+      "title": "vina"
+    },
+    {
+      "id": "meeko",
+      "title": "meeko"
+    },
+    {
+      "id": "openmm",
+      "title": "openmm"
+    },
+    {
+      "id": "pdbfixer",
+      "title": "pdbfixer"
+    },
+    {
+      "id": "mdanalysis",
+      "title": "mdanalysis"
+    },
+    {
+      "id": "prody",
+      "title": "prody"
+    },
+    {
+      "id": "pymol-open-source",
+      "title": "pymol-open-source"
+    },
+    {
+      "id": "nglview",
+      "title": "nglview"
+    },
+    {
+      "id": "nextflow",
+      "title": "nextflow"
+    },
+    {
+      "id": "openjdk",
+      "title": "openjdk"
+    },
+    {
+      "id": "r-base",
+      "title": "r-base"
+    },
+    {
+      "id": "python",
+      "title": "python"
+    }
+  ],
+  "modelCapabilities": [
+    {
+      "id": "vision",
+      "title": "Reads images"
+    },
+    {
+      "id": "long-context",
+      "title": "A context of 200,000 tokens or more"
+    },
+    {
+      "id": "reasoning",
+      "title": "Extended reasoning"
+    }
+  ],
+  "scienceModels": [
+    {
+      "id": "alphafold2",
+      "title": "AlphaFold 2"
+    },
+    {
+      "id": "alphafold3",
+      "title": "AlphaFold 3"
+    },
+    {
+      "id": "boltz-2",
+      "title": "Boltz-2"
+    },
+    {
+      "id": "chai-1",
+      "title": "Chai-1"
+    },
+    {
+      "id": "esmfold",
+      "title": "ESMFold"
+    },
+    {
+      "id": "esm2",
+      "title": "ESM-2"
+    },
+    {
+      "id": "evo2",
+      "title": "Evo 2"
+    },
+    {
+      "id": "diffdock",
+      "title": "DiffDock"
+    },
+    {
+      "id": "proteinmpnn",
+      "title": "ProteinMPNN"
+    },
+    {
+      "id": "ligandmpnn",
+      "title": "LigandMPNN"
+    },
+    {
+      "id": "rfdiffusion",
+      "title": "RFdiffusion"
+    },
+    {
+      "id": "scgpt",
+      "title": "scGPT"
+    },
+    {
+      "id": "borzoi",
+      "title": "Borzoi"
+    },
+    {
+      "id": "openfold3",
+      "title": "OpenFold3"
+    },
+    {
+      "id": "molcraft",
+      "title": "MolCraft"
+    }
+  ]
+}

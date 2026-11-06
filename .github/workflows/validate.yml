@@ -1,0 +1,34 @@
+# Every pull request and every push to main runs the same checks as the
+# platform's import (ADR 0041): schema and vocabularies, licences, sizes and
+# secrets. A plugin that passes here imports; a commit that fails would
+# import nothing.
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      # tools/plugins-lint.mjs is bundled from the monorepo's packages/plugins
+      # (its header names the commit); it needs no install.
+      - run: node tools/plugins-lint.mjs .
+      - name: Connectors
+        run: |
+          for dir in connectors/*/; do
+            [ -f "$dir/package.json" ] || continue
+            echo "::group::$dir"
+            (cd "$dir" && npm ci --ignore-scripts && npm test)
+            echo "::endgroup::"
+          done
