@@ -251,6 +251,38 @@
           }
         }
       }
+    },
+    {
+      "name": "deepmind-science",
+      "source": "./plugins/deepmind-science",
+      "description": "UniProt, PubMed, ChEMBL and Ensembl skills from Google DeepMind's science-skills.",
+      "category": "Life sciences",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "upstream": {
+            "repo": "google-deepmind/science-skills",
+            "path": "skills",
+            "sha": "4de6786171f1479026da5d3a00f110703c8ba35e"
+          },
+          "review": {
+            "network": [
+              "pypi.org",
+              "files.pythonhosted.org",
+              "rest.uniprot.org",
+              "sparql.uniprot.org",
+              "eutils.ncbi.nlm.nih.gov",
+              "www.ebi.ac.uk",
+              "rest.ensembl.org",
+              "grch37.rest.ensembl.org"
+            ],
+            "reviewedBy": "tumbleweed",
+            "reviewedAt": "2026-11-06"
+          }
+        }
+      }
     }
   ]
 }
