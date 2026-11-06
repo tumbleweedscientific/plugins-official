@@ -1,0 +1,40 @@
+{
+  "name": "data-genomes",
+  "displayName": "Genomes data",
+  "description": "Genes, variants and sequences: Ensembl, NCBI Gene and ClinVar, gnomAD, UCSC.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "genomics",
+        "variant-interpretation"
+      ],
+      "maturity": "beta",
+      "connectors": {
+        "genomes": {
+          "dataSources": [
+            "ensembl",
+            "ncbi-gene",
+            "dbsnp",
+            "clinvar",
+            "gnomad",
+            "ucsc",
+            "ncbi-nucleotide"
+          ],
+          "domains": [
+            "genomics",
+            "variant-interpretation"
+          ],
+          "rateLimit": "60 calls a minute per user",
+          "terms": "https://www.ensembl.org/info/about/legal/disclaimer.html",
+          "region": "Cloudflare global network",
+          "cost": "Free"
+        }
+      }
+    }
+  }
+}

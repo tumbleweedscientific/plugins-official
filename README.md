@@ -10,7 +10,7 @@ the platform). The repository is also a Claude Code marketplace
 ```
 .claude-plugin/marketplace.json  every plugin, its status and our review (metadata.tumbleweed)
 plugins/<name>/                  one plugin in Claude's layout, plus research metadata
-connectors/<name>/               the MCP servers we host on Cloudflare Workers
+connectors/                      the MCP servers we host on Cloudflare Workers
 schema/                          JSON Schemas and the controlled vocabularies
 tools/plugins-lint.mjs           the platform's own checks, bundled (do not edit)
 .github/workflows/validate.yml   runs them on every pull request

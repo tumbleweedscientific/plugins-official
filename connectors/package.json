@@ -1,0 +1,30 @@
+{
+  "name": "tumbleweed-connectors",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "MCP servers Tumbleweed Scientific hosts on Cloudflare Workers for public research data sources (ADR 0041).",
+  "license": "Apache-2.0",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "tsc --noEmit && vitest run",
+    "dev:genomes": "wrangler dev --config wrangler.genomes.jsonc",
+    "dev:proteins": "wrangler dev --config wrangler.proteins.jsonc",
+    "dev:chemistry": "wrangler dev --config wrangler.chemistry.jsonc",
+    "dev:literature": "wrangler dev --config wrangler.literature.jsonc",
+    "deploy:genomes": "wrangler deploy --config wrangler.genomes.jsonc",
+    "deploy:proteins": "wrangler deploy --config wrangler.proteins.jsonc",
+    "deploy:chemistry": "wrangler deploy --config wrangler.chemistry.jsonc",
+    "deploy:literature": "wrangler deploy --config wrangler.literature.jsonc"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261024.1",
+    "typescript": "6.0.3",
+    "vitest": "5.0.3",
+    "wrangler": "4.152.0"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "proteins": {
+      "type": "http",
+      "url": "https://connectors.tumbleweedscientific.com/proteins/mcp"
+    }
+  }
+}

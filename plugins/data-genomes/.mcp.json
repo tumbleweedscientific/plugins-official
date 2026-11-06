@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "genomes": {
+      "type": "http",
+      "url": "https://connectors.tumbleweedscientific.com/genomes/mcp"
+    }
+  }
+}

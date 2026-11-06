@@ -50,7 +50,8 @@ checks what it cannot.
 
 ## Connectors we host
 
-`connectors/<name>/` is a Cloudflare Worker serving one MCP endpoint for a
-group of public APIs. Its README states the sources, their terms and
-attribution, the rate limits and the caching. Each has its own `npm test`,
-which the workflow runs; deploying one is a separate, approved step.
+`connectors/src/<name>/` is a Cloudflare Worker serving one MCP endpoint
+for a group of public APIs; `connectors/README.md` states the sources, their
+terms and attribution, the rate limits and the caching. They share one
+package and one `npm test`, which the workflow runs. Deploying is a separate
+step that needs the owner's approval.

@@ -1,0 +1,16 @@
+// The `chemistry` connector (ADR 0041). Deploying needs the owner's approval:
+//   npx wrangler deploy --config wrangler.chemistry.jsonc
+// It serves POST /mcp; the plugin's .mcp.json points at the route below.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tumbleweed-connector-chemistry",
+  "main": "src/chemistry/index.ts",
+  "compatibility_date": "2026-10-25",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "routes": [{ "pattern": "connectors.tumbleweedscientific.com/chemistry/*", "zone_name": "tumbleweedscientific.com" }],
+  "vars": { "CONTACT_EMAIL": "data@tumbleweedscientific.com" },
+  // Per caller (the platform's user hash, else the client address): 60 calls a minute.
+  "ratelimits": [{ "name": "RATE_LIMITER", "namespace_id": "1003", "simple": { "limit": 60, "period": 60 } }],
+  "observability": { "enabled": true }
+}

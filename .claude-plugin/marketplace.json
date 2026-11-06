@@ -159,6 +159,98 @@
           }
         }
       }
+    },
+    {
+      "name": "data-genomes",
+      "source": "./plugins/data-genomes",
+      "description": "Genes, variants and sequences: Ensembl, NCBI Gene and ClinVar, gnomAD, UCSC.",
+      "category": "Data",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "withdrawn",
+          "featured": false,
+          "review": {
+            "connectors": {
+              "genomes": {
+                "title": "Genomes",
+                "description": "Genes, variants and sequences: Ensembl, NCBI Gene and ClinVar, gnomAD, UCSC."
+              }
+            },
+            "reviewedBy": "tumbleweed",
+            "reviewedAt": "2026-11-06"
+          }
+        }
+      }
+    },
+    {
+      "name": "data-proteins",
+      "source": "./plugins/data-proteins",
+      "description": "Proteins, domains and structures: UniProt, InterPro, RCSB PDB, AlphaFold DB.",
+      "category": "Data",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "withdrawn",
+          "featured": false,
+          "review": {
+            "connectors": {
+              "proteins": {
+                "title": "Proteins",
+                "description": "Proteins, domains and structures: UniProt, InterPro, RCSB PDB, AlphaFold DB."
+              }
+            },
+            "reviewedBy": "tumbleweed",
+            "reviewedAt": "2026-11-06"
+          }
+        }
+      }
+    },
+    {
+      "name": "data-chemistry",
+      "source": "./plugins/data-chemistry",
+      "description": "Bioactive molecules, targets and assays from ChEMBL; compounds from PubChem.",
+      "category": "Data",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "withdrawn",
+          "featured": false,
+          "review": {
+            "connectors": {
+              "chemistry": {
+                "title": "Chemistry",
+                "description": "Bioactive molecules, targets and assays from ChEMBL; compounds from PubChem."
+              }
+            },
+            "reviewedBy": "tumbleweed",
+            "reviewedAt": "2026-11-06"
+          }
+        }
+      }
+    },
+    {
+      "name": "data-literature",
+      "source": "./plugins/data-literature",
+      "description": "PubMed and PMC, Europe PMC with preprints, bioRxiv/medRxiv, OpenAlex.",
+      "category": "Data",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "withdrawn",
+          "featured": false,
+          "review": {
+            "connectors": {
+              "literature": {
+                "title": "Literature",
+                "description": "PubMed and PMC, Europe PMC with preprints, bioRxiv/medRxiv, OpenAlex."
+              }
+            },
+            "reviewedBy": "tumbleweed",
+            "reviewedAt": "2026-11-06"
+          }
+        }
+      }
     }
   ]
 }

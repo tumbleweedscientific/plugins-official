@@ -25,10 +25,5 @@ jobs:
       # (its header names the commit); it needs no install.
       - run: node tools/plugins-lint.mjs .
       - name: Connectors
-        run: |
-          for dir in connectors/*/; do
-            [ -f "$dir/package.json" ] || continue
-            echo "::group::$dir"
-            (cd "$dir" && npm ci --ignore-scripts && npm test)
-            echo "::endgroup::"
-          done
+        working-directory: connectors
+        run: npm ci --ignore-scripts && npm test
