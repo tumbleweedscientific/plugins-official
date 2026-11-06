@@ -1,11 +1,22 @@
 tumbleweed-research
 Copyright 2026 Tumbleweed Scientific
 
-This plugin contains material from the following work under the Apache
-License, Version 2.0 (see LICENSE), modified as described in MODIFICATIONS.md:
+This plugin contains material from the following works, each under the
+Apache License, Version 2.0 (see LICENSE), modified as described in
+MODIFICATIONS.md:
 
+- Skills of Claude Science 0.1.70 (Anthropic, PBC): literature-review,
+  indication-dossier, pdf-explore, figure-style, figure-composer,
+  paper-narrative, proteinmpnn, ligandmpnn, solublempnn.
 - The skill-creator skill (Anthropic, PBC); its own license text is kept in
   skills/skill-creator/LICENSE.txt.
 
 skills/bioinfo-figure-deconstruction is an original work of Tumbleweed
-Scientific, licensed under the Apache License, Version 2.0.
+Scientific.
+
+Third-party software and weights the skills install or download at run time
+keep their own licenses, which the skills name: ProteinMPNN, LigandMPNN and
+SolubleMPNN code and weights (MIT, Justas Dauparas); pypdfium2
+(Apache-2.0/BSD-3-Clause). Data services the skills query (Crossref,
+OpenAlex, NCBI, Europe PMC, ClinicalTrials.gov, FDA) are subject to their
+own terms.

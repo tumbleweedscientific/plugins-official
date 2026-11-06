@@ -744,6 +744,18 @@
     {
       "id": "molcraft",
       "title": "MolCraft"
+    },
+    {
+      "id": "esmfold2",
+      "title": "ESMFold2"
+    },
+    {
+      "id": "esmc",
+      "title": "ESM C"
+    },
+    {
+      "id": "solublempnn",
+      "title": "SolubleMPNN"
     }
   ]
 }

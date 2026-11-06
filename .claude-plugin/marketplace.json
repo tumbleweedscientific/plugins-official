@@ -137,7 +137,7 @@
     {
       "name": "tumbleweed-research",
       "source": "./plugins/tumbleweed-research",
-      "description": "Built-in skills of the research agent.",
+      "description": "Built-in research skills of the research agent.",
       "category": "Research",
       "metadata": {
         "tumbleweed": {
@@ -147,15 +147,27 @@
           "review": {
             "network": [
               "pypi.org",
-              "files.pythonhosted.org"
+              "files.pythonhosted.org",
+              "github.com",
+              "codeload.github.com",
+              "api.crossref.org",
+              "doi.org",
+              "api.openalex.org",
+              "eutils.ncbi.nlm.nih.gov",
+              "www.ebi.ac.uk",
+              "clinicaltrials.gov"
             ],
             "credentials": [],
             "specialists": {},
             "oauth": {},
             "connectors": {},
-            "sandboxSkills": {},
+            "sandboxSkills": {
+              "proteinmpnn": true,
+              "ligandmpnn": true,
+              "solublempnn": true
+            },
             "reviewedBy": "guchen",
-            "reviewedAt": "2026-11-05"
+            "reviewedAt": "2026-11-06"
           }
         }
       }
@@ -277,6 +289,32 @@
               "www.ebi.ac.uk",
               "rest.ensembl.org",
               "grch37.rest.ensembl.org"
+            ],
+            "reviewedBy": "tumbleweed",
+            "reviewedAt": "2026-11-06"
+          }
+        }
+      }
+    },
+    {
+      "name": "science-models",
+      "source": "./plugins/science-models",
+      "description": "AI4Science model skills (need a GPU; listed as unavailable until one exists).",
+      "category": "Research",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "builtin",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "pypi.org",
+              "files.pythonhosted.org",
+              "download.pytorch.org",
+              "huggingface.co",
+              "cdn-lfs.huggingface.co",
+              "github.com",
+              "api.colabfold.com"
             ],
             "reviewedBy": "tumbleweed",
             "reviewedAt": "2026-11-06"

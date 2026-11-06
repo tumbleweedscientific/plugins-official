@@ -1,0 +1,23 @@
+{
+  "name": "science-models",
+  "displayName": "Science models",
+  "version": "0.1.0",
+  "description": "AI4Science model skills adapted from Claude Science: AlphaFold2, Boltz-2, Chai-1, OpenFold3 and ESMFold2 co-folding, DiffDock, Borzoi, Evo 2, ESM-2 and scGPT. They need a GPU and are listed as unavailable until one exists.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "structural-biology",
+        "protein-design",
+        "docking",
+        "genomics",
+        "single-cell"
+      ],
+      "maturity": "experimental"
+    }
+  }
+}

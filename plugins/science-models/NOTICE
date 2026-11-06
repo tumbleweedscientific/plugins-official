@@ -1,0 +1,13 @@
+science-models
+Copyright 2026 Tumbleweed Scientific
+
+This plugin contains the alphafold2, boltz, borzoi, chai1, diffdock,
+esmfold2, evo2, fair-esm2, openfold3 and scgpt skills of Claude Science
+0.1.71 (Anthropic, PBC), each stating the Apache License, Version 2.0 (see
+LICENSE); their use here was confirmed by the repository owner on
+2026-11-06. They are modified as described in MODIFICATIONS.md.
+
+The models, code and weights the skills install or download keep their own
+licences, which each SKILL.md names in its frontmatter (e.g. ColabFold and
+AlphaFold2, Boltz-2 MIT, Chai-1, OpenFold3 Apache-2.0, ESM-2 MIT, Evo 2,
+Borzoi, DiffDock, scGPT).
