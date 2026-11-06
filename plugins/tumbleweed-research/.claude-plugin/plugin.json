@@ -1,0 +1,20 @@
+{
+  "name": "tumbleweed-research",
+  "displayName": "Tumbleweed research",
+  "version": "2.0.0",
+  "description": "Built-in skills of the Tumbleweed Scientific research agent: figure deconstruction and authoring new skills.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "visualization",
+        "writing"
+      ],
+      "maturity": "stable"
+    }
+  }
+}

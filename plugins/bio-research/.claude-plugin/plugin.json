@@ -1,0 +1,104 @@
+{
+  "name": "bio-research",
+  "version": "1.2.0",
+  "description": "Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D",
+  "author": {
+    "name": "Anthropic"
+  },
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "genomics",
+        "literature",
+        "lab-data"
+      ],
+      "tags": [
+        "nf-core",
+        "scverse",
+        "allotrope"
+      ],
+      "maturity": "beta",
+      "connectors": {
+        "pubmed": {
+          "dataSources": [
+            "pubmed"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "terms": "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+        },
+        "biorxiv": {
+          "dataSources": [
+            "biorxiv",
+            "medrxiv"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "terms": "https://www.biorxiv.org/about-biorxiv"
+        },
+        "consensus": {
+          "domains": [
+            "literature"
+          ]
+        },
+        "biorender": {
+          "domains": [
+            "visualization"
+          ]
+        },
+        "c-trials": {
+          "dataSources": [
+            "clinicaltrials-gov"
+          ],
+          "domains": [
+            "clinical"
+          ],
+          "terms": "https://clinicaltrials.gov/about-site/terms-conditions"
+        },
+        "chembl": {
+          "dataSources": [
+            "chembl"
+          ],
+          "domains": [
+            "medicinal-chemistry",
+            "pharmacology"
+          ],
+          "terms": "https://www.ebi.ac.uk/about/terms-of-use/"
+        },
+        "ot": {
+          "dataSources": [
+            "open-targets"
+          ],
+          "domains": [
+            "genomics",
+            "pharmacology"
+          ],
+          "terms": "https://platform-docs.opentargets.org/licence"
+        },
+        "synapse": {
+          "dataSources": [
+            "synapse"
+          ],
+          "domains": [
+            "lab-data"
+          ]
+        },
+        "wiley": {
+          "domains": [
+            "literature"
+          ]
+        },
+        "owkin": {
+          "domains": [
+            "clinical"
+          ]
+        }
+      }
+    }
+  }
+}

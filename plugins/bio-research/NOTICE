@@ -1,0 +1,9 @@
+bio-research
+Copyright Anthropic, PBC (the original plugin, Apache License 2.0)
+Modifications copyright 2026 Tumbleweed Scientific
+
+This plugin is an adapted copy of the bio-research plugin of
+anthropics/knowledge-work-plugins (Apache License, Version 2.0, see
+LICENSE), modified as described in MODIFICATIONS.md. Each skill keeps its own
+license text (skills/*/LICENSE.txt). The remote MCP servers it lists are
+operated by third parties under their own terms.

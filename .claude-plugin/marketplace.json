@@ -1,0 +1,164 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tumbleweed-scientific",
+  "description": "Tumbleweed Scientific's reviewed plugins, skills and connectors for life-science research.",
+  "owner": {
+    "name": "Tumbleweed Scientific",
+    "url": "https://tumbleweedscientific.com"
+  },
+  "plugins": [
+    {
+      "name": "bio-research",
+      "source": "./plugins/bio-research",
+      "description": "Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D",
+      "category": "Life sciences",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "upstream": {
+            "repo": "anthropics/knowledge-work-plugins",
+            "path": "bio-research",
+            "sha": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d"
+          },
+          "review": {
+            "network": [
+              "pypi.org",
+              "files.pythonhosted.org",
+              "download.pytorch.org",
+              "eutils.ncbi.nlm.nih.gov",
+              "ftp.ncbi.nlm.nih.gov",
+              "www.ebi.ac.uk"
+            ],
+            "credentials": [
+              {
+                "id": "biorender",
+                "kind": "oauth2",
+                "label": "BioRender account",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "biorender"
+                }
+              },
+              {
+                "id": "consensus",
+                "kind": "oauth2",
+                "label": "Consensus account",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "consensus"
+                }
+              },
+              {
+                "id": "synapse",
+                "kind": "oauth2",
+                "label": "Synapse account",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "synapse"
+                }
+              },
+              {
+                "id": "wiley",
+                "kind": "oauth2",
+                "label": "Wiley Scholar Gateway account",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "wiley"
+                }
+              },
+              {
+                "id": "owkin",
+                "kind": "oauth2",
+                "label": "Owkin account",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "owkin"
+                }
+              }
+            ],
+            "oauth": {
+              "biorender": "biorender",
+              "consensus": "consensus",
+              "synapse": "synapse",
+              "wiley": "wiley",
+              "owkin": "owkin"
+            },
+            "connectors": {
+              "pubmed": {
+                "title": "PubMed",
+                "description": "Search biomedical literature indexed by NCBI PubMed."
+              },
+              "biorxiv": {
+                "title": "bioRxiv",
+                "description": "Search life-sciences preprints on bioRxiv and medRxiv."
+              },
+              "consensus": {
+                "title": "Consensus",
+                "description": "Find answers in peer-reviewed research papers."
+              },
+              "biorender": {
+                "title": "BioRender",
+                "description": "Find scientific illustrations and icons in your BioRender account."
+              },
+              "c-trials": {
+                "title": "ClinicalTrials.gov",
+                "description": "Search registered clinical studies."
+              },
+              "chembl": {
+                "title": "ChEMBL",
+                "description": "Look up bioactive molecules, targets and assay data."
+              },
+              "ot": {
+                "title": "Open Targets",
+                "description": "Explore target–disease associations and evidence."
+              },
+              "synapse": {
+                "title": "Synapse",
+                "description": "Access datasets and projects in Sage Bionetworks' Synapse."
+              },
+              "wiley": {
+                "title": "Wiley Scholar Gateway",
+                "description": "Read journal content available to your Wiley account."
+              },
+              "owkin": {
+                "title": "Owkin",
+                "description": "Query Owkin's AI models for biomedical research.",
+                "unavailable": "Owkin's sign-in does not support automatic client registration; it needs a client id issued to Tumbleweed."
+              }
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-05"
+          }
+        }
+      }
+    },
+    {
+      "name": "tumbleweed-research",
+      "source": "./plugins/tumbleweed-research",
+      "description": "Built-in skills of the research agent.",
+      "category": "Research",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "builtin",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "pypi.org",
+              "files.pythonhosted.org"
+            ],
+            "credentials": [],
+            "specialists": {},
+            "oauth": {},
+            "connectors": {},
+            "sandboxSkills": {},
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-05"
+          }
+        }
+      }
+    }
+  ]
+}

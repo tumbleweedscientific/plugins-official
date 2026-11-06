@@ -1,0 +1,11 @@
+tumbleweed-research
+Copyright 2026 Tumbleweed Scientific
+
+This plugin contains material from the following work under the Apache
+License, Version 2.0 (see LICENSE), modified as described in MODIFICATIONS.md:
+
+- The skill-creator skill (Anthropic, PBC); its own license text is kept in
+  skills/skill-creator/LICENSE.txt.
+
+skills/bioinfo-figure-deconstruction is an original work of Tumbleweed
+Scientific, licensed under the Apache License, Version 2.0.
