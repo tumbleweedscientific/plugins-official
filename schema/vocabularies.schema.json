@@ -232,6 +232,45 @@
         ],
         "additionalProperties": false
       }
+    },
+    "credentialTypes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,62}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "api_key",
+              "oauth2"
+            ]
+          },
+          "hosts": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^(\\*\\.)?[a-z0-9.-]+$"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "kind",
+          "hosts"
+        ],
+        "additionalProperties": false
+      }
     }
   },
   "required": [
