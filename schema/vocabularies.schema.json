@@ -58,6 +58,18 @@
             "type": "string",
             "minLength": 1,
             "maxLength": 300
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "genomes",
+              "proteins",
+              "chemistry",
+              "literature",
+              "clinical",
+              "expression",
+              "pathways"
+            ]
           }
         },
         "required": [
@@ -166,11 +178,57 @@
             "type": "string",
             "minLength": 1,
             "maxLength": 300
+          },
+          "task": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "license": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
           }
         },
         "required": [
           "id",
           "title"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "taskGroups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,62}$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "domains": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]{0,62}$"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "domains"
         ],
         "additionalProperties": false
       }

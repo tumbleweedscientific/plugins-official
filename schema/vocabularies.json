@@ -107,155 +107,193 @@
   "dataSources": [
     {
       "id": "ensembl",
-      "title": "Ensembl"
+      "title": "Ensembl",
+      "category": "genomes"
     },
     {
       "id": "ncbi-gene",
-      "title": "NCBI Gene"
+      "title": "NCBI Gene",
+      "category": "genomes"
     },
     {
       "id": "ncbi-nucleotide",
-      "title": "NCBI Nucleotide"
+      "title": "NCBI Nucleotide",
+      "category": "genomes"
     },
     {
       "id": "dbsnp",
-      "title": "dbSNP"
+      "title": "dbSNP",
+      "category": "genomes"
     },
     {
       "id": "clinvar",
-      "title": "ClinVar"
+      "title": "ClinVar",
+      "category": "genomes"
     },
     {
       "id": "ucsc",
-      "title": "UCSC Genome Browser"
+      "title": "UCSC Genome Browser",
+      "category": "genomes"
     },
     {
       "id": "gnomad",
-      "title": "gnomAD"
+      "title": "gnomAD",
+      "category": "genomes"
     },
     {
       "id": "uniprot",
-      "title": "UniProt"
+      "title": "UniProt",
+      "category": "proteins"
     },
     {
       "id": "interpro",
-      "title": "InterPro"
+      "title": "InterPro",
+      "category": "proteins"
     },
     {
       "id": "pdb",
-      "title": "RCSB PDB"
+      "title": "RCSB PDB",
+      "category": "proteins"
     },
     {
       "id": "alphafold-db",
-      "title": "AlphaFold DB"
+      "title": "AlphaFold DB",
+      "category": "proteins"
     },
     {
       "id": "chembl",
-      "title": "ChEMBL"
+      "title": "ChEMBL",
+      "category": "chemistry"
     },
     {
       "id": "pubchem",
-      "title": "PubChem"
+      "title": "PubChem",
+      "category": "chemistry"
     },
     {
       "id": "pubmed",
-      "title": "PubMed"
+      "title": "PubMed",
+      "category": "literature"
     },
     {
       "id": "pmc",
-      "title": "PubMed Central"
+      "title": "PubMed Central",
+      "category": "literature"
     },
     {
       "id": "europe-pmc",
-      "title": "Europe PMC"
+      "title": "Europe PMC",
+      "category": "literature"
     },
     {
       "id": "biorxiv",
-      "title": "bioRxiv"
+      "title": "bioRxiv",
+      "category": "literature"
     },
     {
       "id": "medrxiv",
-      "title": "medRxiv"
+      "title": "medRxiv",
+      "category": "literature"
     },
     {
       "id": "openalex",
-      "title": "OpenAlex"
+      "title": "OpenAlex",
+      "category": "literature"
     },
     {
       "id": "crossref",
-      "title": "Crossref"
+      "title": "Crossref",
+      "category": "literature"
     },
     {
       "id": "open-targets",
-      "title": "Open Targets"
+      "title": "Open Targets",
+      "category": "clinical"
     },
     {
       "id": "clinicaltrials-gov",
-      "title": "ClinicalTrials.gov"
+      "title": "ClinicalTrials.gov",
+      "category": "clinical"
     },
     {
       "id": "openfda",
-      "title": "openFDA"
+      "title": "openFDA",
+      "category": "clinical"
     },
     {
       "id": "geo",
-      "title": "GEO"
+      "title": "GEO",
+      "category": "expression"
     },
     {
       "id": "sra",
-      "title": "SRA"
+      "title": "SRA",
+      "category": "expression"
     },
     {
       "id": "gtex",
-      "title": "GTEx"
+      "title": "GTEx",
+      "category": "expression"
     },
     {
       "id": "hpa",
-      "title": "Human Protein Atlas"
+      "title": "Human Protein Atlas",
+      "category": "expression"
     },
     {
       "id": "cellxgene",
-      "title": "CELLxGENE"
+      "title": "CELLxGENE",
+      "category": "expression"
     },
     {
       "id": "reactome",
-      "title": "Reactome"
+      "title": "Reactome",
+      "category": "pathways"
     },
     {
       "id": "string",
-      "title": "STRING"
+      "title": "STRING",
+      "category": "pathways"
     },
     {
       "id": "quickgo",
-      "title": "QuickGO"
+      "title": "QuickGO",
+      "category": "pathways"
     },
     {
       "id": "encode-screen",
-      "title": "ENCODE SCREEN"
+      "title": "ENCODE SCREEN",
+      "category": "expression"
     },
     {
       "id": "jaspar",
-      "title": "JASPAR"
+      "title": "JASPAR",
+      "category": "pathways"
     },
     {
       "id": "kegg",
-      "title": "KEGG"
+      "title": "KEGG",
+      "category": "pathways"
     },
     {
       "id": "drugbank",
-      "title": "DrugBank"
+      "title": "DrugBank",
+      "category": "chemistry"
     },
     {
       "id": "depmap",
-      "title": "DepMap"
+      "title": "DepMap",
+      "category": "clinical"
     },
     {
       "id": "gwas-catalog",
-      "title": "GWAS Catalog"
+      "title": "GWAS Catalog",
+      "category": "clinical"
     },
     {
       "id": "synapse",
-      "title": "Synapse"
+      "title": "Synapse",
+      "category": "expression"
     }
   ],
   "formats": [
@@ -687,75 +725,168 @@
   "scienceModels": [
     {
       "id": "alphafold2",
-      "title": "AlphaFold 2"
+      "title": "AlphaFold 2",
+      "task": "structure prediction"
     },
     {
       "id": "alphafold3",
-      "title": "AlphaFold 3"
+      "title": "AlphaFold 3",
+      "task": "structure prediction"
     },
     {
       "id": "boltz-2",
-      "title": "Boltz-2"
+      "title": "Boltz-2",
+      "task": "structure and affinity prediction"
     },
     {
       "id": "chai-1",
-      "title": "Chai-1"
+      "title": "Chai-1",
+      "task": "structure prediction"
     },
     {
       "id": "esmfold",
-      "title": "ESMFold"
+      "title": "ESMFold",
+      "task": "structure prediction"
     },
     {
       "id": "esm2",
-      "title": "ESM-2"
+      "title": "ESM-2",
+      "task": "protein language model"
     },
     {
       "id": "evo2",
-      "title": "Evo 2"
+      "title": "Evo 2",
+      "task": "DNA language model"
     },
     {
       "id": "diffdock",
-      "title": "DiffDock"
+      "title": "DiffDock",
+      "task": "molecular docking"
     },
     {
       "id": "proteinmpnn",
-      "title": "ProteinMPNN"
+      "title": "ProteinMPNN",
+      "task": "sequence design"
     },
     {
       "id": "ligandmpnn",
-      "title": "LigandMPNN"
+      "title": "LigandMPNN",
+      "task": "sequence design"
     },
     {
       "id": "rfdiffusion",
-      "title": "RFdiffusion"
+      "title": "RFdiffusion",
+      "task": "backbone design"
     },
     {
       "id": "scgpt",
-      "title": "scGPT"
+      "title": "scGPT",
+      "task": "single-cell foundation model"
     },
     {
       "id": "borzoi",
-      "title": "Borzoi"
+      "title": "Borzoi",
+      "task": "expression from sequence"
     },
     {
       "id": "openfold3",
-      "title": "OpenFold3"
+      "title": "OpenFold3",
+      "task": "structure prediction"
     },
     {
       "id": "molcraft",
-      "title": "MolCraft"
+      "title": "MolCraft",
+      "task": "molecule generation"
     },
     {
       "id": "esmfold2",
-      "title": "ESMFold2"
+      "title": "ESMFold2",
+      "task": "structure prediction"
     },
     {
       "id": "esmc",
-      "title": "ESM C"
+      "title": "ESM C",
+      "task": "protein language model"
     },
     {
       "id": "solublempnn",
-      "title": "SolubleMPNN"
+      "title": "SolubleMPNN",
+      "task": "sequence design"
+    }
+  ],
+  "taskGroups": [
+    {
+      "id": "literature",
+      "title": "Literature & reviews",
+      "domains": [
+        "literature"
+      ]
+    },
+    {
+      "id": "single-cell",
+      "title": "Single-cell & transcriptomics",
+      "domains": [
+        "single-cell",
+        "transcriptomics",
+        "spatial",
+        "epigenomics"
+      ]
+    },
+    {
+      "id": "genomics",
+      "title": "Genomics & variants",
+      "domains": [
+        "genomics",
+        "variant-interpretation",
+        "microbiome"
+      ]
+    },
+    {
+      "id": "protein",
+      "title": "Protein structure & design",
+      "domains": [
+        "structural-biology",
+        "protein-design",
+        "proteomics",
+        "molecular-dynamics"
+      ]
+    },
+    {
+      "id": "chemistry",
+      "title": "Chemistry & drug discovery",
+      "domains": [
+        "cheminformatics",
+        "medicinal-chemistry",
+        "computational-chemistry",
+        "docking",
+        "admet",
+        "pharmacology",
+        "metabolomics"
+      ]
+    },
+    {
+      "id": "clinical",
+      "title": "Clinical & targets",
+      "domains": [
+        "clinical",
+        "immunology"
+      ]
+    },
+    {
+      "id": "figures-writing",
+      "title": "Figures & writing",
+      "domains": [
+        "visualization",
+        "writing"
+      ]
+    },
+    {
+      "id": "lab-data",
+      "title": "Lab data",
+      "domains": [
+        "lab-data",
+        "imaging"
+      ]
     }
   ]
 }
