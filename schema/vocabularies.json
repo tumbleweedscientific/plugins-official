@@ -110,239 +110,277 @@
       "title": "Ensembl",
       "category": "genomes",
       "homepage": "https://www.ensembl.org",
-      "icon": "https://www.ensembl.org/i/ensembl-favicon.png"
+      "icon": "https://www.ensembl.org/i/ensembl-favicon.png",
+      "description": "Genome annotation, genes, transcripts and variants across vertebrates."
     },
     {
       "id": "ncbi-gene",
       "title": "NCBI Gene",
       "category": "genomes",
-      "homepage": "https://www.ncbi.nlm.nih.gov/gene"
+      "homepage": "https://www.ncbi.nlm.nih.gov/gene",
+      "description": "Gene records: names, function, location and links across species."
     },
     {
       "id": "ncbi-nucleotide",
       "title": "NCBI Nucleotide",
       "category": "genomes",
-      "homepage": "https://www.ncbi.nlm.nih.gov/nuccore"
+      "homepage": "https://www.ncbi.nlm.nih.gov/nuccore",
+      "description": "Nucleotide sequences from GenBank, RefSeq and partners."
     },
     {
       "id": "dbsnp",
       "title": "dbSNP",
       "category": "genomes",
-      "homepage": "https://www.ncbi.nlm.nih.gov/snp"
+      "homepage": "https://www.ncbi.nlm.nih.gov/snp",
+      "description": "Short genetic variants (SNPs and indels) with identifiers and frequencies."
     },
     {
       "id": "clinvar",
       "title": "ClinVar",
       "category": "genomes",
-      "homepage": "https://www.ncbi.nlm.nih.gov/clinvar"
+      "homepage": "https://www.ncbi.nlm.nih.gov/clinvar",
+      "description": "Human variants and their reported clinical significance."
     },
     {
       "id": "ucsc",
       "title": "UCSC Genome Browser",
       "category": "genomes",
-      "homepage": "https://genome.ucsc.edu"
+      "homepage": "https://genome.ucsc.edu",
+      "description": "Genome browser tracks, assemblies and annotations."
     },
     {
       "id": "gnomad",
       "title": "gnomAD",
       "category": "genomes",
       "homepage": "https://gnomad.broadinstitute.org",
-      "icon": "https://gnomad.broadinstitute.org/assets/favicon-32x32.png"
+      "icon": "https://gnomad.broadinstitute.org/assets/favicon-32x32.png",
+      "description": "Population allele frequencies from large human sequencing cohorts."
     },
     {
       "id": "uniprot",
       "title": "UniProt",
       "category": "proteins",
-      "homepage": "https://www.uniprot.org"
+      "homepage": "https://www.uniprot.org",
+      "description": "Protein sequences and curated function, domains and annotations."
     },
     {
       "id": "interpro",
       "title": "InterPro",
       "category": "proteins",
       "homepage": "https://www.ebi.ac.uk/interpro",
-      "icon": "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/favicon-32x32.png"
+      "icon": "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/favicon-32x32.png",
+      "description": "Protein families, domains and functional sites."
     },
     {
       "id": "pdb",
       "title": "RCSB PDB",
       "category": "proteins",
-      "homepage": "https://www.rcsb.org"
+      "homepage": "https://www.rcsb.org",
+      "description": "Experimentally determined 3D structures of proteins and nucleic acids."
     },
     {
       "id": "alphafold-db",
       "title": "AlphaFold DB",
       "category": "proteins",
-      "homepage": "https://alphafold.ebi.ac.uk"
+      "homepage": "https://alphafold.ebi.ac.uk",
+      "description": "Predicted protein structures from AlphaFold."
     },
     {
       "id": "chembl",
       "title": "ChEMBL",
       "category": "chemistry",
       "homepage": "https://www.ebi.ac.uk/chembl",
-      "icon": "https://www.ebi.ac.uk/chembl/favicon.ico"
+      "icon": "https://www.ebi.ac.uk/chembl/favicon.ico",
+      "description": "Bioactive molecules, targets and measured activities from the literature."
     },
     {
       "id": "pubchem",
       "title": "PubChem",
       "category": "chemistry",
-      "homepage": "https://pubchem.ncbi.nlm.nih.gov"
+      "homepage": "https://pubchem.ncbi.nlm.nih.gov",
+      "description": "Chemical compounds, substances and bioassay results."
     },
     {
       "id": "pubmed",
       "title": "PubMed",
       "category": "literature",
-      "homepage": "https://pubmed.ncbi.nlm.nih.gov"
+      "homepage": "https://pubmed.ncbi.nlm.nih.gov",
+      "description": "Citations and abstracts of the biomedical literature."
     },
     {
       "id": "pmc",
       "title": "PubMed Central",
       "category": "literature",
-      "homepage": "https://pmc.ncbi.nlm.nih.gov"
+      "homepage": "https://pmc.ncbi.nlm.nih.gov",
+      "description": "Full-text open-access biomedical articles."
     },
     {
       "id": "europe-pmc",
       "title": "Europe PMC",
       "category": "literature",
-      "homepage": "https://europepmc.org"
+      "homepage": "https://europepmc.org",
+      "description": "Life-science literature, preprints and full texts with text mining."
     },
     {
       "id": "biorxiv",
       "title": "bioRxiv",
       "category": "literature",
-      "homepage": "https://www.biorxiv.org"
+      "homepage": "https://www.biorxiv.org",
+      "description": "Preprints in the life sciences."
     },
     {
       "id": "medrxiv",
       "title": "medRxiv",
       "category": "literature",
-      "homepage": "https://www.medrxiv.org"
+      "homepage": "https://www.medrxiv.org",
+      "description": "Preprints in medicine and health sciences."
     },
     {
       "id": "openalex",
       "title": "OpenAlex",
       "category": "literature",
       "homepage": "https://openalex.org",
-      "icon": "https://openalex.org/tricon-outlined.png"
+      "icon": "https://openalex.org/tricon-outlined.png",
+      "description": "Open index of scholarly works, authors, venues and citations."
     },
     {
       "id": "crossref",
       "title": "Crossref",
       "category": "literature",
-      "homepage": "https://www.crossref.org"
+      "homepage": "https://www.crossref.org",
+      "description": "DOI metadata for scholarly publications."
     },
     {
       "id": "open-targets",
       "title": "Open Targets",
       "category": "clinical",
       "homepage": "https://platform.opentargets.org",
-      "icon": "https://platform.opentargets.org/favicon.png"
+      "icon": "https://platform.opentargets.org/favicon.png",
+      "description": "Target–disease associations with genetic, drug and literature evidence."
     },
     {
       "id": "clinicaltrials-gov",
       "title": "ClinicalTrials.gov",
       "category": "clinical",
-      "homepage": "https://clinicaltrials.gov"
+      "homepage": "https://clinicaltrials.gov",
+      "description": "Registered clinical studies, their design, status and results."
     },
     {
       "id": "openfda",
       "title": "openFDA",
       "category": "clinical",
-      "homepage": "https://open.fda.gov"
+      "homepage": "https://open.fda.gov",
+      "description": "FDA data on drugs, adverse events, labels and recalls."
     },
     {
       "id": "geo",
       "title": "GEO",
       "category": "expression",
-      "homepage": "https://www.ncbi.nlm.nih.gov/geo"
+      "homepage": "https://www.ncbi.nlm.nih.gov/geo",
+      "description": "Functional genomics datasets: expression arrays and sequencing."
     },
     {
       "id": "sra",
       "title": "SRA",
       "category": "expression",
-      "homepage": "https://www.ncbi.nlm.nih.gov/sra"
+      "homepage": "https://www.ncbi.nlm.nih.gov/sra",
+      "description": "Raw sequencing reads from high-throughput experiments."
     },
     {
       "id": "gtex",
       "title": "GTEx",
       "category": "expression",
-      "homepage": "https://gtexportal.org"
+      "homepage": "https://gtexportal.org",
+      "description": "Gene expression and eQTLs across human tissues."
     },
     {
       "id": "hpa",
       "title": "Human Protein Atlas",
       "category": "expression",
-      "homepage": "https://www.proteinatlas.org"
+      "homepage": "https://www.proteinatlas.org",
+      "description": "Protein and RNA expression across human tissues and cells."
     },
     {
       "id": "cellxgene",
       "title": "CELLxGENE",
       "category": "expression",
-      "homepage": "https://cellxgene.cziscience.com"
+      "homepage": "https://cellxgene.cziscience.com",
+      "description": "Curated single-cell RNA-seq datasets and cell atlases."
     },
     {
       "id": "reactome",
       "title": "Reactome",
       "category": "pathways",
       "homepage": "https://reactome.org",
-      "icon": "https://reactome.org/templates/favourite/favicon.ico"
+      "icon": "https://reactome.org/templates/favourite/favicon.ico",
+      "description": "Curated biological pathways and reactions."
     },
     {
       "id": "string",
       "title": "STRING",
       "category": "pathways",
-      "homepage": "https://string-db.org"
+      "homepage": "https://string-db.org",
+      "description": "Known and predicted protein–protein interactions."
     },
     {
       "id": "quickgo",
       "title": "QuickGO",
       "category": "pathways",
-      "homepage": "https://www.ebi.ac.uk/QuickGO"
+      "homepage": "https://www.ebi.ac.uk/QuickGO",
+      "description": "Gene Ontology terms and annotations."
     },
     {
       "id": "encode-screen",
       "title": "ENCODE SCREEN",
       "category": "expression",
       "homepage": "https://screen.encodeproject.org",
-      "icon": "https://screen.encodeproject.org/apple-icon-60x60.png"
+      "icon": "https://screen.encodeproject.org/apple-icon-60x60.png",
+      "description": "Candidate cis-regulatory elements from ENCODE."
     },
     {
       "id": "jaspar",
       "title": "JASPAR",
       "category": "pathways",
       "homepage": "https://jaspar.elixir.no",
-      "icon": "https://jaspar.elixir.no/static/img/favicons/favicon-32x32.png"
+      "icon": "https://jaspar.elixir.no/static/img/favicons/favicon-32x32.png",
+      "description": "Transcription factor binding profiles."
     },
     {
       "id": "kegg",
       "title": "KEGG",
       "category": "pathways",
-      "homepage": "https://www.kegg.jp"
+      "homepage": "https://www.kegg.jp",
+      "description": "Pathways, modules and functional hierarchies of genes and compounds."
     },
     {
       "id": "drugbank",
       "title": "DrugBank",
       "category": "chemistry",
-      "homepage": "https://go.drugbank.com"
+      "homepage": "https://go.drugbank.com",
+      "description": "Drugs, their targets, mechanisms and interactions."
     },
     {
       "id": "depmap",
       "title": "DepMap",
       "category": "clinical",
-      "homepage": "https://depmap.org"
+      "homepage": "https://depmap.org",
+      "description": "Cancer cell line dependencies, expression and drug sensitivity."
     },
     {
       "id": "gwas-catalog",
       "title": "GWAS Catalog",
       "category": "clinical",
       "homepage": "https://www.ebi.ac.uk/gwas",
-      "icon": "https://www.ebi.ac.uk/gwas/assets/images/favicon.ico"
+      "icon": "https://www.ebi.ac.uk/gwas/assets/images/favicon.ico",
+      "description": "Published genome-wide association results."
     },
     {
       "id": "synapse",
       "title": "Synapse",
       "category": "expression",
       "homepage": "https://www.synapse.org",
-      "icon": "https://www.synapse.org/favicon.png"
+      "icon": "https://www.synapse.org/favicon.png",
+      "description": "Shared research datasets from collaborative biomedical projects."
     }
   ],
   "formats": [
@@ -775,92 +813,110 @@
     {
       "id": "alphafold2",
       "title": "AlphaFold 2",
-      "task": "structure prediction"
+      "task": "structure prediction",
+      "description": "Predicts protein structures from sequence."
     },
     {
       "id": "alphafold3",
       "title": "AlphaFold 3",
-      "task": "structure prediction"
+      "task": "structure prediction",
+      "description": "Predicts structures of complexes of proteins, nucleic acids and ligands."
     },
     {
       "id": "boltz-2",
       "title": "Boltz-2",
-      "task": "structure and affinity prediction"
+      "task": "structure and affinity prediction",
+      "description": "Predicts biomolecular complex structures and binding affinity."
     },
     {
       "id": "chai-1",
       "title": "Chai-1",
-      "task": "structure prediction"
+      "task": "structure prediction",
+      "description": "Predicts structures of proteins, nucleic acids and small-molecule complexes."
     },
     {
       "id": "esmfold",
       "title": "ESMFold",
-      "task": "structure prediction"
+      "task": "structure prediction",
+      "description": "Fast single-sequence protein structure prediction."
     },
     {
       "id": "esm2",
       "title": "ESM-2",
-      "task": "protein language model"
+      "task": "protein language model",
+      "description": "Protein language model for embeddings and variant effects."
     },
     {
       "id": "evo2",
       "title": "Evo 2",
-      "task": "DNA language model"
+      "task": "DNA language model",
+      "description": "DNA language model for sequence scoring and generation."
     },
     {
       "id": "diffdock",
       "title": "DiffDock",
-      "task": "molecular docking"
+      "task": "molecular docking",
+      "description": "Docks small molecules into protein structures."
     },
     {
       "id": "proteinmpnn",
       "title": "ProteinMPNN",
-      "task": "sequence design"
+      "task": "sequence design",
+      "description": "Designs sequences that fold to a given backbone."
     },
     {
       "id": "ligandmpnn",
       "title": "LigandMPNN",
-      "task": "sequence design"
+      "task": "sequence design",
+      "description": "Sequence design aware of ligands, nucleic acids and metals."
     },
     {
       "id": "rfdiffusion",
       "title": "RFdiffusion",
-      "task": "backbone design"
+      "task": "backbone design",
+      "description": "Generates new protein backbones and binders."
     },
     {
       "id": "scgpt",
       "title": "scGPT",
-      "task": "single-cell foundation model"
+      "task": "single-cell foundation model",
+      "description": "Foundation model for single-cell transcriptomics."
     },
     {
       "id": "borzoi",
       "title": "Borzoi",
-      "task": "expression from sequence"
+      "task": "expression from sequence",
+      "description": "Predicts gene expression and chromatin tracks from DNA sequence."
     },
     {
       "id": "openfold3",
       "title": "OpenFold3",
-      "task": "structure prediction"
+      "task": "structure prediction",
+      "description": "Open reproduction of AlphaFold3 for complex structure prediction."
     },
     {
       "id": "molcraft",
       "title": "MolCraft",
-      "task": "molecule generation"
+      "task": "molecule generation",
+      "description": "Generates molecules for a binding pocket."
     },
     {
       "id": "esmfold2",
       "title": "ESMFold2",
-      "task": "structure prediction"
+      "task": "structure prediction",
+      "description": "Protein structure prediction from the ESM family."
     },
     {
       "id": "esmc",
       "title": "ESM C",
-      "task": "protein language model"
+      "task": "protein language model",
+      "description": "ESM Cambrian protein language model for embeddings."
     },
     {
       "id": "solublempnn",
       "title": "SolubleMPNN",
-      "task": "sequence design"
+      "task": "sequence design",
+      "description": "Sequence design that favours soluble proteins."
     }
   ],
   "taskGroups": [
