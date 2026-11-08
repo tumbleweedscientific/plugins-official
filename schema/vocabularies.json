@@ -108,192 +108,241 @@
     {
       "id": "ensembl",
       "title": "Ensembl",
-      "category": "genomes"
+      "category": "genomes",
+      "homepage": "https://www.ensembl.org",
+      "icon": "https://www.ensembl.org/i/ensembl-favicon.png"
     },
     {
       "id": "ncbi-gene",
       "title": "NCBI Gene",
-      "category": "genomes"
+      "category": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/gene"
     },
     {
       "id": "ncbi-nucleotide",
       "title": "NCBI Nucleotide",
-      "category": "genomes"
+      "category": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/nuccore"
     },
     {
       "id": "dbsnp",
       "title": "dbSNP",
-      "category": "genomes"
+      "category": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/snp"
     },
     {
       "id": "clinvar",
       "title": "ClinVar",
-      "category": "genomes"
+      "category": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/clinvar"
     },
     {
       "id": "ucsc",
       "title": "UCSC Genome Browser",
-      "category": "genomes"
+      "category": "genomes",
+      "homepage": "https://genome.ucsc.edu"
     },
     {
       "id": "gnomad",
       "title": "gnomAD",
-      "category": "genomes"
+      "category": "genomes",
+      "homepage": "https://gnomad.broadinstitute.org",
+      "icon": "https://gnomad.broadinstitute.org/assets/favicon-32x32.png"
     },
     {
       "id": "uniprot",
       "title": "UniProt",
-      "category": "proteins"
+      "category": "proteins",
+      "homepage": "https://www.uniprot.org"
     },
     {
       "id": "interpro",
       "title": "InterPro",
-      "category": "proteins"
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/interpro",
+      "icon": "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/favicon-32x32.png"
     },
     {
       "id": "pdb",
       "title": "RCSB PDB",
-      "category": "proteins"
+      "category": "proteins",
+      "homepage": "https://www.rcsb.org"
     },
     {
       "id": "alphafold-db",
       "title": "AlphaFold DB",
-      "category": "proteins"
+      "category": "proteins",
+      "homepage": "https://alphafold.ebi.ac.uk"
     },
     {
       "id": "chembl",
       "title": "ChEMBL",
-      "category": "chemistry"
+      "category": "chemistry",
+      "homepage": "https://www.ebi.ac.uk/chembl",
+      "icon": "https://www.ebi.ac.uk/chembl/favicon.ico"
     },
     {
       "id": "pubchem",
       "title": "PubChem",
-      "category": "chemistry"
+      "category": "chemistry",
+      "homepage": "https://pubchem.ncbi.nlm.nih.gov"
     },
     {
       "id": "pubmed",
       "title": "PubMed",
-      "category": "literature"
+      "category": "literature",
+      "homepage": "https://pubmed.ncbi.nlm.nih.gov"
     },
     {
       "id": "pmc",
       "title": "PubMed Central",
-      "category": "literature"
+      "category": "literature",
+      "homepage": "https://pmc.ncbi.nlm.nih.gov"
     },
     {
       "id": "europe-pmc",
       "title": "Europe PMC",
-      "category": "literature"
+      "category": "literature",
+      "homepage": "https://europepmc.org"
     },
     {
       "id": "biorxiv",
       "title": "bioRxiv",
-      "category": "literature"
+      "category": "literature",
+      "homepage": "https://www.biorxiv.org"
     },
     {
       "id": "medrxiv",
       "title": "medRxiv",
-      "category": "literature"
+      "category": "literature",
+      "homepage": "https://www.medrxiv.org"
     },
     {
       "id": "openalex",
       "title": "OpenAlex",
-      "category": "literature"
+      "category": "literature",
+      "homepage": "https://openalex.org",
+      "icon": "https://openalex.org/tricon-outlined.png"
     },
     {
       "id": "crossref",
       "title": "Crossref",
-      "category": "literature"
+      "category": "literature",
+      "homepage": "https://www.crossref.org"
     },
     {
       "id": "open-targets",
       "title": "Open Targets",
-      "category": "clinical"
+      "category": "clinical",
+      "homepage": "https://platform.opentargets.org",
+      "icon": "https://platform.opentargets.org/favicon.png"
     },
     {
       "id": "clinicaltrials-gov",
       "title": "ClinicalTrials.gov",
-      "category": "clinical"
+      "category": "clinical",
+      "homepage": "https://clinicaltrials.gov"
     },
     {
       "id": "openfda",
       "title": "openFDA",
-      "category": "clinical"
+      "category": "clinical",
+      "homepage": "https://open.fda.gov"
     },
     {
       "id": "geo",
       "title": "GEO",
-      "category": "expression"
+      "category": "expression",
+      "homepage": "https://www.ncbi.nlm.nih.gov/geo"
     },
     {
       "id": "sra",
       "title": "SRA",
-      "category": "expression"
+      "category": "expression",
+      "homepage": "https://www.ncbi.nlm.nih.gov/sra"
     },
     {
       "id": "gtex",
       "title": "GTEx",
-      "category": "expression"
+      "category": "expression",
+      "homepage": "https://gtexportal.org"
     },
     {
       "id": "hpa",
       "title": "Human Protein Atlas",
-      "category": "expression"
+      "category": "expression",
+      "homepage": "https://www.proteinatlas.org"
     },
     {
       "id": "cellxgene",
       "title": "CELLxGENE",
-      "category": "expression"
+      "category": "expression",
+      "homepage": "https://cellxgene.cziscience.com"
     },
     {
       "id": "reactome",
       "title": "Reactome",
-      "category": "pathways"
+      "category": "pathways",
+      "homepage": "https://reactome.org",
+      "icon": "https://reactome.org/templates/favourite/favicon.ico"
     },
     {
       "id": "string",
       "title": "STRING",
-      "category": "pathways"
+      "category": "pathways",
+      "homepage": "https://string-db.org"
     },
     {
       "id": "quickgo",
       "title": "QuickGO",
-      "category": "pathways"
+      "category": "pathways",
+      "homepage": "https://www.ebi.ac.uk/QuickGO"
     },
     {
       "id": "encode-screen",
       "title": "ENCODE SCREEN",
-      "category": "expression"
+      "category": "expression",
+      "homepage": "https://screen.encodeproject.org",
+      "icon": "https://screen.encodeproject.org/apple-icon-60x60.png"
     },
     {
       "id": "jaspar",
       "title": "JASPAR",
-      "category": "pathways"
+      "category": "pathways",
+      "homepage": "https://jaspar.elixir.no",
+      "icon": "https://jaspar.elixir.no/static/img/favicons/favicon-32x32.png"
     },
     {
       "id": "kegg",
       "title": "KEGG",
-      "category": "pathways"
+      "category": "pathways",
+      "homepage": "https://www.kegg.jp"
     },
     {
       "id": "drugbank",
       "title": "DrugBank",
-      "category": "chemistry"
+      "category": "chemistry",
+      "homepage": "https://go.drugbank.com"
     },
     {
       "id": "depmap",
       "title": "DepMap",
-      "category": "clinical"
+      "category": "clinical",
+      "homepage": "https://depmap.org"
     },
     {
       "id": "gwas-catalog",
       "title": "GWAS Catalog",
-      "category": "clinical"
+      "category": "clinical",
+      "homepage": "https://www.ebi.ac.uk/gwas",
+      "icon": "https://www.ebi.ac.uk/gwas/assets/images/favicon.ico"
     },
     {
       "id": "synapse",
       "title": "Synapse",
-      "category": "expression"
+      "category": "expression",
+      "homepage": "https://www.synapse.org",
+      "icon": "https://www.synapse.org/favicon.png"
     }
   ],
   "formats": [

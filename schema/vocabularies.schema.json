@@ -70,6 +70,14 @@
               "expression",
               "pathways"
             ]
+          },
+          "homepage": {
+            "type": "string",
+            "format": "uri"
+          },
+          "icon": {
+            "type": "string",
+            "format": "uri"
           }
         },
         "required": [
