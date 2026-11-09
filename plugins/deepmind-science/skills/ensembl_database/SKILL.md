@@ -13,6 +13,7 @@ metadata:
     tags: [ensembl, vep]
     maturity: beta
     requires:
+      network: [pypi.org, files.pythonhosted.org, rest.uniprot.org, sparql.uniprot.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, rest.ensembl.org, grch37.rest.ensembl.org]
       environment: sandbox
       dataSources: [ensembl]
     outputs: [json, tsv]

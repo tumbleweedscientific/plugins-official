@@ -6,14 +6,17 @@ use the equivalent below; never pretend a missing tool ran.
 
 ## Where things are
 
-- Read a skill's other files (references, templates, this file) with
+- Read a skill's other files (references, templates) with
   `load_skill(name, file="references/…")`: paths are relative to the skill's
-  directory, and this needs no sandbox.
-- Scripts run from the sandbox at `/opt/plugins/tumbleweed-research/`. The
-  plugin is copied there, read-only, the first time a `bash` command or a
-  `python_nb` / `r_nb` cell names a path under that directory, so always use
-  the absolute path, e.g.
-  `exec(open("/opt/plugins/tumbleweed-research/skills/pdf-explore/kernel.py").read())`.
+  directory, and this needs no sandbox. Files shared by this package (this
+  file, MODIFICATIONS.md, NOTICE, LICENSE) are under `.package/`, e.g.
+  `load_skill(name, file=".package/RUNTIME.md")`.
+- Scripts run from the sandbox at `/opt/skills/<skill>/`. A skill is copied
+  there, read-only, the first time a `bash` command or a `python_nb` /
+  `r_nb` cell names a path under its directory, so always use the absolute
+  path, e.g. `exec(open("/opt/skills/pdf-explore/kernel.py").read())`. A
+  skill that uses another one (`figure-composer` runs `figure-style`'s
+  kernel) names it in `requires.skills`, and both are there.
 - The conversation's files are in `/workspace`. Write every output there
   (create a subdirectory per task); the user sees `/workspace` in the files
   panel.

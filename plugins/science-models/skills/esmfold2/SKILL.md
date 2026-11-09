@@ -21,6 +21,7 @@ metadata:
     domains: [structural-biology, protein-design]
     maturity: experimental
     requires:
+      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, huggingface.co, cdn-lfs.huggingface.co, github.com, api.colabfold.com]
       environment: sandbox
       gpu: true
       scienceModels: [esmfold2, esmc]
@@ -40,7 +41,7 @@ metadata:
       terms_url: https://github.com/Biohub/esm/blob/main/LICENSE.md
 ---
 
-<!-- Modified by Tumbleweed Scientific (2026-11-06): research metadata added; see ../../MODIFICATIONS.md. -->
+<!-- Modified by Tumbleweed Scientific (2026-11-06): research metadata added; see .package/MODIFICATIONS.md. -->
 
 > On Tumbleweed Scientific this skill needs a GPU, which no environment has yet: it is listed as unavailable and the assistant does not run it. The remote-compute and model-endpoint skills it mentions belong to Claude Science and are not part of this platform.
 

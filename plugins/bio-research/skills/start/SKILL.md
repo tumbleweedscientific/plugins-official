@@ -14,7 +14,7 @@ metadata:
 
 # Bio-Research Start
 
-> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](../../CONNECTORS.md).
+> If you see unfamiliar placeholders or need to check which tools are connected, see [CONNECTORS.md](.package/CONNECTORS.md).
 
 You are helping a biological researcher get oriented with the bio-research plugin. Walk through the following steps in order.
 

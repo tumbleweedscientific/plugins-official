@@ -13,6 +13,7 @@ metadata:
     domains: [protein-design]
     maturity: stable
     requires:
+      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
       environment: sandbox
       scienceModels: [proteinmpnn]
       longRunning: true
@@ -38,8 +39,8 @@ metadata:
 > `/workspace/proteinmpnn/`). There is no GPU or remote-compute dispatch, so keep runs
 > to a few backbones and modest `--num_seq_per_target`; tell the user when a
 > campaign needs a GPU. Mentions of `envs/…` files and the `remote-compute-modal`
-> skill refer to the original host and do not apply. See `../../RUNTIME.md`
-> and `../../MODIFICATIONS.md`.
+> skill refer to the original host and do not apply. See `.package/RUNTIME.md`
+> and `.package/MODIFICATIONS.md`.
 
 ProteinMPNN is the default inverse-folding step in the binder pipeline: a
 message-passing network that sees backbone geometry only, so it is the right

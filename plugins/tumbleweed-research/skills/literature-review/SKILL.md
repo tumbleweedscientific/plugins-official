@@ -8,6 +8,7 @@ metadata:
     tags: [citations, reviews]
     maturity: stable
     requires:
+      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
       environment: sandbox
       tools: [requests]
       dataSources: [crossref, openalex, pubmed, europe-pmc]
@@ -37,14 +38,14 @@ metadata:
 
 > Adapted by Tumbleweed Scientific (2026-10-29) from Claude Science's
 > `literature-review` skill (Apache-2.0): tools and helper loading follow this
-> platform (see `../../RUNTIME.md`); see `../../MODIFICATIONS.md`.
+> platform (see `.package/RUNTIME.md`); see `.package/MODIFICATIONS.md`.
 
 ## Running here
 
 Load the helpers once per notebook, in a `python_nb` cell:
 
 ```python
-exec(open("/opt/plugins/tumbleweed-research/skills/literature-review/kernel.py").read())
+exec(open("/opt/skills/literature-review/kernel.py").read())
 ```
 
 `crossref_lookup`, `verify_dois`, `extract_dois` and `style_pass` work as

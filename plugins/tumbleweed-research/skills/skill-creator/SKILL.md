@@ -4,6 +4,8 @@ description: Create new skills, modify and improve existing skills, and measure 
 license: Apache-2.0
 metadata:
   tumbleweed:
+    requires:
+      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
     domains: [writing]
     tags: [skills]
     maturity: beta
@@ -18,7 +20,7 @@ metadata:
 > "Claude.ai-specific instructions" describe (no sub-agents, no browser), the
 > `claude -p` description-optimization scripts are removed, and the Cowork
 > section is replaced by "On Tumbleweed Scientific" below. See
-> `../../RUNTIME.md` and `../../MODIFICATIONS.md`.
+> `.package/RUNTIME.md` and `.package/MODIFICATIONS.md`.
 
 A skill for creating new skills and iteratively improving them.
 
@@ -473,7 +475,7 @@ In Claude.ai, the core workflow is the same (draft → test → review → impro
 ## On Tumbleweed Scientific
 
 - **Work in `/workspace`.** Skills installed here are read-only under
-  `/opt/plugins/…`; copy a skill to `/workspace/skills/<name>/` before editing,
+  `/opt/skills/…`; copy a skill to `/workspace/skills/<name>/` before editing,
   and create new ones there.
 - **No sub-agents and no `claude` CLI.** Follow "Claude.ai-specific
   instructions": run each test prompt yourself, one at a time, following the
@@ -485,7 +487,7 @@ In Claude.ai, the core workflow is the same (draft → test → review → impro
   conversation; ask for feedback with `ask_user` or in the reply.
 - **Delivering the skill:** run `python -m scripts.package_skill
   /workspace/skills/<name> /workspace` from this skill's directory
-  (`/opt/plugins/tumbleweed-research/skills/skill-creator`; it needs
+  (`/opt/skills/skill-creator`; it needs
   `pyyaml`), which writes `/workspace/<name>.skill`; tell the user where it is in the files panel. Users cannot
   install their own skills on this platform yet: a finished skill is added
   by a reviewed plugin, so say that a reviewed submission is the way to make

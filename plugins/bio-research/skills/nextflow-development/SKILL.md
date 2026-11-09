@@ -8,6 +8,7 @@ metadata:
     tags: [nf-core, nextflow]
     maturity: experimental
     requires:
+      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, eutils.ncbi.nlm.nih.gov, ftp.ncbi.nlm.nih.gov, www.ebi.ac.uk]
       environment: sandbox
       tools: [nextflow, openjdk]
       dataSources: [geo, sra]

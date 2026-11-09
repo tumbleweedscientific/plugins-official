@@ -8,6 +8,8 @@ metadata:
     tags: [figures]
     maturity: beta
     requires:
+      skills: [figure-style]
+      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
       environment: sandbox
       tools: [matplotlib]
     outputs: [png, pdf]
@@ -19,15 +21,15 @@ metadata:
 > Adapted by Tumbleweed Scientific (2026-10-29) from Claude Science's
 > `figure-composer` skill (Apache-2.0): there are no sub-agents here, so you
 > render each panel and run each review yourself, in turn; files live under
-> `/workspace` (see `../../RUNTIME.md`, `../../MODIFICATIONS.md`).
+> `/workspace` (see `.package/RUNTIME.md`, `.package/MODIFICATIONS.md`).
 
 **Step 0.** Load `figure-style` alongside this skill — that is the
 design rules (and `apply_figure_style()` + helpers). Then load both kernels in
 one `python_nb` cell:
 
 ```python
-exec(open("/opt/plugins/tumbleweed-research/skills/figure-style/kernel.py").read())
-exec(open("/opt/plugins/tumbleweed-research/skills/figure-composer/kernel.py").read())
+exec(open("/opt/skills/figure-style/kernel.py").read())
+exec(open("/opt/skills/figure-composer/kernel.py").read())
 ```
 
 Work in one directory per figure, e.g. `/workspace/figures/fig2/`.

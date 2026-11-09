@@ -11,6 +11,7 @@ metadata:
     tags: [dossier]
     maturity: beta
     requires:
+      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
       environment: sandbox
       dataSources: [clinicaltrials-gov, pubmed, openfda, open-targets]
     outputs: [report, html]
@@ -22,8 +23,8 @@ metadata:
 
 > Adapted by Tumbleweed Scientific (2026-10-29) from Claude Science's
 > `indication-dossier` skill (Apache-2.0): tools, sub-agents and the work
-> directory follow this platform (see `../../RUNTIME.md`); see
-> `../../MODIFICATIONS.md`.
+> directory follow this platform (see `.package/RUNTIME.md`); see
+> `.package/MODIFICATIONS.md`.
 
 Produces a structured research dossier on a single indication, framed as a
 patient population: who they are, what's wrong, how they're treated today,

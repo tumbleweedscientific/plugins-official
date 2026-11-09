@@ -8,6 +8,7 @@ metadata:
     tags: [figures, matplotlib]
     maturity: stable
     requires:
+      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
       environment: sandbox
       tools: [matplotlib]
     outputs: [png, svg, pdf]
@@ -18,10 +19,10 @@ metadata:
 
 > Adapted by Tumbleweed Scientific (2026-10-29) from Claude Science's
 > `figure-style` skill (Apache-2.0): helper loading and the perceptual check
-> follow this platform (see `../../RUNTIME.md`); see `../../MODIFICATIONS.md`.
+> follow this platform (see `.package/RUNTIME.md`); see `.package/MODIFICATIONS.md`.
 >
 > Load the helpers in a `python_nb` cell first:
-> `exec(open("/opt/plugins/tumbleweed-research/skills/figure-style/kernel.py").read())`
+> `exec(open("/opt/skills/figure-style/kernel.py").read())`
 
 *A checklist for correct, legible, internally-consistent scientific figures. This
 skill does not impose a visual house style — frame, font, and palette are

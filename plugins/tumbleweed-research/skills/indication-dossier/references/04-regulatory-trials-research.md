@@ -2,7 +2,7 @@
 
 > Modified by Tumbleweed Scientific (2026-10-29): sub-agents run as sequential
 > steps. `WebSearch`, `pubmed MCP` and `clinical-trials MCP` mean the
-> equivalents in `../../../RUNTIME.md`; see `../../../MODIFICATIONS.md`.
+> equivalents in `.package/RUNTIME.md`; see `.package/MODIFICATIONS.md`.
 
 **When:** `waypoints/biology_soc.json` exists, `waypoints/regulatory_trials.json` doesn't.
 

@@ -1,7 +1,7 @@
 """
 Literature-review helpers. Load them into the notebook's Python kernel with
 
-    exec(open("/opt/plugins/tumbleweed-research/skills/literature-review/kernel.py").read())
+    exec(open("/opt/skills/literature-review/kernel.py").read())
 
 which defines:
 

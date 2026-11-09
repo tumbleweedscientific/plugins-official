@@ -8,6 +8,7 @@ metadata:
     tags: [pdf]
     maturity: stable
     requires:
+      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
       environment: sandbox
       tools: [pypdfium2]
     inputs: [pdf]
@@ -20,7 +21,7 @@ metadata:
 > `pdf-explore` skill (Apache-2.0). The original swept every page with
 > parallel model calls; no model is callable from code here, so the sweep
 > is lexical (search, regex, outline) and the reading is yours. See
-> `../../RUNTIME.md` and `../../MODIFICATIONS.md`.
+> `.package/RUNTIME.md` and `.package/MODIFICATIONS.md`.
 
 A long PDF does not fit in context, and reading it page by page re-reads the
 same ranges again and again. Parse it once in the notebook, find the pages
@@ -32,7 +33,7 @@ when the answer is in a figure.
 In a `python_nb` cell (the PDF is under `/workspace`, e.g. an upload):
 
 ```python
-exec(open("/opt/plugins/tumbleweed-research/skills/pdf-explore/kernel.py").read())
+exec(open("/opt/skills/pdf-explore/kernel.py").read())
 ```
 
 They need `pypdfium2` and `pillow`; if the first call raises an

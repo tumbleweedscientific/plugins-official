@@ -2,7 +2,7 @@
 Helpers of the pdf-explore skill. Load them into the notebook's Python
 kernel with
 
-    exec(open("/opt/plugins/tumbleweed-research/skills/pdf-explore/kernel.py").read())
+    exec(open("/opt/skills/pdf-explore/kernel.py").read())
 
 Surface (all ``pdf_``-prefixed, as they share the kernel's ``__main__``):
     pdf_pages(path, ...)        — parse once → [{page, text, n_chars, image_path?}]

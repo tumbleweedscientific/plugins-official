@@ -8,6 +8,7 @@ metadata:
     tags: [manuscript]
     maturity: beta
     requires:
+      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
       environment: sandbox
     inputs: [pdf, docx]
     outputs: [report]
@@ -19,9 +20,9 @@ metadata:
 > Adapted by Tumbleweed Scientific (2026-10-29) from Claude Science's
 > `paper-narrative` skill (Apache-2.0): you write the brief and the editor's
 > review yourself (no model calls from code or sub-agents); the manuscript,
-> deck and rules are files under `/workspace` (see `../../RUNTIME.md`,
-> `../../MODIFICATIONS.md`). Load the helpers in a `python_nb` cell:
-> `exec(open("/opt/plugins/tumbleweed-research/skills/paper-narrative/kernel.py").read())`.
+> deck and rules are files under `/workspace` (see `.package/RUNTIME.md`,
+> `.package/MODIFICATIONS.md`). Load the helpers in a `python_nb` cell:
+> `exec(open("/opt/skills/paper-narrative/kernel.py").read())`.
 > To read the manuscript or the figure deck, use `pdf-explore`.
 
 **Outermost tier.** Judge and reshape the *story* a paper's figures tell. Input is
