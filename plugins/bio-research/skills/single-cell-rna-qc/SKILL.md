@@ -8,7 +8,7 @@ metadata:
     tags: [scanpy, qc]
     maturity: stable
     requires:
-      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, eutils.ncbi.nlm.nih.gov, ftp.ncbi.nlm.nih.gov, www.ebi.ac.uk]
+      network: []
       environment: sandbox
       tools: [scanpy, anndata]
     inputs: [h5ad, 10x-h5]

@@ -13,7 +13,7 @@ metadata:
     domains: [protein-design]
     maturity: stable
     requires:
-      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
+      network: [pypi.org, files.pythonhosted.org, github.com]
       environment: sandbox
       scienceModels: [proteinmpnn]
       longRunning: true

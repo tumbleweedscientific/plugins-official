@@ -5,7 +5,7 @@ license: Apache-2.0
 metadata:
   tumbleweed:
     requires:
-      network: [pypi.org, files.pythonhosted.org, github.com, codeload.github.com, api.crossref.org, doi.org, api.openalex.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, clinicaltrials.gov]
+      network: []
     domains: [writing]
     tags: [skills]
     maturity: beta

@@ -11,7 +11,7 @@ metadata:
     tags: [chembl, bioactivity]
     maturity: beta
     requires:
-      network: [pypi.org, files.pythonhosted.org, rest.uniprot.org, sparql.uniprot.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, rest.ensembl.org, grch37.rest.ensembl.org]
+      network: [pypi.org, files.pythonhosted.org, www.ebi.ac.uk]
       environment: sandbox
       dataSources: [chembl]
     outputs: [json, csv]

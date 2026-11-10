@@ -13,7 +13,7 @@ metadata:
     tags: [uniprot, sparql]
     maturity: beta
     requires:
-      network: [pypi.org, files.pythonhosted.org, rest.uniprot.org, sparql.uniprot.org, eutils.ncbi.nlm.nih.gov, www.ebi.ac.uk, rest.ensembl.org, grch37.rest.ensembl.org]
+      network: [pypi.org, files.pythonhosted.org, rest.uniprot.org, sparql.uniprot.org]
       environment: sandbox
       dataSources: [uniprot]
     outputs: [json, tsv, fasta]

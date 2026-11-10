@@ -8,7 +8,7 @@ metadata:
     tags: [allotrope, lims]
     maturity: beta
     requires:
-      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, eutils.ncbi.nlm.nih.gov, ftp.ncbi.nlm.nih.gov, www.ebi.ac.uk]
+      network: [pypi.org, files.pythonhosted.org]
       environment: sandbox
       tools: [pandas, openpyxl, pypdf]
     inputs: [csv, xlsx, pdf, txt]

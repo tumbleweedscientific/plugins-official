@@ -8,7 +8,7 @@ metadata:
     tags: [scvi, scanvi, totalvi]
     maturity: beta
     requires:
-      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, eutils.ncbi.nlm.nih.gov, ftp.ncbi.nlm.nih.gov, www.ebi.ac.uk]
+      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, huggingface.co, cdn-lfs.huggingface.co]
       environment: sandbox
       resourceClass: large
       tools: [scanpy, anndata]

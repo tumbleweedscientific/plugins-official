@@ -15,7 +15,7 @@ metadata:
     domains: [structural-biology]
     maturity: experimental
     requires:
-      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, huggingface.co, cdn-lfs.huggingface.co, github.com, api.colabfold.com]
+      network: [pypi.org, files.pythonhosted.org, github.com, api.colabfold.com]
       environment: sandbox
       gpu: true
       scienceModels: [alphafold2]

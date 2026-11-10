@@ -13,7 +13,7 @@ metadata:
     domains: [proteomics, protein-design]
     maturity: experimental
     requires:
-      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, huggingface.co, cdn-lfs.huggingface.co, github.com, api.colabfold.com]
+      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, dl.fbaipublicfiles.com, github.com]
       environment: sandbox
       gpu: true
       scienceModels: [esm2]

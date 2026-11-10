@@ -14,7 +14,7 @@ metadata:
     domains: [genomics, epigenomics]
     maturity: experimental
     requires:
-      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, huggingface.co, cdn-lfs.huggingface.co, github.com, api.colabfold.com]
+      network: [pypi.org, files.pythonhosted.org, download.pytorch.org, huggingface.co, cdn-lfs.huggingface.co]
       environment: sandbox
       gpu: true
       scienceModels: [borzoi]
