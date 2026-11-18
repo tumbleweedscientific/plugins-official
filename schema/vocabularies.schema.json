@@ -262,6 +262,19 @@
               "oauth2"
             ]
           },
+          "homepage": {
+            "type": "string",
+            "format": "uri"
+          },
+          "help": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "envVar": {
+            "type": "string",
+            "pattern": "^[A-Z_][A-Z0-9_]{0,63}$"
+          },
           "hosts": {
             "minItems": 1,
             "type": "array",

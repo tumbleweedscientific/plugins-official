@@ -2355,6 +2355,9 @@
       "id": "alphagenome",
       "title": "AlphaGenome",
       "kind": "api_key",
+      "homepage": "https://deepmind.google.com/science/alphagenome",
+      "help": "Required for AlphaGenome API variant predictions. Request an API key from Google DeepMind AlphaGenome.",
+      "envVar": "ALPHAGENOME_API_KEY",
       "hosts": [
         "*.googleapis.com",
         "alphagenome.deepmind.com"
@@ -2364,6 +2367,9 @@
       "id": "anthropic",
       "title": "Anthropic API",
       "kind": "api_key",
+      "homepage": "https://console.anthropic.com/settings/keys",
+      "help": "Create an API key in Anthropic Console.",
+      "envVar": "ANTHROPIC_API_KEY",
       "hosts": [
         "api.anthropic.com"
       ]
@@ -2372,6 +2378,9 @@
       "id": "boltz",
       "title": "Boltz API",
       "kind": "api_key",
+      "homepage": "https://boltz.bio",
+      "help": "Required for Boltz cloud co-folding runs. Generate an API key in your Boltz account settings.",
+      "envVar": "BOLTZ_API_KEY",
       "hosts": [
         "*.boltz.bio"
       ]
@@ -2380,6 +2389,9 @@
       "id": "chemspace",
       "title": "Chemspace",
       "kind": "api_key",
+      "homepage": "https://chem-space.com",
+      "help": "Optional: unlocks live Chemspace catalog search and pricing.",
+      "envVar": "CHEMSPACE_API_KEY",
       "hosts": [
         "api.chem-space.com",
         "*.chem-space.com"
@@ -2389,6 +2401,9 @@
       "id": "gemini",
       "title": "Google Gemini API",
       "kind": "api_key",
+      "homepage": "https://aistudio.google.com/apikey",
+      "help": "Create an API key in Google AI Studio.",
+      "envVar": "GEMINI_API_KEY",
       "hosts": [
         "generativelanguage.googleapis.com"
       ]
@@ -2397,6 +2412,9 @@
       "id": "huggingface",
       "title": "Hugging Face Hub",
       "kind": "api_key",
+      "homepage": "https://huggingface.co/settings/tokens",
+      "help": "Create a Read access token at huggingface.co/settings/tokens.",
+      "envVar": "HF_TOKEN",
       "hosts": [
         "huggingface.co",
         "*.huggingface.co"
@@ -2406,6 +2424,9 @@
       "id": "molport",
       "title": "MolPort",
       "kind": "api_key",
+      "homepage": "https://www.molport.com",
+      "help": "Optional: unlocks live MolPort compound availability and pricing.",
+      "envVar": "MOLPORT_API_KEY",
       "hosts": [
         "api.molport.com",
         "*.molport.com"
@@ -2415,6 +2436,9 @@
       "id": "ncbi",
       "title": "NCBI E-utilities",
       "kind": "api_key",
+      "homepage": "https://www.ncbi.nlm.nih.gov/account/settings/",
+      "help": "Optional: raises NCBI E-utilities rate limit from 3 to 10 requests/s. Generate one in NCBI Account Settings.",
+      "envVar": "NCBI_API_KEY",
       "hosts": [
         "eutils.ncbi.nlm.nih.gov",
         "*.ncbi.nlm.nih.gov"
@@ -2424,6 +2448,9 @@
       "id": "openai",
       "title": "OpenAI API",
       "kind": "api_key",
+      "homepage": "https://platform.openai.com/api-keys",
+      "help": "Create an API key in OpenAI Platform.",
+      "envVar": "OPENAI_API_KEY",
       "hosts": [
         "api.openai.com"
       ]
@@ -2432,6 +2459,9 @@
       "id": "openalex",
       "title": "OpenAlex",
       "kind": "api_key",
+      "homepage": "https://openalex.org/settings/api",
+      "help": "Optional: unlocks higher polite-pool daily rate limits on OpenAlex.",
+      "envVar": "OPENALEX_API_KEY",
       "hosts": [
         "api.openalex.org"
       ]
@@ -2440,6 +2470,9 @@
       "id": "openfda",
       "title": "openFDA",
       "kind": "api_key",
+      "homepage": "https://open.fda.gov/apis/authentication/",
+      "help": "Optional: raises openFDA quota from 1,000 to 120,000 requests/day.",
+      "envVar": "OPENFDA_API_KEY",
       "hosts": [
         "api.fda.gov"
       ]
@@ -2448,6 +2481,9 @@
       "id": "openprotein",
       "title": "OpenProtein",
       "kind": "api_key",
+      "homepage": "https://www.openprotein.ai",
+      "help": "Required for OpenProtein.AI structure and sequence design APIs.",
+      "envVar": "OPENPROTEIN_API_KEY",
       "hosts": [
         "api.openprotein.ai"
       ]
@@ -2456,6 +2492,9 @@
       "id": "tavily",
       "title": "Tavily Search",
       "kind": "api_key",
+      "homepage": "https://app.tavily.com",
+      "help": "Required for Tavily web search in literature skills.",
+      "envVar": "TAVILY_API_KEY",
       "hosts": [
         "api.tavily.com"
       ]
