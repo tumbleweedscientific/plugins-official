@@ -1,0 +1,4 @@
+# Requirements for string-database
+
+polite-http
+requests

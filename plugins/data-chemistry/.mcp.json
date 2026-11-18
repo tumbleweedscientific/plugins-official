@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "chemistry": {
-      "type": "http",
-      "url": "https://connectors.tumbleweedscientific.com/chemistry/mcp"
-    }
-  }
-}

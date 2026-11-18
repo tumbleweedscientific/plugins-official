@@ -1,0 +1,4 @@
+# Requirements for openfda-database
+
+polite-http
+python-dotenv

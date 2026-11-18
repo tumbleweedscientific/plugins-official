@@ -1,0 +1,6 @@
+# Requirements for cancer-cohort-genomics
+
+matplotlib
+numpy
+pandas
+requests

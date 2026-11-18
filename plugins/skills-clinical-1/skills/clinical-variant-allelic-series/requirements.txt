@@ -1,0 +1,10 @@
+# Requirements for clinical-variant-allelic-series
+# System / CLI tools: R, esearch
+
+matplotlib
+numpy
+pandas
+Pillow
+pypdf
+reportlab
+requests

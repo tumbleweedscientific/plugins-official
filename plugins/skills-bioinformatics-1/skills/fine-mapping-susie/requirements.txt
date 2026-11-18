@@ -1,0 +1,10 @@
+# Requirements for fine-mapping-susie
+# R / Bioconductor packages: Rfast, data.table, ggplot2, jsonlite, susieR
+# System / CLI tools: R, Rscript, bcftools, bgzip, plink2, tabix
+
+matplotlib
+numpy
+pandas
+pyliftover
+reportlab
+requests

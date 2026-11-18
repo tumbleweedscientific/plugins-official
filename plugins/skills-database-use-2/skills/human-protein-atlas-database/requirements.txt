@@ -1,0 +1,4 @@
+# Requirements for human-protein-atlas-database
+
+polite-http
+requests

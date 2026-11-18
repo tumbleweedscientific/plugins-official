@@ -1,0 +1,5 @@
+# Requirements for antibody-structure-prediction-tfold
+# Hardware note: GPU (CUDA) recommended for model inference
+
+biopython
+torch

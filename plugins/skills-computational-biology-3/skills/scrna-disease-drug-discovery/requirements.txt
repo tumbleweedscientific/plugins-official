@@ -1,0 +1,17 @@
+# Requirements for scrna-disease-drug-discovery
+# System / CLI tools: R
+
+anndata
+celltypist
+decoupler
+gseapy
+liana
+matplotlib
+numpy
+pandas
+pydeseq2
+requests
+scanpy
+scipy
+scrublet
+seaborn

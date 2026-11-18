@@ -1,0 +1,6 @@
+# Requirements for boltz
+# Hardware note: GPU (CUDA) recommended for model inference
+
+boltz
+PyYAML
+torch

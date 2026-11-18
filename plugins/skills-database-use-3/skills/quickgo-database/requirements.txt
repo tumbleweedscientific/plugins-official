@@ -1,0 +1,4 @@
+# Requirements for quickgo-database
+
+polite-http
+requests

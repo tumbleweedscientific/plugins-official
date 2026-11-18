@@ -1,0 +1,5 @@
+# Requirements for chai1
+# Hardware note: GPU (CUDA) recommended for model inference
+
+chai-lab
+torch

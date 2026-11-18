@@ -1,0 +1,12 @@
+# Requirements for drug-repurposing-indication-expansion
+
+matplotlib
+numpy
+pandas
+Pillow
+pypdf
+rdkit
+reportlab
+requests
+scipy
+statsmodels

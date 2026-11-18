@@ -1,0 +1,3 @@
+# Requirements for drug-drug-interaction-analysis
+
+requests

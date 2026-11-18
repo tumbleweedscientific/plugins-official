@@ -1,0 +1,9 @@
+# Requirements for pcr-primer-design
+# System / CLI tools: blastn
+
+biopython
+matplotlib
+numpy
+pandas
+primer3-py
+requests

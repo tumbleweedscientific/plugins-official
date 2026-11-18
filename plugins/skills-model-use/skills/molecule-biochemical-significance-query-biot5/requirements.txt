@@ -1,0 +1,6 @@
+# Requirements for molecule-biochemical-significance-query-biot5
+# Hardware note: GPU (CUDA) recommended for model inference
+
+open-biomed @ git+https://github.com/PharMolix/OpenBioMed.git
+torch
+transformers

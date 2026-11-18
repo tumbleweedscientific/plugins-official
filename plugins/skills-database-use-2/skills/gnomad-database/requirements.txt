@@ -1,0 +1,4 @@
+# Requirements for gnomad-database
+
+polite-http
+requests

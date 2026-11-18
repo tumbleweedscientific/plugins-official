@@ -1,0 +1,11 @@
+# Requirements for microbiome-analysis
+# R / Bioconductor packages: ALDEx2, ANCOMBC, Maaslin2, data.table, dplyr, lme4, phyloseq, tidyr, vegan
+# System / CLI tools: R, Rscript, picrust2, picrust2_pipeline.py
+
+numpy
+pandas
+Pillow
+pypdf
+reportlab
+scipy
+statsmodels

@@ -1,0 +1,4 @@
+# Requirements for reactome-database
+
+polite-http
+requests

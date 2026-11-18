@@ -1,0 +1,4 @@
+# Requirements for survival-analysis-clinical
+# R / Bioconductor packages: ggplot2, ggprism, scales, survival, survminer, svglite
+# System / CLI tools: R
+# Python >= 3.10 (standard library only; no third-party pip packages required)

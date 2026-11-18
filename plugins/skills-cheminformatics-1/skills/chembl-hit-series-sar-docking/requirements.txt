@@ -1,0 +1,12 @@
+# Requirements for chembl-hit-series-sar-docking
+# System / CLI tools: R, obabel, vina
+
+matplotlib
+meeko
+numpy
+pandas
+Pillow
+pypdf
+rdkit
+scipy
+seaborn

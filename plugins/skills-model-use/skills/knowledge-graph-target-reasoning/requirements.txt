@@ -1,0 +1,9 @@
+# Requirements for knowledge-graph-target-reasoning
+# Hardware note: GPU (CUDA) recommended for model inference
+
+matplotlib
+matplotlib-venn
+numpy
+pandas
+requests
+scipy

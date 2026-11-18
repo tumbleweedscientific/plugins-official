@@ -1,0 +1,10 @@
+# Requirements for pharmacovigilance-ae-signal-detection
+
+matplotlib
+numpy
+pandas
+pypdf
+reportlab
+requests
+scipy
+statsmodels

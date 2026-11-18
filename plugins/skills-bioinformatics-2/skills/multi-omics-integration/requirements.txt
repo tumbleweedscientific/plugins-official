@@ -1,0 +1,3 @@
+# Requirements for multi-omics-integration
+# R / Bioconductor packages: ComplexHeatmap, MOFA2, RColorBrewer, circlize, ggplot2, ggprism, reshape2, rmarkdown, tinytex
+# Python >= 3.10 (standard library only; no third-party pip packages required)

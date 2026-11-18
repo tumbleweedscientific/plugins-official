@@ -1,0 +1,5 @@
+# Requirements for diffdock
+# Hardware note: GPU (CUDA) recommended for model inference
+
+rdkit
+torch

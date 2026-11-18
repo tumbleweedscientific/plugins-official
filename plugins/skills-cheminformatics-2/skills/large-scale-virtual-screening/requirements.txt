@@ -1,0 +1,14 @@
+# Requirements for large-scale-virtual-screening
+# System / CLI tools: R, obabel, vina
+
+chembl-webresource-client
+matplotlib
+meeko
+numpy
+pandas
+Pillow
+pypdf
+rdkit
+reportlab
+scikit-learn
+scipy

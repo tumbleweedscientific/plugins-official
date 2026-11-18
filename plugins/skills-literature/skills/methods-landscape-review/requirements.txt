@@ -1,0 +1,6 @@
+# Requirements for methods-landscape-review
+# R / Bioconductor packages: dplyr, ggplot2, ggprism, jsonlite, patchwork, tidyr
+# System / CLI tools: R, Rscript
+
+matplotlib
+pandas

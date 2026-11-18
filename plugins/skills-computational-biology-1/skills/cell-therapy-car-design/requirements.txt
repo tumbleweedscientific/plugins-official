@@ -1,0 +1,7 @@
+# Requirements for cell-therapy-car-design
+# System / CLI tools: R, fasterq-dump, prefetch
+
+biopython
+pandas
+PyMuPDF
+reportlab

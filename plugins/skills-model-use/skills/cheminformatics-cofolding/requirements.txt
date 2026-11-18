@@ -1,0 +1,15 @@
+# Requirements for cheminformatics-cofolding
+# System / CLI tools: R, docker
+# Hardware note: GPU (CUDA) recommended for model inference
+
+boltz-api
+gemmi
+jax
+matplotlib
+numpy
+openprotein-python
+pandas
+polite-http
+python-dotenv
+rdkit
+tokamax

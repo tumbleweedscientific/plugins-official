@@ -1,0 +1,4 @@
+# Requirements for locus-to-gene-mapper
+
+matplotlib
+requests

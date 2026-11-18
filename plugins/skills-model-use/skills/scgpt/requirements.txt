@@ -1,0 +1,7 @@
+# Requirements for scgpt
+# Hardware note: GPU (CUDA) recommended for model inference
+
+anndata
+scanpy
+scgpt
+torch

@@ -1,0 +1,13 @@
+# Requirements for alphagenome-variant-impact-score
+
+absl-py
+alphagenome>=0.9.0
+anndata
+numpy >= 2.0
+pandas<3.0
+polars
+pyarrow
+pysam; sys_platform != 'win32'
+python-dotenv
+requests
+tabulate

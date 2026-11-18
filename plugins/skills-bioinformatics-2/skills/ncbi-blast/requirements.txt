@@ -1,0 +1,4 @@
+# Requirements for ncbi-blast
+# System / CLI tools: blastn, blastp, blastx, tblastn
+
+requests

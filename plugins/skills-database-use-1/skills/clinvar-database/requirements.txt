@@ -1,0 +1,6 @@
+# Requirements for clinvar-database
+# System / CLI tools: efetch, esearch, star
+
+polite-http
+python-dotenv
+requests

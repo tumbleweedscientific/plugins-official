@@ -1,0 +1,99 @@
+---
+name: borzoi
+description: 'Predict genome-wide functional tracks (RNA-seq, CAGE, DNase, ChIP) from DNA sequence with Borzoi. Use this skill when: (1) Scoring the regulatory effect of a variant on expression/accessibility, (2) Generating predicted coverage tracks for a locus, (3) Prioritizing non-coding variants by predicted track delta.'
+metadata:
+  tumbleweed:
+    domains:
+    - genomics
+    - epigenomics
+    tags:
+    - borzoi
+    - model-use
+    maturity: stable
+    citations: []
+    starterPrompts:
+    - 'Use borzoi: Predict genome-wide functional tracks (RNA-seq, CAGE, DNase, ChIP) from DNA sequence with Borzoi.'
+    requires:
+      environment: sandbox
+      gpu: true
+      tools:
+      - borzoi-pytorch
+      - torch
+      dataSources: []
+      models: []
+      scienceModels:
+      - borzoi
+      credentials: []
+      longRunning: true
+      image: bioinfo
+      resourceClass: large
+      network: []
+    inputs: []
+    outputs:
+    - report
+    title: Borzoi
+license: Apache-2.0
+---
+
+# Borzoi — DNA → Functional Track Prediction
+
+## Prerequisites
+
+| Requirement | Minimum | Recommended |
+| ----------- | ------- | ----------- |
+| Python      | 3.10+   | 3.11        |
+| CUDA        | 12.1+   | 12.4+       |
+| GPU VRAM    | 16 GB   | 24 GB+      |
+## How to run
+
+```python
+from borzoi_pytorch import Borzoi
+
+model = Borzoi.from_pretrained("johahi/borzoi-replicate-0").cuda().eval()
+# input: (batch, 4, 524288) one-hot DNA  → output: (batch, tracks, 6144) bins
+```
+
+Borzoi consumes ~524 kb one-hot windows and emits binned predictions across
+7,611 human tracks (the separate 2,608-track mouse head is off by default;
+enable via `enable_mouse_head=True` and select with
+`forward(..., is_human=False)`). For variant scoring, run ref/alt windows
+centered on the variant and compare per-track output.
+
+## Output format
+
+`(B, T, L)` tensor — `T` tracks × `L` 32-bp bins. Track metadata (assay,
+biosample) is in `borzoi_pytorch.pytorch_borzoi_model.TRACKS_DF` (or `model.tracks_df` when using the `AnnotatedBorzoi` subclass) — the base `Borzoi` model has no `targets` attribute.
+
+## Remote compute
+
+Needs ≥24 GB VRAM and either pre-cached HF weights or egress to
+`huggingface.co`. Read `compute_details({provider, mode:'read'})` for an
+environment with `borzoi-pytorch`, then:
+
+```bash
+# Submit via configured Tumbleweed GPU runner (requires.gpu: true)
+```
+
+Then call the `wait_for_notification` brain-tool. When the
+`compute_done` notification arrives, act on its payload:
+
+```python
+# Inspect or save generated output files directly in the workspace.
+```
+
+Configure weight caches (`HF_HOME` / `TORCH_HOME` / `model_dir`) via the GPU runner mount or environment variables.
+
+If the provider exposes a weight-cache mount, point `HF_HOME` at it inside
+`borzoi_run.py` (path is in the GPU runner configuration).
+
+## Troubleshooting
+
+| Symptom                        | Cause                    | Fix                                  |
+| ------------------------------ | ------------------------ | ------------------------------------ |
+| `module has no __version__`    | Package exposes no attr  | Use `importlib.metadata.version("borzoi-pytorch")` |
+| Shape mismatch on input        | Wrong window length      | Pad/crop to 524288 bp (fixed; not exposed as a model attribute) |
+
+---
+
+**Next**: combine track deltas with `evo2` likelihood deltas for a
+two-axis variant prioritization.

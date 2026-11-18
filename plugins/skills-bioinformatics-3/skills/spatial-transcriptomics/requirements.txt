@@ -1,0 +1,15 @@
+# Requirements for spatial-transcriptomics
+# System / CLI tools: R, pdftoppm
+
+anndata
+matplotlib
+numpy
+pandas
+Pillow
+pypdf
+reportlab
+scanpy
+scikit-learn
+scipy
+squidpy
+tifffile

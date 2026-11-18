@@ -1,0 +1,31 @@
+{
+  "name": "skills-model-use",
+  "version": "1.0.0",
+  "description": "Foundation models and deep learning tools for proteins, molecules, and genomics.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "admet",
+        "cheminformatics",
+        "clinical",
+        "docking",
+        "epigenomics",
+        "genomics",
+        "immunology",
+        "medicinal-chemistry",
+        "pharmacology",
+        "protein-design",
+        "proteomics",
+        "single-cell",
+        "spatial",
+        "structural-biology",
+        "transcriptomics"
+      ]
+    }
+  }
+}

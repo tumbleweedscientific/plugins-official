@@ -1,0 +1,10 @@
+# Requirements for cheminformatics-reactions
+# System / CLI tools: R, pdftoppm
+
+matplotlib>=3.8.0
+networkx>=3.0
+numpy>=1.26.0
+pandas
+Pillow>=10.0.0
+PyYAML>=6.0
+rdkit>=2024.3.1

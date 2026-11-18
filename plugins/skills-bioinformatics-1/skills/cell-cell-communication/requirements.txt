@@ -1,0 +1,4 @@
+# Requirements for cell-cell-communication
+# R / Bioconductor packages: CellChat, ComplexHeatmap, NMF, Seurat, circlize, ggalluvial, ggplot2, ggprism, presto, svglite
+# System / CLI tools: R
+# Python >= 3.10 (standard library only; no third-party pip packages required)

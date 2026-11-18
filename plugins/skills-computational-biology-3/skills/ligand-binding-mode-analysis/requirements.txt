@@ -1,0 +1,12 @@
+# Requirements for ligand-binding-mode-analysis
+# System / CLI tools: R, pymol, salmon
+
+biopython
+matplotlib
+numpy
+Pillow
+plip
+pymol-open-source
+pypdf
+rdkit
+reportlab

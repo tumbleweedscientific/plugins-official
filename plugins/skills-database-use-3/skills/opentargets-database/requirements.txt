@@ -1,0 +1,5 @@
+# Requirements for opentargets-database
+# System / CLI tools: star
+
+polite-http
+requests

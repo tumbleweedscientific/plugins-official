@@ -1,0 +1,7 @@
+# Requirements for signature-reversal-lincs
+
+numpy
+pandas
+reportlab
+requests
+scipy

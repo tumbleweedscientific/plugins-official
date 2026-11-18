@@ -1,0 +1,5 @@
+# Requirements for ncbi-sequence-fetch
+# System / CLI tools: R, efetch, esearch
+
+polite-http
+python-dotenv

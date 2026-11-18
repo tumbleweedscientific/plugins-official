@@ -1,0 +1,4 @@
+# Requirements for rare-disease-case-prioritization
+# System / CLI tools: Rscript, pdftoppm
+
+matplotlib

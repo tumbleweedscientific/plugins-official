@@ -1,0 +1,3 @@
+# Requirements for literature-search-arxiv
+
+polite-http

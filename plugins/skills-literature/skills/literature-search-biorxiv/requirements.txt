@@ -1,0 +1,4 @@
+# Requirements for literature-search-biorxiv
+
+polite-http
+requests

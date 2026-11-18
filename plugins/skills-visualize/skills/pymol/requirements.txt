@@ -1,0 +1,4 @@
+# Requirements for pymol
+# System / CLI tools: pymol
+
+pymol-open-source

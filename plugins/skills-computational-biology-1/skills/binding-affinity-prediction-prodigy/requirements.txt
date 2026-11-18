@@ -1,0 +1,4 @@
+# Requirements for binding-affinity-prediction-prodigy
+
+biopython
+prodigy-prot

@@ -1,0 +1,11 @@
+# Requirements for drug-seq-analysis
+# R / Bioconductor packages: DESeq2
+# System / CLI tools: R, Rscript, pdftoppm
+
+matplotlib
+numpy
+pandas
+Pillow
+pypdf
+scikit-learn
+scipy

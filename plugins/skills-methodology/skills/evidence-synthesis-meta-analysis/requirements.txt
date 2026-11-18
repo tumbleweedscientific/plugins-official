@@ -1,0 +1,7 @@
+# Requirements for evidence-synthesis-meta-analysis
+# R / Bioconductor packages: ggplot2, meta, metafor, patchwork
+# System / CLI tools: R, Rscript
+
+Pillow
+pypdf
+reportlab

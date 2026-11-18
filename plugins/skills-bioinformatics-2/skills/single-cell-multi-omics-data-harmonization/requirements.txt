@@ -1,0 +1,3 @@
+# Requirements for single-cell-multi-omics-data-harmonization
+# R / Bioconductor packages: DESeq2, MultiAssayExperiment, SummarizedExperiment, biomaRt, ggplot2, gridExtra, sva
+# Python >= 3.10: scanpy, anndata, muon, mudata, numpy, pandas

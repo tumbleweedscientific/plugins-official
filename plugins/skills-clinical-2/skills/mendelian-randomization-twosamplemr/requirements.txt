@@ -1,0 +1,4 @@
+# Requirements for mendelian-randomization-twosamplemr
+# R / Bioconductor packages: MRPRESSO, TwoSampleMR, dplyr, ggplot2, ggprism, ieugwasr, rmarkdown, svglite, tinytex
+# System / CLI tools: R
+# Python >= 3.10 (standard library only; no third-party pip packages required)

@@ -1,0 +1,325 @@
+{
+  "name": "bifrost-bio-mcp",
+  "version": "1.0.0",
+  "description": "23 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (literature, genomics, chemistry, structures, clinical, expression).",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://ai-gateway.tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "cheminformatics",
+        "clinical",
+        "docking",
+        "epigenomics",
+        "genomics",
+        "immunology",
+        "lab-data",
+        "literature",
+        "medicinal-chemistry",
+        "metabolomics",
+        "microbiome",
+        "pharmacology",
+        "proteomics",
+        "single-cell",
+        "structural-biology",
+        "transcriptomics",
+        "variant-interpretation"
+      ],
+      "connectors": {
+        "bio-pubmed": {
+          "dataSources": [
+            "pubmed",
+            "pmc",
+            "europe-pmc"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://pubmed.ncbi.nlm.nih.gov",
+          "toolLoading": "lazy"
+        },
+        "bio-chembl": {
+          "dataSources": [
+            "chembl"
+          ],
+          "domains": [
+            "medicinal-chemistry",
+            "cheminformatics",
+            "pharmacology"
+          ],
+          "homepage": "https://www.ebi.ac.uk/chembl/",
+          "toolLoading": "lazy"
+        },
+        "bio-cellguide": {
+          "dataSources": [
+            "cellxgene"
+          ],
+          "domains": [
+            "single-cell",
+            "transcriptomics"
+          ],
+          "homepage": "https://cellxgene.cziscience.com",
+          "toolLoading": "lazy"
+        },
+        "bio-clinical-genomics": {
+          "dataSources": [
+            "clingen",
+            "civic",
+            "open-targets"
+          ],
+          "domains": [
+            "clinical",
+            "genomics",
+            "variant-interpretation"
+          ],
+          "homepage": "https://clinicalgenome.org",
+          "toolLoading": "lazy"
+        },
+        "bio-clinical-trials": {
+          "dataSources": [
+            "clinicaltrials-gov"
+          ],
+          "domains": [
+            "clinical"
+          ],
+          "homepage": "https://clinicaltrials.gov",
+          "toolLoading": "lazy"
+        },
+        "bio-biorxiv": {
+          "dataSources": [
+            "biorxiv",
+            "medrxiv"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://www.biorxiv.org",
+          "toolLoading": "lazy"
+        },
+        "bio-variants": {
+          "dataSources": [
+            "gnomad",
+            "cadd",
+            "clinvar",
+            "dbsnp"
+          ],
+          "domains": [
+            "genomics",
+            "variant-interpretation"
+          ],
+          "homepage": "https://gnomad.broadinstitute.org",
+          "toolLoading": "lazy"
+        },
+        "bio-drug-regulatory": {
+          "dataSources": [
+            "openfda"
+          ],
+          "domains": [
+            "clinical",
+            "pharmacology"
+          ],
+          "homepage": "https://open.fda.gov",
+          "toolLoading": "lazy"
+        },
+        "bio-zinc": {
+          "dataSources": [
+            "zinc"
+          ],
+          "domains": [
+            "cheminformatics",
+            "medicinal-chemistry",
+            "docking"
+          ],
+          "homepage": "https://cartblanche22.docking.org",
+          "toolLoading": "lazy"
+        },
+        "bio-genes-ontologies": {
+          "dataSources": [
+            "mygene",
+            "ols",
+            "quickgo",
+            "uniprot",
+            "reactome",
+            "kegg"
+          ],
+          "domains": [
+            "genomics",
+            "proteomics"
+          ],
+          "homepage": "https://www.ebi.ac.uk/ols4/",
+          "toolLoading": "lazy"
+        },
+        "bio-rna": {
+          "dataSources": [
+            "rfam"
+          ],
+          "domains": [
+            "genomics",
+            "transcriptomics"
+          ],
+          "homepage": "https://rfam.org",
+          "toolLoading": "lazy"
+        },
+        "bio-cancer-models": {
+          "dataSources": [
+            "depmap",
+            "cbioportal"
+          ],
+          "domains": [
+            "clinical",
+            "genomics",
+            "pharmacology"
+          ],
+          "homepage": "https://depmap.org",
+          "toolLoading": "lazy"
+        },
+        "bio-chemistry": {
+          "dataSources": [
+            "pubchem",
+            "chebi",
+            "rhea",
+            "bindingdb"
+          ],
+          "domains": [
+            "cheminformatics",
+            "medicinal-chemistry",
+            "pharmacology"
+          ],
+          "homepage": "https://pubchem.ncbi.nlm.nih.gov",
+          "toolLoading": "lazy"
+        },
+        "bio-structures-interactions": {
+          "dataSources": [
+            "pdb",
+            "alphafold-db",
+            "emdb",
+            "intact",
+            "complex-portal"
+          ],
+          "domains": [
+            "structural-biology",
+            "proteomics"
+          ],
+          "homepage": "https://www.rcsb.org",
+          "toolLoading": "lazy"
+        },
+        "bio-literature": {
+          "dataSources": [
+            "openalex",
+            "arxiv"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://openalex.org",
+          "toolLoading": "lazy"
+        },
+        "bio-protein-annotation": {
+          "dataSources": [
+            "interpro",
+            "pfam",
+            "hpa",
+            "string"
+          ],
+          "domains": [
+            "proteomics",
+            "structural-biology"
+          ],
+          "homepage": "https://www.ebi.ac.uk/interpro/",
+          "toolLoading": "lazy"
+        },
+        "bio-research-resources": {
+          "dataSources": [
+            "grants-gov",
+            "antibody-registry"
+          ],
+          "domains": [
+            "lab-data",
+            "immunology"
+          ],
+          "homepage": "https://www.antibodyregistry.org",
+          "toolLoading": "lazy"
+        },
+        "bio-human-genetics": {
+          "dataSources": [
+            "gwas-catalog",
+            "eqtl-catalogue",
+            "pheweb"
+          ],
+          "domains": [
+            "genomics",
+            "variant-interpretation"
+          ],
+          "homepage": "https://www.ebi.ac.uk/gwas/",
+          "toolLoading": "lazy"
+        },
+        "bio-expression": {
+          "dataSources": [
+            "gtex",
+            "panglaodb"
+          ],
+          "domains": [
+            "transcriptomics",
+            "single-cell"
+          ],
+          "homepage": "https://gtexportal.org",
+          "toolLoading": "lazy"
+        },
+        "bio-omics-archives": {
+          "dataSources": [
+            "geo",
+            "arrayexpress",
+            "pride",
+            "metabolights",
+            "mgnify"
+          ],
+          "domains": [
+            "transcriptomics",
+            "proteomics",
+            "metabolomics",
+            "microbiome"
+          ],
+          "homepage": "https://www.ncbi.nlm.nih.gov/geo/",
+          "toolLoading": "lazy"
+        },
+        "bio-biomart": {
+          "dataSources": [
+            "ensembl"
+          ],
+          "domains": [
+            "genomics"
+          ],
+          "homepage": "https://www.ensembl.org",
+          "toolLoading": "lazy"
+        },
+        "bio-genomes": {
+          "dataSources": [
+            "ensembl",
+            "ucsc"
+          ],
+          "domains": [
+            "genomics"
+          ],
+          "homepage": "https://genome.ucsc.edu",
+          "toolLoading": "lazy"
+        },
+        "bio-regulation": {
+          "dataSources": [
+            "encode-screen",
+            "jaspar",
+            "unibind"
+          ],
+          "domains": [
+            "epigenomics",
+            "genomics"
+          ],
+          "homepage": "https://www.encodeproject.org",
+          "toolLoading": "lazy"
+        }
+      }
+    }
+  }
+}

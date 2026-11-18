@@ -1,0 +1,7 @@
+# Requirements for genetic-constraint-gating
+
+matplotlib
+numpy
+pandas
+reportlab
+requests

@@ -1,0 +1,4 @@
+# Requirements for ensembl-database
+
+polite-http
+requests

@@ -1,0 +1,6 @@
+# Requirements for functional-protein-design
+# System / CLI tools: pymol
+# Hardware note: GPU (CUDA) recommended for model inference
+
+torch
+transformers

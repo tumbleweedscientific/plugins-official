@@ -1,0 +1,4 @@
+# Requirements for proteomics-diff-exp
+# R / Bioconductor packages: ComplexHeatmap, DEqMS, ExperimentHub, circlize, ggplot2, ggprism, ggrepel, impute, knitr, limma, matrixStats, rmarkdown, svglite, tinytex, vsn
+# System / CLI tools: R
+# Python >= 3.10 (standard library only; no third-party pip packages required)

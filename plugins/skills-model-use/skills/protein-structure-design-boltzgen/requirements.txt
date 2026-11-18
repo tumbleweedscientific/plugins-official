@@ -1,0 +1,5 @@
+# Requirements for protein-structure-design-boltzgen
+# Hardware note: GPU (CUDA) recommended for model inference
+
+biopython
+torch

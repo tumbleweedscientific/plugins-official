@@ -1,0 +1,9 @@
+# Requirements for direction-of-effect-concordance
+# R / Bioconductor packages: dplyr, ggplot2, readr, tidyr
+# System / CLI tools: R, Rscript
+
+matplotlib
+pandas
+Pillow
+reportlab
+requests

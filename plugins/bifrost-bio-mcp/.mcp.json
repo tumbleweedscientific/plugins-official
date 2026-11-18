@@ -1,0 +1,165 @@
+{
+  "mcpServers": {
+    "bio-pubmed": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/pubmed",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_PUBMED_API_KEY}"
+      }
+    },
+    "bio-chembl": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/chembl",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_CHEMBL_API_KEY}"
+      }
+    },
+    "bio-cellguide": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/cellguide",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_CELLGUIDE_API_KEY}"
+      }
+    },
+    "bio-clinical-genomics": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/clinical-genomics",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_CLINICAL_GENOMICS_API_KEY}"
+      }
+    },
+    "bio-clinical-trials": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/clinical-trials",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_CLINICAL_TRIALS_API_KEY}"
+      }
+    },
+    "bio-biorxiv": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/biorxiv",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_BIORXIV_API_KEY}"
+      }
+    },
+    "bio-variants": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/variants",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_VARIANTS_API_KEY}"
+      }
+    },
+    "bio-drug-regulatory": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/drug-regulatory",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_DRUG_REGULATORY_API_KEY}"
+      }
+    },
+    "bio-zinc": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/zinc",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_ZINC_API_KEY}"
+      }
+    },
+    "bio-genes-ontologies": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/genes-ontologies",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_GENES_ONTOLOGIES_API_KEY}"
+      }
+    },
+    "bio-rna": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/rna",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_RNA_API_KEY}"
+      }
+    },
+    "bio-cancer-models": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/cancer-models",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_CANCER_MODELS_API_KEY}"
+      }
+    },
+    "bio-chemistry": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/chemistry",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_CHEMISTRY_API_KEY}"
+      }
+    },
+    "bio-structures-interactions": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/structures-interactions",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_STRUCTURES_INTERACTIONS_API_KEY}"
+      }
+    },
+    "bio-literature": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/literature",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_LITERATURE_API_KEY}"
+      }
+    },
+    "bio-protein-annotation": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/protein-annotation",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_PROTEIN_ANNOTATION_API_KEY}"
+      }
+    },
+    "bio-research-resources": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/research-resources",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_RESEARCH_RESOURCES_API_KEY}"
+      }
+    },
+    "bio-human-genetics": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/human-genetics",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_HUMAN_GENETICS_API_KEY}"
+      }
+    },
+    "bio-expression": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/expression",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_EXPRESSION_API_KEY}"
+      }
+    },
+    "bio-omics-archives": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/omics-archives",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_OMICS_ARCHIVES_API_KEY}"
+      }
+    },
+    "bio-biomart": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/biomart",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_BIOMART_API_KEY}"
+      }
+    },
+    "bio-genomes": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/genomes",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_GENOMES_API_KEY}"
+      }
+    },
+    "bio-regulation": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/regulation",
+      "headers": {
+        "Authorization": "Bearer ${BIFROST_BIO_REGULATION_API_KEY}"
+      }
+    }
+  }
+}

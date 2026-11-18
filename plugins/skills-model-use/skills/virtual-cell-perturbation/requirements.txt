@@ -1,0 +1,14 @@
+# Requirements for virtual-cell-perturbation
+# Hardware note: GPU (CUDA) recommended for model inference
+
+cell-gears
+gdown
+huggingface-hub
+matplotlib
+numpy
+Pillow
+pypdf
+reportlab
+scanpy
+scgpt
+torch

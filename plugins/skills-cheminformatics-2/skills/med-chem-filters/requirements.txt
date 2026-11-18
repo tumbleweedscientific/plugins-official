@@ -1,0 +1,7 @@
+# Requirements for med-chem-filters
+
+datamol
+medchem
+numpy
+pandas
+rdkit

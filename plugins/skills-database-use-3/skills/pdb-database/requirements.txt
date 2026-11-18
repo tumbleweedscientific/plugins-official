@@ -1,0 +1,4 @@
+# Requirements for pdb-database
+
+polite-http
+requests

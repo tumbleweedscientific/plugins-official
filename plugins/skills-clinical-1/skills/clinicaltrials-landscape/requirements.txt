@@ -1,0 +1,9 @@
+# Requirements for clinicaltrials-landscape
+# System / CLI tools: pdftoppm
+
+matplotlib
+numpy
+pandas
+Pillow
+PyYAML
+requests

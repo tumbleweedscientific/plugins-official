@@ -1,0 +1,5 @@
+# Requirements for encode-ccres-database
+# System / CLI tools: bedtools
+
+polite-http
+requests

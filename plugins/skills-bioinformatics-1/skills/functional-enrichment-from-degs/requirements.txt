@@ -1,0 +1,4 @@
+# Requirements for functional-enrichment-from-degs
+# R / Bioconductor packages: DESeq2, clusterProfiler, dplyr, enrichplot, ggplot2, ggrepel, msigdbr, org.Hs.eg.db, org.Mm.eg.db, svglite
+# System / CLI tools: R
+# Python >= 3.10 (standard library only; no third-party pip packages required)

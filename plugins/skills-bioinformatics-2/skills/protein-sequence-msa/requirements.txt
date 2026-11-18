@@ -1,0 +1,4 @@
+# Requirements for protein-sequence-msa
+
+polite-http
+python-dotenv

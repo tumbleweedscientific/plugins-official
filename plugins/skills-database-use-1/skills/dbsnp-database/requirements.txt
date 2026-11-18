@@ -1,0 +1,4 @@
+# Requirements for dbsnp-database
+
+polite-http
+python-dotenv

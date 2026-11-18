@@ -1,0 +1,4 @@
+# Requirements for pubchem-database
+
+polite-http
+requests

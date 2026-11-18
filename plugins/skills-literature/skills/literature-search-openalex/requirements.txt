@@ -1,0 +1,4 @@
+# Requirements for literature-search-openalex
+
+polite-http
+python-dotenv

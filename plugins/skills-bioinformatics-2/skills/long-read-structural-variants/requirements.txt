@@ -1,0 +1,8 @@
+# Requirements for long-read-structural-variants
+# System / CLI tools: bcftools, bgzip, minimap2, pdftoppm, sniffles
+
+matplotlib
+numpy
+Pillow
+pypdf
+pysam

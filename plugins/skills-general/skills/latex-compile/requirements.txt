@@ -1,0 +1,3 @@
+# Requirements for latex-compile
+# System / CLI tools: tectonic
+# Python >= 3.10 (standard library only; no third-party pip packages required)

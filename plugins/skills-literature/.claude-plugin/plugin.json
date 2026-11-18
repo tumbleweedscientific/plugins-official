@@ -1,0 +1,19 @@
+{
+  "name": "skills-literature",
+  "version": "1.0.0",
+  "description": "Scientific literature search, synthesis, grants, and manuscript writing.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "literature",
+        "pharmacology",
+        "writing"
+      ]
+    }
+  }
+}

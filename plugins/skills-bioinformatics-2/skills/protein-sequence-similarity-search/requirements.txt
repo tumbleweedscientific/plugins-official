@@ -1,0 +1,5 @@
+# Requirements for protein-sequence-similarity-search
+# System / CLI tools: blastp
+
+polite-http
+python-dotenv

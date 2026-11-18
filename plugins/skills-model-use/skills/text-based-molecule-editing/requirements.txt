@@ -1,0 +1,7 @@
+# Requirements for text-based-molecule-editing
+# Hardware note: GPU (CUDA) recommended for model inference
+
+open-biomed @ git+https://github.com/PharMolix/OpenBioMed.git
+rdkit
+torch
+transformers

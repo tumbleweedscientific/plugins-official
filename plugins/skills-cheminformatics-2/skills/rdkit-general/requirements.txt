@@ -1,0 +1,12 @@
+# Requirements for rdkit-general
+# System / CLI tools: R, smina, star, vina
+
+cycler
+matplotlib
+numpy
+pandas
+polite-http
+rdkit
+scikit-learn
+scipy
+seaborn

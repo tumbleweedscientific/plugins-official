@@ -1,0 +1,4 @@
+# Requirements for ncbi-entrez
+# System / CLI tools: efetch, esearch
+
+requests

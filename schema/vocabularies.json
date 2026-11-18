@@ -4,32 +4,52 @@
   "version": 1,
   "domains": [
     {
-      "id": "genomics",
-      "title": "Genomics"
+      "id": "admet",
+      "title": "ADMET"
     },
     {
-      "id": "variant-interpretation",
-      "title": "Variant interpretation"
+      "id": "cheminformatics",
+      "title": "Cheminformatics"
     },
     {
-      "id": "transcriptomics",
-      "title": "Transcriptomics"
+      "id": "clinical",
+      "title": "Clinical"
     },
     {
-      "id": "single-cell",
-      "title": "Single-cell"
+      "id": "computational-chemistry",
+      "title": "Computational chemistry"
     },
     {
-      "id": "spatial",
-      "title": "Spatial omics"
+      "id": "docking",
+      "title": "Docking"
     },
     {
       "id": "epigenomics",
       "title": "Epigenomics"
     },
     {
-      "id": "proteomics",
-      "title": "Proteomics"
+      "id": "genomics",
+      "title": "Genomics"
+    },
+    {
+      "id": "imaging",
+      "title": "Imaging"
+    },
+    {
+      "id": "immunology",
+      "title": "Immunology"
+    },
+    {
+      "id": "lab-data",
+      "title": "Lab data"
+    },
+    {
+      "id": "literature",
+      "title": "Literature"
+    },
+    {
+      "id": "medicinal-chemistry",
+      "title": "Medicinal chemistry"
     },
     {
       "id": "metabolomics",
@@ -40,60 +60,40 @@
       "title": "Microbiome"
     },
     {
-      "id": "immunology",
-      "title": "Immunology"
-    },
-    {
-      "id": "structural-biology",
-      "title": "Structural biology"
-    },
-    {
-      "id": "protein-design",
-      "title": "Protein design"
-    },
-    {
-      "id": "cheminformatics",
-      "title": "Cheminformatics"
-    },
-    {
-      "id": "medicinal-chemistry",
-      "title": "Medicinal chemistry"
-    },
-    {
-      "id": "computational-chemistry",
-      "title": "Computational chemistry"
-    },
-    {
       "id": "molecular-dynamics",
       "title": "Molecular dynamics"
-    },
-    {
-      "id": "docking",
-      "title": "Docking"
-    },
-    {
-      "id": "admet",
-      "title": "ADMET"
     },
     {
       "id": "pharmacology",
       "title": "Pharmacology"
     },
     {
-      "id": "clinical",
-      "title": "Clinical"
+      "id": "protein-design",
+      "title": "Protein design"
     },
     {
-      "id": "literature",
-      "title": "Literature"
+      "id": "proteomics",
+      "title": "Proteomics"
     },
     {
-      "id": "imaging",
-      "title": "Imaging"
+      "id": "single-cell",
+      "title": "Single-cell"
     },
     {
-      "id": "lab-data",
-      "title": "Lab data"
+      "id": "spatial",
+      "title": "Spatial omics"
+    },
+    {
+      "id": "structural-biology",
+      "title": "Structural biology"
+    },
+    {
+      "id": "transcriptomics",
+      "title": "Transcriptomics"
+    },
+    {
+      "id": "variant-interpretation",
+      "title": "Variant interpretation"
     },
     {
       "id": "visualization",
@@ -106,84 +106,79 @@
   ],
   "dataSources": [
     {
-      "id": "ensembl",
-      "title": "Ensembl",
-      "category": "genomes",
-      "homepage": "https://www.ensembl.org",
-      "icon": "https://www.ensembl.org/i/ensembl-favicon.png",
-      "description": "Genome annotation, genes, transcripts and variants across vertebrates."
-    },
-    {
-      "id": "ncbi-gene",
-      "title": "NCBI Gene",
-      "category": "genomes",
-      "homepage": "https://www.ncbi.nlm.nih.gov/gene",
-      "description": "Gene records: names, function, location and links across species."
-    },
-    {
-      "id": "ncbi-nucleotide",
-      "title": "NCBI Nucleotide",
-      "category": "genomes",
-      "homepage": "https://www.ncbi.nlm.nih.gov/nuccore",
-      "description": "Nucleotide sequences from GenBank, RefSeq and partners."
-    },
-    {
-      "id": "dbsnp",
-      "title": "dbSNP",
-      "category": "genomes",
-      "homepage": "https://www.ncbi.nlm.nih.gov/snp",
-      "description": "Short genetic variants (SNPs and indels) with identifiers and frequencies."
-    },
-    {
-      "id": "clinvar",
-      "title": "ClinVar",
-      "category": "genomes",
-      "homepage": "https://www.ncbi.nlm.nih.gov/clinvar",
-      "description": "Human variants and their reported clinical significance."
-    },
-    {
-      "id": "ucsc",
-      "title": "UCSC Genome Browser",
-      "category": "genomes",
-      "homepage": "https://genome.ucsc.edu",
-      "description": "Genome browser tracks, assemblies and annotations."
-    },
-    {
-      "id": "gnomad",
-      "title": "gnomAD",
-      "category": "genomes",
-      "homepage": "https://gnomad.broadinstitute.org",
-      "icon": "https://gnomad.broadinstitute.org/assets/favicon-32x32.png",
-      "description": "Population allele frequencies from large human sequencing cohorts."
-    },
-    {
-      "id": "uniprot",
-      "title": "UniProt",
-      "category": "proteins",
-      "homepage": "https://www.uniprot.org",
-      "description": "Protein sequences and curated function, domains and annotations."
-    },
-    {
-      "id": "interpro",
-      "title": "InterPro",
-      "category": "proteins",
-      "homepage": "https://www.ebi.ac.uk/interpro",
-      "icon": "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/favicon-32x32.png",
-      "description": "Protein families, domains and functional sites."
-    },
-    {
-      "id": "pdb",
-      "title": "RCSB PDB",
-      "category": "proteins",
-      "homepage": "https://www.rcsb.org",
-      "description": "Experimentally determined 3D structures of proteins and nucleic acids."
-    },
-    {
       "id": "alphafold-db",
       "title": "AlphaFold DB",
       "category": "proteins",
       "homepage": "https://alphafold.ebi.ac.uk",
       "description": "Predicted protein structures from AlphaFold."
+    },
+    {
+      "id": "antibody-registry",
+      "title": "Antibody Registry",
+      "category": "proteins",
+      "homepage": "https://www.antibodyregistry.org"
+    },
+    {
+      "id": "arrayexpress",
+      "title": "ArrayExpress",
+      "category": "expression",
+      "homepage": "https://www.ebi.ac.uk/biostudies/arrayexpress"
+    },
+    {
+      "id": "arxiv",
+      "title": "arXiv",
+      "category": "literature",
+      "homepage": "https://arxiv.org"
+    },
+    {
+      "id": "bgee",
+      "title": "Bgee"
+    },
+    {
+      "id": "bindingdb",
+      "title": "BindingDB",
+      "category": "chemistry",
+      "homepage": "https://www.bindingdb.org"
+    },
+    {
+      "id": "biobankjapan",
+      "title": "Biobankjapan"
+    },
+    {
+      "id": "biorxiv",
+      "title": "bioRxiv",
+      "category": "literature",
+      "homepage": "https://www.biorxiv.org",
+      "description": "Preprints in the life sciences."
+    },
+    {
+      "id": "biostudies",
+      "title": "Biostudies"
+    },
+    {
+      "id": "cadd",
+      "title": "CADD",
+      "category": "genomes",
+      "homepage": "https://cadd.gs.washington.edu"
+    },
+    {
+      "id": "cbioportal",
+      "title": "cBioPortal",
+      "category": "clinical",
+      "homepage": "https://www.cbioportal.org"
+    },
+    {
+      "id": "cellxgene",
+      "title": "CELLxGENE",
+      "category": "expression",
+      "homepage": "https://cellxgene.cziscience.com",
+      "description": "Curated single-cell RNA-seq datasets and cell atlases."
+    },
+    {
+      "id": "chebi",
+      "title": "ChEBI",
+      "category": "chemistry",
+      "homepage": "https://www.ebi.ac.uk/chebi/"
     },
     {
       "id": "chembl",
@@ -194,69 +189,16 @@
       "description": "Bioactive molecules, targets and measured activities from the literature."
     },
     {
-      "id": "pubchem",
-      "title": "PubChem",
-      "category": "chemistry",
-      "homepage": "https://pubchem.ncbi.nlm.nih.gov",
-      "description": "Chemical compounds, substances and bioassay results."
-    },
-    {
-      "id": "pubmed",
-      "title": "PubMed",
-      "category": "literature",
-      "homepage": "https://pubmed.ncbi.nlm.nih.gov",
-      "description": "Citations and abstracts of the biomedical literature."
-    },
-    {
-      "id": "pmc",
-      "title": "PubMed Central",
-      "category": "literature",
-      "homepage": "https://pmc.ncbi.nlm.nih.gov",
-      "description": "Full-text open-access biomedical articles."
-    },
-    {
-      "id": "europe-pmc",
-      "title": "Europe PMC",
-      "category": "literature",
-      "homepage": "https://europepmc.org",
-      "description": "Life-science literature, preprints and full texts with text mining."
-    },
-    {
-      "id": "biorxiv",
-      "title": "bioRxiv",
-      "category": "literature",
-      "homepage": "https://www.biorxiv.org",
-      "description": "Preprints in the life sciences."
-    },
-    {
-      "id": "medrxiv",
-      "title": "medRxiv",
-      "category": "literature",
-      "homepage": "https://www.medrxiv.org",
-      "description": "Preprints in medicine and health sciences."
-    },
-    {
-      "id": "openalex",
-      "title": "OpenAlex",
-      "category": "literature",
-      "homepage": "https://openalex.org",
-      "icon": "https://openalex.org/tricon-outlined.png",
-      "description": "Open index of scholarly works, authors, venues and citations."
-    },
-    {
-      "id": "crossref",
-      "title": "Crossref",
-      "category": "literature",
-      "homepage": "https://www.crossref.org",
-      "description": "DOI metadata for scholarly publications."
-    },
-    {
-      "id": "open-targets",
-      "title": "Open Targets",
+      "id": "civic",
+      "title": "CIViC",
       "category": "clinical",
-      "homepage": "https://platform.opentargets.org",
-      "icon": "https://platform.opentargets.org/favicon.png",
-      "description": "Target–disease associations with genetic, drug and literature evidence."
+      "homepage": "https://civicdb.org"
+    },
+    {
+      "id": "clingen",
+      "title": "ClinGen",
+      "category": "clinical",
+      "homepage": "https://clinicalgenome.org"
     },
     {
       "id": "clinicaltrials-gov",
@@ -266,11 +208,104 @@
       "description": "Registered clinical studies, their design, status and results."
     },
     {
-      "id": "openfda",
-      "title": "openFDA",
+      "id": "clinvar",
+      "title": "ClinVar",
+      "category": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/clinvar",
+      "description": "Human variants and their reported clinical significance."
+    },
+    {
+      "id": "complex-portal",
+      "title": "Complex Portal",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/complexportal/"
+    },
+    {
+      "id": "crossref",
+      "title": "Crossref",
+      "category": "literature",
+      "homepage": "https://www.crossref.org",
+      "description": "DOI metadata for scholarly publications."
+    },
+    {
+      "id": "dbsnp",
+      "title": "dbSNP",
+      "category": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/snp",
+      "description": "Short genetic variants (SNPs and indels) with identifiers and frequencies."
+    },
+    {
+      "id": "depmap",
+      "title": "DepMap",
       "category": "clinical",
-      "homepage": "https://open.fda.gov",
-      "description": "FDA data on drugs, adverse events, labels and recalls."
+      "homepage": "https://depmap.org",
+      "description": "Cancer cell line dependencies, expression and drug sensitivity."
+    },
+    {
+      "id": "drugbank",
+      "title": "DrugBank",
+      "category": "chemistry",
+      "homepage": "https://go.drugbank.com",
+      "description": "Drugs, their targets, mechanisms and interactions."
+    },
+    {
+      "id": "efo",
+      "title": "Efo"
+    },
+    {
+      "id": "emdb",
+      "title": "EMDB",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/emdb/"
+    },
+    {
+      "id": "encode-screen",
+      "title": "ENCODE SCREEN",
+      "category": "expression",
+      "homepage": "https://screen.encodeproject.org",
+      "icon": "https://screen.encodeproject.org/apple-icon-60x60.png",
+      "description": "Candidate cis-regulatory elements from ENCODE."
+    },
+    {
+      "id": "ensembl",
+      "title": "Ensembl",
+      "category": "genomes",
+      "homepage": "https://www.ensembl.org",
+      "icon": "https://www.ensembl.org/i/ensembl-favicon.png",
+      "description": "Genome annotation, genes, transcripts and variants across vertebrates."
+    },
+    {
+      "id": "epigraphdb",
+      "title": "Epigraphdb"
+    },
+    {
+      "id": "eqtl-catalogue",
+      "title": "eQTL Catalogue",
+      "category": "genomes",
+      "homepage": "https://www.ebi.ac.uk/eqtl/"
+    },
+    {
+      "id": "europe-pmc",
+      "title": "Europe PMC",
+      "category": "literature",
+      "homepage": "https://europepmc.org",
+      "description": "Life-science literature, preprints and full texts with text mining."
+    },
+    {
+      "id": "eva",
+      "title": "Eva"
+    },
+    {
+      "id": "finngen",
+      "title": "Finngen"
+    },
+    {
+      "id": "foldseek",
+      "title": "Foldseek"
+    },
+    {
+      "id": "genebass",
+      "title": "Genebass"
     },
     {
       "id": "geo",
@@ -280,11 +315,18 @@
       "description": "Functional genomics datasets: expression arrays and sequencing."
     },
     {
-      "id": "sra",
-      "title": "SRA",
-      "category": "expression",
-      "homepage": "https://www.ncbi.nlm.nih.gov/sra",
-      "description": "Raw sequencing reads from high-throughput experiments."
+      "id": "gnomad",
+      "title": "gnomAD",
+      "category": "genomes",
+      "homepage": "https://gnomad.broadinstitute.org",
+      "icon": "https://gnomad.broadinstitute.org/assets/favicon-32x32.png",
+      "description": "Population allele frequencies from large human sequencing cohorts."
+    },
+    {
+      "id": "grants-gov",
+      "title": "Grants.gov",
+      "category": "literature",
+      "homepage": "https://www.grants.gov"
     },
     {
       "id": "gtex",
@@ -294,6 +336,18 @@
       "description": "Gene expression and eQTLs across human tissues."
     },
     {
+      "id": "gwas-catalog",
+      "title": "GWAS Catalog",
+      "category": "clinical",
+      "homepage": "https://www.ebi.ac.uk/gwas",
+      "icon": "https://www.ebi.ac.uk/gwas/assets/images/favicon.ico",
+      "description": "Published genome-wide association results."
+    },
+    {
+      "id": "hmdb",
+      "title": "Hmdb"
+    },
+    {
       "id": "hpa",
       "title": "Human Protein Atlas",
       "category": "expression",
@@ -301,41 +355,22 @@
       "description": "Protein and RNA expression across human tissues and cells."
     },
     {
-      "id": "cellxgene",
-      "title": "CELLxGENE",
-      "category": "expression",
-      "homepage": "https://cellxgene.cziscience.com",
-      "description": "Curated single-cell RNA-seq datasets and cell atlases."
+      "id": "intact",
+      "title": "IntAct",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/intact/"
     },
     {
-      "id": "reactome",
-      "title": "Reactome",
-      "category": "pathways",
-      "homepage": "https://reactome.org",
-      "icon": "https://reactome.org/templates/favourite/favicon.ico",
-      "description": "Curated biological pathways and reactions."
+      "id": "interpro",
+      "title": "InterPro",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/interpro",
+      "icon": "https://www.ebi.ac.uk/interpro/assets/icons-and-manifests/e60/favicon-32x32.png",
+      "description": "Protein families, domains and functional sites."
     },
     {
-      "id": "string",
-      "title": "STRING",
-      "category": "pathways",
-      "homepage": "https://string-db.org",
-      "description": "Known and predicted protein–protein interactions."
-    },
-    {
-      "id": "quickgo",
-      "title": "QuickGO",
-      "category": "pathways",
-      "homepage": "https://www.ebi.ac.uk/QuickGO",
-      "description": "Gene Ontology terms and annotations."
-    },
-    {
-      "id": "encode-screen",
-      "title": "ENCODE SCREEN",
-      "category": "expression",
-      "homepage": "https://screen.encodeproject.org",
-      "icon": "https://screen.encodeproject.org/apple-icon-60x60.png",
-      "description": "Candidate cis-regulatory elements from ENCODE."
+      "id": "ipd",
+      "title": "Ipd"
     },
     {
       "id": "jaspar",
@@ -353,26 +388,185 @@
       "description": "Pathways, modules and functional hierarchies of genes and compounds."
     },
     {
-      "id": "drugbank",
-      "title": "DrugBank",
+      "id": "medrxiv",
+      "title": "medRxiv",
+      "category": "literature",
+      "homepage": "https://www.medrxiv.org",
+      "description": "Preprints in medicine and health sciences."
+    },
+    {
+      "id": "metabolights",
+      "title": "MetaboLights",
       "category": "chemistry",
-      "homepage": "https://go.drugbank.com",
-      "description": "Drugs, their targets, mechanisms and interactions."
+      "homepage": "https://www.ebi.ac.uk/metabolights/"
     },
     {
-      "id": "depmap",
-      "title": "DepMap",
-      "category": "clinical",
-      "homepage": "https://depmap.org",
-      "description": "Cancer cell line dependencies, expression and drug sensitivity."
+      "id": "mgnify",
+      "title": "MGnify",
+      "category": "genomes",
+      "homepage": "https://www.ebi.ac.uk/metagenomics/"
     },
     {
-      "id": "gwas-catalog",
-      "title": "GWAS Catalog",
+      "id": "mygene",
+      "title": "MyGene.info",
+      "category": "genomes",
+      "homepage": "https://mygene.info"
+    },
+    {
+      "id": "ncbi-clinicaltables",
+      "title": "Ncbi Clinicaltables"
+    },
+    {
+      "id": "ncbi-datasets",
+      "title": "Ncbi Datasets"
+    },
+    {
+      "id": "ncbi-gene",
+      "title": "NCBI Gene",
+      "category": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/gene",
+      "description": "Gene records: names, function, location and links across species."
+    },
+    {
+      "id": "ncbi-nucleotide",
+      "title": "NCBI Nucleotide",
+      "category": "genomes",
+      "homepage": "https://www.ncbi.nlm.nih.gov/nuccore",
+      "description": "Nucleotide sequences from GenBank, RefSeq and partners."
+    },
+    {
+      "id": "ols",
+      "title": "EMBL-EBI OLS",
+      "category": "pathways",
+      "homepage": "https://www.ebi.ac.uk/ols4/"
+    },
+    {
+      "id": "open-targets",
+      "title": "Open Targets",
       "category": "clinical",
-      "homepage": "https://www.ebi.ac.uk/gwas",
-      "icon": "https://www.ebi.ac.uk/gwas/assets/images/favicon.ico",
-      "description": "Published genome-wide association results."
+      "homepage": "https://platform.opentargets.org",
+      "icon": "https://platform.opentargets.org/favicon.png",
+      "description": "Target–disease associations with genetic, drug and literature evidence."
+    },
+    {
+      "id": "openalex",
+      "title": "OpenAlex",
+      "category": "literature",
+      "homepage": "https://openalex.org",
+      "icon": "https://openalex.org/tricon-outlined.png",
+      "description": "Open index of scholarly works, authors, venues and citations."
+    },
+    {
+      "id": "openfda",
+      "title": "openFDA",
+      "category": "clinical",
+      "homepage": "https://open.fda.gov",
+      "description": "FDA data on drugs, adverse events, labels and recalls."
+    },
+    {
+      "id": "panglaodb",
+      "title": "PanglaoDB",
+      "category": "expression",
+      "homepage": "https://panglaodb.se"
+    },
+    {
+      "id": "pdb",
+      "title": "RCSB PDB",
+      "category": "proteins",
+      "homepage": "https://www.rcsb.org",
+      "description": "Experimentally determined 3D structures of proteins and nucleic acids."
+    },
+    {
+      "id": "pfam",
+      "title": "Pfam",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/interpro/"
+    },
+    {
+      "id": "pharmgkb",
+      "title": "Pharmgkb"
+    },
+    {
+      "id": "pheweb",
+      "title": "PheWeb",
+      "category": "genomes",
+      "homepage": "https://pheweb.org"
+    },
+    {
+      "id": "pmc",
+      "title": "PubMed Central",
+      "category": "literature",
+      "homepage": "https://pmc.ncbi.nlm.nih.gov",
+      "description": "Full-text open-access biomedical articles."
+    },
+    {
+      "id": "pride",
+      "title": "PRIDE",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/pride/"
+    },
+    {
+      "id": "proteomexchange",
+      "title": "Proteomexchange"
+    },
+    {
+      "id": "pubchem",
+      "title": "PubChem",
+      "category": "chemistry",
+      "homepage": "https://pubchem.ncbi.nlm.nih.gov",
+      "description": "Chemical compounds, substances and bioassay results."
+    },
+    {
+      "id": "pubmed",
+      "title": "PubMed",
+      "category": "literature",
+      "homepage": "https://pubmed.ncbi.nlm.nih.gov",
+      "description": "Citations and abstracts of the biomedical literature."
+    },
+    {
+      "id": "quickgo",
+      "title": "QuickGO",
+      "category": "pathways",
+      "homepage": "https://www.ebi.ac.uk/QuickGO",
+      "description": "Gene Ontology terms and annotations."
+    },
+    {
+      "id": "reactome",
+      "title": "Reactome",
+      "category": "pathways",
+      "homepage": "https://reactome.org",
+      "icon": "https://reactome.org/templates/favourite/favicon.ico",
+      "description": "Curated biological pathways and reactions."
+    },
+    {
+      "id": "rfam",
+      "title": "Rfam",
+      "category": "genomes",
+      "homepage": "https://rfam.org"
+    },
+    {
+      "id": "rhea",
+      "title": "Rhea",
+      "category": "pathways",
+      "homepage": "https://www.rhea-db.org"
+    },
+    {
+      "id": "rnacentral",
+      "title": "Rnacentral"
+    },
+    {
+      "id": "sra",
+      "title": "SRA",
+      "category": "expression",
+      "homepage": "https://www.ncbi.nlm.nih.gov/sra",
+      "description": "Raw sequencing reads from high-throughput experiments."
+    },
+    {
+      "id": "string",
+      "title": "STRING",
+      "category": "pathways",
+      "homepage": "https://string-db.org",
+      "description": "Known and predicted protein–protein interactions."
     },
     {
       "id": "synapse",
@@ -381,76 +575,82 @@
       "homepage": "https://www.synapse.org",
       "icon": "https://www.synapse.org/favicon.png",
       "description": "Shared research datasets from collaborative biomedical projects."
+    },
+    {
+      "id": "tpmi",
+      "title": "Tpmi"
+    },
+    {
+      "id": "ucsc",
+      "title": "UCSC Genome Browser",
+      "category": "genomes",
+      "homepage": "https://genome.ucsc.edu",
+      "description": "Genome browser tracks, assemblies and annotations."
+    },
+    {
+      "id": "ukb-topmed",
+      "title": "Ukb Topmed"
+    },
+    {
+      "id": "unibind",
+      "title": "UniBind",
+      "category": "genomes",
+      "homepage": "https://unibind.uio.no"
+    },
+    {
+      "id": "uniprot",
+      "title": "UniProt",
+      "category": "proteins",
+      "homepage": "https://www.uniprot.org",
+      "description": "Protein sequences and curated function, domains and annotations."
+    },
+    {
+      "id": "zinc",
+      "title": "ZINC22",
+      "category": "chemistry",
+      "homepage": "https://cartblanche22.docking.org"
     }
   ],
   "formats": [
     {
-      "id": "h5ad",
-      "title": "AnnData (.h5ad)"
-    },
-    {
-      "id": "mtx",
-      "title": "Matrix Market (.mtx)"
-    },
-    {
       "id": "10x-h5",
       "title": "10x Genomics HDF5"
-    },
-    {
-      "id": "loom",
-      "title": "Loom"
-    },
-    {
-      "id": "rds",
-      "title": "R data (.rds)"
-    },
-    {
-      "id": "csv",
-      "title": "CSV"
-    },
-    {
-      "id": "tsv",
-      "title": "TSV"
-    },
-    {
-      "id": "xlsx",
-      "title": "Excel"
-    },
-    {
-      "id": "txt",
-      "title": "Plain text"
-    },
-    {
-      "id": "json",
-      "title": "JSON"
-    },
-    {
-      "id": "fastq",
-      "title": "FASTQ"
-    },
-    {
-      "id": "fasta",
-      "title": "FASTA"
     },
     {
       "id": "bam",
       "title": "BAM"
     },
     {
+      "id": "bed",
+      "title": "BED"
+    },
+    {
+      "id": "biom",
+      "title": "Biom"
+    },
+    {
+      "id": "bw",
+      "title": "bigWig"
+    },
+    {
       "id": "cram",
       "title": "CRAM"
     },
     {
-      "id": "sam",
-      "title": "SAM"
+      "id": "csv",
+      "title": "CSV"
     },
     {
-      "id": "vcf",
-      "title": "VCF"
+      "id": "docx",
+      "title": "Word"
     },
     {
-      "id": "bed",
-      "title": "BED"
+      "id": "fasta",
+      "title": "FASTA"
+    },
+    {
+      "id": "fastq",
+      "title": "FASTQ"
     },
     {
       "id": "gff",
@@ -461,56 +661,8 @@
       "title": "GTF"
     },
     {
-      "id": "bw",
-      "title": "bigWig"
-    },
-    {
-      "id": "pdb",
-      "title": "PDB structure"
-    },
-    {
-      "id": "mmcif",
-      "title": "mmCIF structure"
-    },
-    {
-      "id": "sdf",
-      "title": "SDF"
-    },
-    {
-      "id": "mol",
-      "title": "MOL"
-    },
-    {
-      "id": "mol2",
-      "title": "MOL2"
-    },
-    {
-      "id": "smiles",
-      "title": "SMILES"
-    },
-    {
-      "id": "pdf",
-      "title": "PDF"
-    },
-    {
-      "id": "docx",
-      "title": "Word"
-    },
-    {
-      "id": "png",
-      "title": "PNG image"
-    },
-    {
-      "id": "jpg",
-      "title": "JPEG image"
-    },
-    {
-      "id": "tiff",
-      "title": "TIFF image"
-    },
-    {
-      "id": "svg",
-      "title": "SVG"
+      "id": "h5ad",
+      "title": "AnnData (.h5ad)"
     },
     {
       "id": "html",
@@ -521,110 +673,1034 @@
       "title": "Jupyter notebook"
     },
     {
+      "id": "jpg",
+      "title": "JPEG image"
+    },
+    {
+      "id": "json",
+      "title": "JSON"
+    },
+    {
+      "id": "loom",
+      "title": "Loom"
+    },
+    {
+      "id": "mmcif",
+      "title": "mmCIF structure"
+    },
+    {
+      "id": "mol",
+      "title": "MOL"
+    },
+    {
+      "id": "mol2",
+      "title": "MOL2"
+    },
+    {
+      "id": "mtx",
+      "title": "Matrix Market (.mtx)"
+    },
+    {
+      "id": "pdb",
+      "title": "PDB structure"
+    },
+    {
+      "id": "pdf",
+      "title": "PDF"
+    },
+    {
+      "id": "png",
+      "title": "PNG image"
+    },
+    {
+      "id": "rds",
+      "title": "R data (.rds)"
+    },
+    {
       "id": "report",
       "title": "A written report"
+    },
+    {
+      "id": "sam",
+      "title": "SAM"
+    },
+    {
+      "id": "sdf",
+      "title": "SDF"
+    },
+    {
+      "id": "smiles",
+      "title": "SMILES"
+    },
+    {
+      "id": "svg",
+      "title": "SVG"
+    },
+    {
+      "id": "tex",
+      "title": "Tex"
+    },
+    {
+      "id": "tiff",
+      "title": "TIFF image"
+    },
+    {
+      "id": "tsv",
+      "title": "TSV"
+    },
+    {
+      "id": "txt",
+      "title": "Plain text"
+    },
+    {
+      "id": "vcf",
+      "title": "VCF"
+    },
+    {
+      "id": "xlsx",
+      "title": "Excel"
     }
   ],
   "tools": [
     {
-      "id": "scanpy",
-      "title": "scanpy"
+      "id": "abnumber",
+      "title": "Abnumber"
+    },
+    {
+      "id": "absl-py",
+      "title": "Absl Py"
+    },
+    {
+      "id": "adjusttext",
+      "title": "Adjusttext"
+    },
+    {
+      "id": "admet-ai",
+      "title": "Admet Ai"
+    },
+    {
+      "id": "agricolae",
+      "title": "Agricolae"
+    },
+    {
+      "id": "aiohttp",
+      "title": "Aiohttp"
+    },
+    {
+      "id": "aizynthfinder",
+      "title": "Aizynthfinder"
+    },
+    {
+      "id": "aldex2",
+      "title": "Aldex2"
+    },
+    {
+      "id": "all",
+      "title": "All"
+    },
+    {
+      "id": "allotropy",
+      "title": "Allotropy"
+    },
+    {
+      "id": "alphagenome",
+      "title": "Alphagenome"
+    },
+    {
+      "id": "anarci",
+      "title": "Anarci"
+    },
+    {
+      "id": "ancombc",
+      "title": "Ancombc"
     },
     {
       "id": "anndata",
       "title": "anndata"
     },
     {
-      "id": "squidpy",
-      "title": "squidpy"
+      "id": "annotationdbi",
+      "title": "Annotationdbi"
     },
     {
-      "id": "scrublet",
-      "title": "scrublet"
+      "id": "anticlust",
+      "title": "Anticlust"
     },
     {
-      "id": "harmonypy",
-      "title": "harmonypy"
+      "id": "apeglm",
+      "title": "Apeglm"
     },
     {
-      "id": "leidenalg",
-      "title": "leidenalg"
+      "id": "arboreto",
+      "title": "Arboreto"
     },
     {
-      "id": "umap-learn",
-      "title": "umap-learn"
+      "id": "arrow",
+      "title": "Arrow"
     },
     {
-      "id": "gseapy",
-      "title": "gseapy"
+      "id": "arxiv",
+      "title": "Arxiv"
     },
     {
-      "id": "pydeseq2",
-      "title": "pydeseq2"
+      "id": "azimuth",
+      "title": "Azimuth"
     },
     {
-      "id": "seurat",
-      "title": "seurat"
+      "id": "bayesprism",
+      "title": "Bayesprism"
     },
     {
-      "id": "deseq2",
-      "title": "deseq2"
+      "id": "bcftools",
+      "title": "bcftools"
     },
     {
-      "id": "edger",
-      "title": "edger"
+      "id": "beautifulsoup4",
+      "title": "Beautifulsoup4"
     },
     {
-      "id": "limma",
-      "title": "limma"
+      "id": "bedtools",
+      "title": "bedtools"
     },
     {
-      "id": "clusterprofiler",
-      "title": "clusterprofiler"
+      "id": "bgzip",
+      "title": "Bgzip"
+    },
+    {
+      "id": "bigsnpr",
+      "title": "Bigsnpr"
+    },
+    {
+      "id": "bigstatsr",
+      "title": "Bigstatsr"
+    },
+    {
+      "id": "biobase",
+      "title": "Biobase"
+    },
+    {
+      "id": "biomart",
+      "title": "Biomart"
+    },
+    {
+      "id": "biopython",
+      "title": "biopython"
+    },
+    {
+      "id": "bisquerna",
+      "title": "Bisquerna"
+    },
+    {
+      "id": "blast",
+      "title": "blast"
+    },
+    {
+      "id": "boltz",
+      "title": "Boltz"
+    },
+    {
+      "id": "boltz-api",
+      "title": "Boltz Api"
+    },
+    {
+      "id": "borzoi-pytorch",
+      "title": "Borzoi Pytorch"
+    },
+    {
+      "id": "bowtie2",
+      "title": "bowtie2"
+    },
+    {
+      "id": "bwa",
+      "title": "bwa"
+    },
+    {
+      "id": "cachetools",
+      "title": "Cachetools"
+    },
+    {
+      "id": "catalyst",
+      "title": "Catalyst"
+    },
+    {
+      "id": "cell-gears",
+      "title": "Cell Gears"
     },
     {
       "id": "cellchat",
       "title": "cellchat"
     },
     {
-      "id": "pandas",
-      "title": "pandas"
+      "id": "celldex",
+      "title": "Celldex"
     },
     {
-      "id": "polars",
-      "title": "polars"
+      "id": "cellrank",
+      "title": "Cellrank"
     },
     {
-      "id": "numpy",
-      "title": "numpy"
+      "id": "celltypist",
+      "title": "Celltypist"
     },
     {
-      "id": "scipy",
-      "title": "scipy"
+      "id": "cellxgene-census",
+      "title": "Cellxgene Census"
     },
     {
-      "id": "scikit-learn",
-      "title": "scikit-learn"
+      "id": "chai-lab",
+      "title": "Chai Lab"
     },
     {
-      "id": "statsmodels",
-      "title": "statsmodels"
+      "id": "chembl-structure-pipeline",
+      "title": "Chembl Structure Pipeline"
+    },
+    {
+      "id": "chembl-webresource-client",
+      "title": "Chembl Webresource Client"
+    },
+    {
+      "id": "chipseeker",
+      "title": "Chipseeker"
+    },
+    {
+      "id": "circlize",
+      "title": "Circlize"
+    },
+    {
+      "id": "cluster",
+      "title": "Cluster"
+    },
+    {
+      "id": "clusterprofiler",
+      "title": "clusterprofiler"
+    },
+    {
+      "id": "combat",
+      "title": "Combat"
+    },
+    {
+      "id": "complexheatmap",
+      "title": "Complexheatmap"
+    },
+    {
+      "id": "consensusclusterplus",
+      "title": "Consensusclusterplus"
+    },
+    {
+      "id": "csvtk",
+      "title": "csvtk"
+    },
+    {
+      "id": "ctxcore",
+      "title": "Ctxcore"
+    },
+    {
+      "id": "cutadapt",
+      "title": "cutadapt"
+    },
+    {
+      "id": "cycler",
+      "title": "Cycler"
+    },
+    {
+      "id": "cyvcf2",
+      "title": "Cyvcf2"
+    },
+    {
+      "id": "data-table",
+      "title": "Data Table"
+    },
+    {
+      "id": "datamol",
+      "title": "Datamol"
+    },
+    {
+      "id": "dbscan",
+      "title": "Dbscan"
+    },
+    {
+      "id": "decoupler",
+      "title": "Decoupler"
+    },
+    {
+      "id": "deeppurpose",
+      "title": "Deeppurpose"
+    },
+    {
+      "id": "deeptools",
+      "title": "deepTools"
+    },
+    {
+      "id": "deepvariant",
+      "title": "Deepvariant"
+    },
+    {
+      "id": "dendextend",
+      "title": "Dendextend"
+    },
+    {
+      "id": "deqms",
+      "title": "Deqms"
+    },
+    {
+      "id": "deseq2",
+      "title": "deseq2"
+    },
+    {
+      "id": "designit",
+      "title": "Designit"
+    },
+    {
+      "id": "diffcyt",
+      "title": "Diffcyt"
+    },
+    {
+      "id": "diffxpy",
+      "title": "Diffxpy"
+    },
+    {
+      "id": "digest",
+      "title": "Digest"
+    },
+    {
+      "id": "docker",
+      "title": "Docker"
+    },
+    {
+      "id": "doubletfinder",
+      "title": "Doubletfinder"
+    },
+    {
+      "id": "dplyr",
+      "title": "Dplyr"
+    },
+    {
+      "id": "drfp",
+      "title": "Drfp"
+    },
+    {
+      "id": "duckdb",
+      "title": "duckdb"
+    },
+    {
+      "id": "dwls",
+      "title": "Dwls"
+    },
+    {
+      "id": "easyocr",
+      "title": "Easyocr"
+    },
+    {
+      "id": "edger",
+      "title": "edger"
+    },
+    {
+      "id": "enrichplot",
+      "title": "Enrichplot"
+    },
+    {
+      "id": "entrez-direct",
+      "title": "entrez-direct"
+    },
+    {
+      "id": "experimenthub",
+      "title": "Experimenthub"
+    },
+    {
+      "id": "factoextra",
+      "title": "Factoextra"
+    },
+    {
+      "id": "fair-esm",
+      "title": "Fair Esm"
+    },
+    {
+      "id": "fastp",
+      "title": "fastp"
+    },
+    {
+      "id": "fastqc",
+      "title": "Fastqc"
+    },
+    {
+      "id": "fgsea",
+      "title": "Fgsea"
+    },
+    {
+      "id": "flowcore",
+      "title": "Flowcore"
+    },
+    {
+      "id": "flowworkspace",
+      "title": "Flowworkspace"
+    },
+    {
+      "id": "freebayes",
+      "title": "Freebayes"
+    },
+    {
+      "id": "gap-stat",
+      "title": "Gap Stat"
+    },
+    {
+      "id": "gatk4",
+      "title": "gatk4"
+    },
+    {
+      "id": "gdown",
+      "title": "Gdown"
+    },
+    {
+      "id": "gemmi",
+      "title": "Gemmi"
+    },
+    {
+      "id": "geneformer",
+      "title": "Geneformer"
+    },
+    {
+      "id": "genomicfeatures",
+      "title": "Genomicfeatures"
+    },
+    {
+      "id": "genomicranges",
+      "title": "Genomicranges"
+    },
+    {
+      "id": "geoparse",
+      "title": "Geoparse"
+    },
+    {
+      "id": "geoquery",
+      "title": "Geoquery"
+    },
+    {
+      "id": "ggalluvial",
+      "title": "Ggalluvial"
+    },
+    {
+      "id": "gget",
+      "title": "Gget"
+    },
+    {
+      "id": "ggplate",
+      "title": "Ggplate"
+    },
+    {
+      "id": "ggplot2",
+      "title": "Ggplot2"
+    },
+    {
+      "id": "ggprism",
+      "title": "Ggprism"
+    },
+    {
+      "id": "ggraph",
+      "title": "Ggraph"
+    },
+    {
+      "id": "ggrepel",
+      "title": "Ggrepel"
+    },
+    {
+      "id": "glmgampoi",
+      "title": "Glmgampoi"
+    },
+    {
+      "id": "glmnet",
+      "title": "Glmnet"
+    },
+    {
+      "id": "gridextra",
+      "title": "gridExtra"
+    },
+    {
+      "id": "gseapy",
+      "title": "gseapy"
+    },
+    {
+      "id": "gsva",
+      "title": "Gsva"
+    },
+    {
+      "id": "h5py",
+      "title": "H5Py"
+    },
+    {
+      "id": "hap-py",
+      "title": "Hap Py"
+    },
+    {
+      "id": "harmony",
+      "title": "Harmony"
+    },
+    {
+      "id": "harmonypy",
+      "title": "harmonypy"
+    },
+    {
+      "id": "hdbscan",
+      "title": "Hdbscan"
+    },
+    {
+      "id": "hdf5r",
+      "title": "Hdf5R"
+    },
+    {
+      "id": "hisat2",
+      "title": "Hisat2"
+    },
+    {
+      "id": "hmmer",
+      "title": "hmmer"
+    },
+    {
+      "id": "huggingface-hub",
+      "title": "Huggingface Hub"
+    },
+    {
+      "id": "ieugwasr",
+      "title": "Ieugwasr"
+    },
+    {
+      "id": "ihw",
+      "title": "Ihw"
+    },
+    {
+      "id": "immunarch",
+      "title": "Immunarch"
+    },
+    {
+      "id": "impute",
+      "title": "Impute"
+    },
+    {
+      "id": "iqtree",
+      "title": "iqtree"
+    },
+    {
+      "id": "jax",
+      "title": "Jax"
+    },
+    {
+      "id": "joblib",
+      "title": "Joblib"
+    },
+    {
+      "id": "jsonlite",
+      "title": "Jsonlite"
+    },
+    {
+      "id": "knitr",
+      "title": "Knitr"
+    },
+    {
+      "id": "langchain-tavily",
+      "title": "Langchain Tavily"
+    },
+    {
+      "id": "leidenalg",
+      "title": "leidenalg"
+    },
+    {
+      "id": "liana",
+      "title": "Liana"
+    },
+    {
+      "id": "lifelines",
+      "title": "Lifelines"
+    },
+    {
+      "id": "limma",
+      "title": "limma"
+    },
+    {
+      "id": "lisi",
+      "title": "Lisi"
+    },
+    {
+      "id": "lme4",
+      "title": "Lme4"
+    },
+    {
+      "id": "lmertest",
+      "title": "Lmertest"
+    },
+    {
+      "id": "lxml",
+      "title": "Lxml"
+    },
+    {
+      "id": "maaslin2",
+      "title": "Maaslin2"
+    },
+    {
+      "id": "macs2",
+      "title": "Macs2"
+    },
+    {
+      "id": "mafft",
+      "title": "mafft"
+    },
+    {
+      "id": "mapie",
+      "title": "Mapie"
+    },
+    {
+      "id": "markdown",
+      "title": "Markdown"
+    },
+    {
+      "id": "marker-pdf",
+      "title": "Marker Pdf"
     },
     {
       "id": "matplotlib",
       "title": "matplotlib"
     },
     {
-      "id": "seaborn",
-      "title": "seaborn"
+      "id": "matplotlib-venn",
+      "title": "Matplotlib Venn"
+    },
+    {
+      "id": "matrix",
+      "title": "Matrix"
+    },
+    {
+      "id": "matrixstats",
+      "title": "Matrixstats"
+    },
+    {
+      "id": "mclust",
+      "title": "Mclust"
+    },
+    {
+      "id": "mdanalysis",
+      "title": "mdanalysis"
+    },
+    {
+      "id": "medchem",
+      "title": "Medchem"
+    },
+    {
+      "id": "meeko",
+      "title": "meeko"
+    },
+    {
+      "id": "meta",
+      "title": "Meta"
+    },
+    {
+      "id": "metafor",
+      "title": "Metafor"
+    },
+    {
+      "id": "milor",
+      "title": "Milor"
+    },
+    {
+      "id": "minimap2",
+      "title": "minimap2"
+    },
+    {
+      "id": "mofa2",
+      "title": "Mofa2"
+    },
+    {
+      "id": "molfeat",
+      "title": "Molfeat"
+    },
+    {
+      "id": "mosdepth",
+      "title": "Mosdepth"
+    },
+    {
+      "id": "mrpresso",
+      "title": "Mrpresso"
+    },
+    {
+      "id": "msigdbr",
+      "title": "Msigdbr"
+    },
+    {
+      "id": "mudata",
+      "title": "Mudata"
+    },
+    {
+      "id": "multiassayexperiment",
+      "title": "Multiassayexperiment"
+    },
+    {
+      "id": "multiqc",
+      "title": "Multiqc"
+    },
+    {
+      "id": "muon",
+      "title": "muon"
+    },
+    {
+      "id": "muscat",
+      "title": "Muscat"
+    },
+    {
+      "id": "muscle",
+      "title": "muscle"
+    },
+    {
+      "id": "music",
+      "title": "Music"
+    },
+    {
+      "id": "mygene",
+      "title": "Mygene"
+    },
+    {
+      "id": "nbclust",
+      "title": "Nbclust"
+    },
+    {
+      "id": "networkx",
+      "title": "Networkx"
+    },
+    {
+      "id": "nextflow",
+      "title": "nextflow"
+    },
+    {
+      "id": "nglview",
+      "title": "nglview"
+    },
+    {
+      "id": "nlmixr2",
+      "title": "Nlmixr2"
+    },
+    {
+      "id": "nlmixr2data",
+      "title": "Nlmixr2Data"
+    },
+    {
+      "id": "nmf",
+      "title": "Nmf"
+    },
+    {
+      "id": "numpy",
+      "title": "numpy"
+    },
+    {
+      "id": "open-biomed",
+      "title": "Open Biomed"
+    },
+    {
+      "id": "openbabel",
+      "title": "openbabel"
+    },
+    {
+      "id": "opencyto",
+      "title": "Opencyto"
+    },
+    {
+      "id": "openff-interchange",
+      "title": "Openff Interchange"
+    },
+    {
+      "id": "openff-toolkit",
+      "title": "Openff Toolkit"
+    },
+    {
+      "id": "openff-units",
+      "title": "Openff Units"
+    },
+    {
+      "id": "openfold",
+      "title": "Openfold"
+    },
+    {
+      "id": "openjdk",
+      "title": "openjdk"
+    },
+    {
+      "id": "openmm",
+      "title": "openmm"
+    },
+    {
+      "id": "openmmforcefields",
+      "title": "Openmmforcefields"
+    },
+    {
+      "id": "openprotein-python",
+      "title": "Openprotein Python"
+    },
+    {
+      "id": "openpyxl",
+      "title": "openpyxl"
+    },
+    {
+      "id": "openxlsx",
+      "title": "Openxlsx"
+    },
+    {
+      "id": "optparse",
+      "title": "Optparse"
+    },
+    {
+      "id": "ord-schema",
+      "title": "Ord Schema"
+    },
+    {
+      "id": "org-hs-eg-db",
+      "title": "Org Hs Eg Db"
+    },
+    {
+      "id": "org-mm-eg-db",
+      "title": "Org Mm Eg Db"
+    },
+    {
+      "id": "org-rn-eg-db",
+      "title": "Org Rn Eg Db"
+    },
+    {
+      "id": "packaging",
+      "title": "Packaging"
+    },
+    {
+      "id": "pandas",
+      "title": "pandas"
+    },
+    {
+      "id": "patchwork",
+      "title": "Patchwork"
+    },
+    {
+      "id": "pdbfixer",
+      "title": "pdbfixer"
+    },
+    {
+      "id": "pdfplumber",
+      "title": "Pdfplumber"
+    },
+    {
+      "id": "pdftoppm",
+      "title": "Pdftoppm"
+    },
+    {
+      "id": "pheatmap",
+      "title": "Pheatmap"
+    },
+    {
+      "id": "phyloseq",
+      "title": "Phyloseq"
+    },
+    {
+      "id": "picard",
+      "title": "Picard"
+    },
+    {
+      "id": "picrust2",
+      "title": "Picrust2"
+    },
+    {
+      "id": "pillow",
+      "title": "Pillow"
+    },
+    {
+      "id": "plater",
+      "title": "Plater"
+    },
+    {
+      "id": "plink2",
+      "title": "Plink2"
+    },
+    {
+      "id": "plip",
+      "title": "Plip"
     },
     {
       "id": "plotly",
       "title": "plotly"
     },
     {
-      "id": "openpyxl",
-      "title": "openpyxl"
+      "id": "plotnine",
+      "title": "Plotnine"
+    },
+    {
+      "id": "plotnine-prism",
+      "title": "Plotnine Prism"
+    },
+    {
+      "id": "polars",
+      "title": "polars"
+    },
+    {
+      "id": "polite-http",
+      "title": "Polite Http"
+    },
+    {
+      "id": "powsimr",
+      "title": "Powsimr"
+    },
+    {
+      "id": "predictingthepast",
+      "title": "Predictingthepast"
+    },
+    {
+      "id": "presto",
+      "title": "Presto"
+    },
+    {
+      "id": "primer3-py",
+      "title": "Primer3 Py"
+    },
+    {
+      "id": "proc",
+      "title": "Proc"
+    },
+    {
+      "id": "prodigy-prot",
+      "title": "Prodigy Prot"
+    },
+    {
+      "id": "prody",
+      "title": "prody"
+    },
+    {
+      "id": "protobuf",
+      "title": "Protobuf"
+    },
+    {
+      "id": "pwr",
+      "title": "Pwr"
+    },
+    {
+      "id": "pyarrow",
+      "title": "Pyarrow"
+    },
+    {
+      "id": "pydantic",
+      "title": "Pydantic"
+    },
+    {
+      "id": "pydeseq2",
+      "title": "pydeseq2"
+    },
+    {
+      "id": "pyliftover",
+      "title": "Pyliftover"
+    },
+    {
+      "id": "pymol",
+      "title": "Pymol"
+    },
+    {
+      "id": "pymol-open-source",
+      "title": "pymol-open-source"
+    },
+    {
+      "id": "pymupdf",
+      "title": "Pymupdf"
+    },
+    {
+      "id": "pyopenms",
+      "title": "Pyopenms"
     },
     {
       "id": "pypdf",
@@ -635,171 +1711,387 @@
       "title": "pypdfium2"
     },
     {
-      "id": "reportlab",
-      "title": "reportlab"
-    },
-    {
-      "id": "biopython",
-      "title": "biopython"
-    },
-    {
       "id": "pysam",
       "title": "pysam"
     },
     {
-      "id": "duckdb",
-      "title": "duckdb"
+      "id": "pysbd",
+      "title": "Pysbd"
     },
     {
-      "id": "requests",
-      "title": "requests"
+      "id": "pyscenic",
+      "title": "Pyscenic"
     },
     {
-      "id": "samtools",
-      "title": "samtools"
+      "id": "pytdc",
+      "title": "Pytdc"
     },
     {
-      "id": "bcftools",
-      "title": "bcftools"
+      "id": "pyteomics",
+      "title": "Pyteomics"
     },
     {
-      "id": "bedtools",
-      "title": "bedtools"
+      "id": "python",
+      "title": "python"
     },
     {
-      "id": "seqkit",
-      "title": "seqkit"
+      "id": "python-constraint",
+      "title": "Python Constraint"
     },
     {
-      "id": "csvtk",
-      "title": "csvtk"
+      "id": "python-dotenv",
+      "title": "Python Dotenv"
     },
     {
-      "id": "fastp",
-      "title": "fastp"
+      "id": "pytorch-lightning",
+      "title": "Pytorch Lightning"
     },
     {
-      "id": "cutadapt",
-      "title": "cutadapt"
+      "id": "pyyaml",
+      "title": "Pyyaml"
     },
     {
-      "id": "minimap2",
-      "title": "minimap2"
-    },
-    {
-      "id": "bwa",
-      "title": "bwa"
-    },
-    {
-      "id": "bowtie2",
-      "title": "bowtie2"
-    },
-    {
-      "id": "star",
-      "title": "star"
-    },
-    {
-      "id": "salmon",
-      "title": "salmon"
-    },
-    {
-      "id": "subread",
-      "title": "subread"
-    },
-    {
-      "id": "gatk4",
-      "title": "gatk4"
-    },
-    {
-      "id": "blast",
-      "title": "blast"
-    },
-    {
-      "id": "mafft",
-      "title": "mafft"
-    },
-    {
-      "id": "muscle",
-      "title": "muscle"
-    },
-    {
-      "id": "iqtree",
-      "title": "iqtree"
-    },
-    {
-      "id": "hmmer",
-      "title": "hmmer"
-    },
-    {
-      "id": "sra-tools",
-      "title": "sra-tools"
-    },
-    {
-      "id": "entrez-direct",
-      "title": "entrez-direct"
-    },
-    {
-      "id": "rdkit",
-      "title": "rdkit"
-    },
-    {
-      "id": "openbabel",
-      "title": "openbabel"
-    },
-    {
-      "id": "vina",
-      "title": "vina"
-    },
-    {
-      "id": "meeko",
-      "title": "meeko"
-    },
-    {
-      "id": "openmm",
-      "title": "openmm"
-    },
-    {
-      "id": "pdbfixer",
-      "title": "pdbfixer"
-    },
-    {
-      "id": "mdanalysis",
-      "title": "mdanalysis"
-    },
-    {
-      "id": "prody",
-      "title": "prody"
-    },
-    {
-      "id": "pymol-open-source",
-      "title": "pymol-open-source"
-    },
-    {
-      "id": "nglview",
-      "title": "nglview"
-    },
-    {
-      "id": "nextflow",
-      "title": "nextflow"
-    },
-    {
-      "id": "openjdk",
-      "title": "openjdk"
+      "id": "qvalue",
+      "title": "Qvalue"
     },
     {
       "id": "r-base",
       "title": "r-base"
     },
     {
-      "id": "python",
-      "title": "python"
+      "id": "r-utils",
+      "title": "R Utils"
+    },
+    {
+      "id": "rcolorbrewer",
+      "title": "Rcolorbrewer"
+    },
+    {
+      "id": "rdkit",
+      "title": "rdkit"
+    },
+    {
+      "id": "reactomepa",
+      "title": "Reactomepa"
+    },
+    {
+      "id": "readr",
+      "title": "Readr"
+    },
+    {
+      "id": "readxl",
+      "title": "Readxl"
+    },
+    {
+      "id": "reportlab",
+      "title": "reportlab"
+    },
+    {
+      "id": "requests",
+      "title": "requests"
+    },
+    {
+      "id": "reshape2",
+      "title": "Reshape2"
+    },
+    {
+      "id": "rfast",
+      "title": "Rfast"
+    },
+    {
+      "id": "rmarkdown",
+      "title": "Rmarkdown"
+    },
+    {
+      "id": "rnaseqpower",
+      "title": "Rnaseqpower"
+    },
+    {
+      "id": "rnaseqsamplesize",
+      "title": "Rnaseqsamplesize"
+    },
+    {
+      "id": "rpact",
+      "title": "Rpact"
+    },
+    {
+      "id": "rpy2",
+      "title": "Rpy2"
+    },
+    {
+      "id": "rs3",
+      "title": "Rs3"
+    },
+    {
+      "id": "rxode2",
+      "title": "Rxode2"
+    },
+    {
+      "id": "salmon",
+      "title": "salmon"
+    },
+    {
+      "id": "samtools",
+      "title": "samtools"
+    },
+    {
+      "id": "scales",
+      "title": "Scales"
+    },
+    {
+      "id": "scanpy",
+      "title": "scanpy"
+    },
+    {
+      "id": "scgpt",
+      "title": "Scgpt"
+    },
+    {
+      "id": "scib-metrics",
+      "title": "Scib Metrics"
+    },
+    {
+      "id": "scikit-learn",
+      "title": "scikit-learn"
+    },
+    {
+      "id": "scipy",
+      "title": "scipy"
+    },
+    {
+      "id": "scrublet",
+      "title": "scrublet"
+    },
+    {
+      "id": "scvelo",
+      "title": "Scvelo"
+    },
+    {
+      "id": "scvi-tools",
+      "title": "Scvi Tools"
+    },
+    {
+      "id": "seaborn",
+      "title": "seaborn"
+    },
+    {
+      "id": "seqkit",
+      "title": "seqkit"
+    },
+    {
+      "id": "seurat",
+      "title": "seurat"
+    },
+    {
+      "id": "seuratobject",
+      "title": "Seuratobject"
+    },
+    {
+      "id": "simbu",
+      "title": "Simbu"
+    },
+    {
+      "id": "singlecellexperiment",
+      "title": "Singlecellexperiment"
+    },
+    {
+      "id": "singler",
+      "title": "Singler"
+    },
+    {
+      "id": "singularity",
+      "title": "Singularity"
+    },
+    {
+      "id": "smina",
+      "title": "Smina"
+    },
+    {
+      "id": "sniffles",
+      "title": "Sniffles"
+    },
+    {
+      "id": "snpeff",
+      "title": "Snpeff"
+    },
+    {
+      "id": "soupx",
+      "title": "Soupx"
+    },
+    {
+      "id": "spatialdata",
+      "title": "Spatialdata"
+    },
+    {
+      "id": "spatialdata-io",
+      "title": "Spatialdata Io"
+    },
+    {
+      "id": "splito",
+      "title": "Splito"
+    },
+    {
+      "id": "squidpy",
+      "title": "squidpy"
+    },
+    {
+      "id": "sra-tools",
+      "title": "sra-tools"
+    },
+    {
+      "id": "ssizerna",
+      "title": "Ssizerna"
+    },
+    {
+      "id": "star",
+      "title": "star"
+    },
+    {
+      "id": "statsmodels",
+      "title": "statsmodels"
+    },
+    {
+      "id": "strelka2",
+      "title": "Strelka2"
+    },
+    {
+      "id": "subread",
+      "title": "subread"
+    },
+    {
+      "id": "summarizedexperiment",
+      "title": "Summarizedexperiment"
+    },
+    {
+      "id": "survival",
+      "title": "Survival"
+    },
+    {
+      "id": "survminer",
+      "title": "Survminer"
+    },
+    {
+      "id": "susier",
+      "title": "Susier"
+    },
+    {
+      "id": "sva",
+      "title": "Sva"
+    },
+    {
+      "id": "svglite",
+      "title": "Svglite"
+    },
+    {
+      "id": "tabix",
+      "title": "Tabix"
+    },
+    {
+      "id": "tabulate",
+      "title": "Tabulate"
+    },
+    {
+      "id": "tectonic",
+      "title": "Tectonic"
+    },
+    {
+      "id": "tensorflow",
+      "title": "Tensorflow"
+    },
+    {
+      "id": "texlive",
+      "title": "Texlive"
+    },
+    {
+      "id": "tidyr",
+      "title": "Tidyr"
+    },
+    {
+      "id": "tifffile",
+      "title": "Tifffile"
+    },
+    {
+      "id": "tiledbsoma",
+      "title": "Tiledbsoma"
+    },
+    {
+      "id": "timeax",
+      "title": "Timeax"
+    },
+    {
+      "id": "tinytex",
+      "title": "Tinytex"
+    },
+    {
+      "id": "tokamax",
+      "title": "Tokamax"
+    },
+    {
+      "id": "torch",
+      "title": "Torch"
+    },
+    {
+      "id": "torch-geometric",
+      "title": "Torch Geometric"
+    },
+    {
+      "id": "transformers",
+      "title": "Transformers"
+    },
+    {
+      "id": "twosamplemr",
+      "title": "Twosamplemr"
+    },
+    {
+      "id": "txdb-hsapiens-ucsc-hg38-knowngene",
+      "title": "Txdb Hsapiens Ucsc Hg38 Knowngene"
+    },
+    {
+      "id": "tximport",
+      "title": "Tximport"
+    },
+    {
+      "id": "umap-learn",
+      "title": "umap-learn"
+    },
+    {
+      "id": "urllib3",
+      "title": "Urllib3"
+    },
+    {
+      "id": "vegan",
+      "title": "Vegan"
+    },
+    {
+      "id": "vep",
+      "title": "Vep"
+    },
+    {
+      "id": "vina",
+      "title": "vina"
+    },
+    {
+      "id": "vsn",
+      "title": "Vsn"
+    },
+    {
+      "id": "wgcna",
+      "title": "Wgcna"
+    },
+    {
+      "id": "xgboost",
+      "title": "Xgboost"
+    },
+    {
+      "id": "xlsxwriter",
+      "title": "Xlsxwriter"
+    },
+    {
+      "id": "zellkonverter",
+      "title": "Zellkonverter"
     }
   ],
   "modelCapabilities": [
-    {
-      "id": "vision",
-      "title": "Reads images"
-    },
     {
       "id": "long-context",
       "title": "A context of 200,000 tokens or more"
@@ -807,6 +2099,10 @@
     {
       "id": "reasoning",
       "title": "Extended reasoning"
+    },
+    {
+      "id": "vision",
+      "title": "Reads images"
     }
   ],
   "scienceModels": [
@@ -823,10 +2119,28 @@
       "description": "Predicts structures of complexes of proteins, nucleic acids and ligands."
     },
     {
+      "id": "alphagenome",
+      "title": "Alphagenome"
+    },
+    {
+      "id": "biot5",
+      "title": "Biot5"
+    },
+    {
       "id": "boltz-2",
       "title": "Boltz-2",
       "task": "structure and affinity prediction",
       "description": "Predicts biomolecular complex structures and binding affinity."
+    },
+    {
+      "id": "boltzgen",
+      "title": "Boltzgen"
+    },
+    {
+      "id": "borzoi",
+      "title": "Borzoi",
+      "task": "expression from sequence",
+      "description": "Predicts gene expression and chromatin tracks from DNA sequence."
     },
     {
       "id": "chai-1",
@@ -835,22 +2149,8 @@
       "description": "Predicts structures of proteins, nucleic acids and small-molecule complexes."
     },
     {
-      "id": "esmfold",
-      "title": "ESMFold",
-      "task": "structure prediction",
-      "description": "Fast single-sequence protein structure prediction."
-    },
-    {
-      "id": "esm2",
-      "title": "ESM-2",
-      "task": "protein language model",
-      "description": "Protein language model for embeddings and variant effects."
-    },
-    {
-      "id": "evo2",
-      "title": "Evo 2",
-      "task": "DNA language model",
-      "description": "DNA language model for sequence scoring and generation."
+      "id": "codefp",
+      "title": "Codefp"
     },
     {
       "id": "diffdock",
@@ -859,16 +2159,90 @@
       "description": "Docks small molecules into protein structures."
     },
     {
-      "id": "proteinmpnn",
-      "title": "ProteinMPNN",
-      "task": "sequence design",
-      "description": "Designs sequences that fold to a given backbone."
+      "id": "esm2",
+      "title": "ESM-2",
+      "task": "protein language model",
+      "description": "Protein language model for embeddings and variant effects."
+    },
+    {
+      "id": "esmc",
+      "title": "ESM C",
+      "task": "protein language model",
+      "description": "ESM Cambrian protein language model for embeddings."
+    },
+    {
+      "id": "esmfold",
+      "title": "ESMFold",
+      "task": "structure prediction",
+      "description": "Fast single-sequence protein structure prediction."
+    },
+    {
+      "id": "esmfold2",
+      "title": "ESMFold2",
+      "task": "structure prediction",
+      "description": "Protein structure prediction from the ESM family."
+    },
+    {
+      "id": "evo2",
+      "title": "Evo 2",
+      "task": "DNA language model",
+      "description": "DNA language model for sequence scoring and generation."
+    },
+    {
+      "id": "gears",
+      "title": "Gears"
+    },
+    {
+      "id": "geneformer",
+      "title": "Geneformer"
+    },
+    {
+      "id": "graphmvp",
+      "title": "Graphmvp"
+    },
+    {
+      "id": "iggm",
+      "title": "Iggm"
+    },
+    {
+      "id": "ithaca",
+      "title": "Ithaca"
+    },
+    {
+      "id": "langcell",
+      "title": "Langcell"
     },
     {
       "id": "ligandmpnn",
       "title": "LigandMPNN",
       "task": "sequence design",
       "description": "Sequence design aware of ligands, nucleic acids and metals."
+    },
+    {
+      "id": "molcraft",
+      "title": "MolCraft",
+      "task": "molecule generation",
+      "description": "Generates molecules for a binding pocket."
+    },
+    {
+      "id": "mutaplm",
+      "title": "Mutaplm"
+    },
+    {
+      "id": "openfold3",
+      "title": "OpenFold3",
+      "task": "structure prediction",
+      "description": "Open reproduction of AlphaFold3 for complex structure prediction."
+    },
+    {
+      "id": "prodigy",
+      "title": "Prodigy"
+    },
+    {
+      "id": "proteinmpnn",
+      "title": "ProteinMPNN",
+      "task": "sequence design",
+      "description": "Designs sequences that fold to a given backbone."
     },
     {
       "id": "rfdiffusion",
@@ -883,40 +2257,22 @@
       "description": "Foundation model for single-cell transcriptomics."
     },
     {
-      "id": "borzoi",
-      "title": "Borzoi",
-      "task": "expression from sequence",
-      "description": "Predicts gene expression and chromatin tracks from DNA sequence."
-    },
-    {
-      "id": "openfold3",
-      "title": "OpenFold3",
-      "task": "structure prediction",
-      "description": "Open reproduction of AlphaFold3 for complex structure prediction."
-    },
-    {
-      "id": "molcraft",
-      "title": "MolCraft",
-      "task": "molecule generation",
-      "description": "Generates molecules for a binding pocket."
-    },
-    {
-      "id": "esmfold2",
-      "title": "ESMFold2",
-      "task": "structure prediction",
-      "description": "Protein structure prediction from the ESM family."
-    },
-    {
-      "id": "esmc",
-      "title": "ESM C",
-      "task": "protein language model",
-      "description": "ESM Cambrian protein language model for embeddings."
-    },
-    {
       "id": "solublempnn",
       "title": "SolubleMPNN",
       "task": "sequence design",
       "description": "Sequence design that favours soluble proteins."
+    },
+    {
+      "id": "stofm",
+      "title": "Stofm"
+    },
+    {
+      "id": "tfold",
+      "title": "Tfold"
+    },
+    {
+      "id": "txgnn",
+      "title": "Txgnn"
     }
   ],
   "taskGroups": [
@@ -991,6 +2347,117 @@
       "domains": [
         "lab-data",
         "imaging"
+      ]
+    }
+  ],
+  "credentialTypes": [
+    {
+      "id": "alphagenome",
+      "title": "AlphaGenome",
+      "kind": "api_key",
+      "hosts": [
+        "*.googleapis.com",
+        "alphagenome.deepmind.com"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "title": "Anthropic API",
+      "kind": "api_key",
+      "hosts": [
+        "api.anthropic.com"
+      ]
+    },
+    {
+      "id": "boltz",
+      "title": "Boltz API",
+      "kind": "api_key",
+      "hosts": [
+        "*.boltz.bio"
+      ]
+    },
+    {
+      "id": "chemspace",
+      "title": "Chemspace",
+      "kind": "api_key",
+      "hosts": [
+        "api.chem-space.com",
+        "*.chem-space.com"
+      ]
+    },
+    {
+      "id": "gemini",
+      "title": "Google Gemini API",
+      "kind": "api_key",
+      "hosts": [
+        "generativelanguage.googleapis.com"
+      ]
+    },
+    {
+      "id": "huggingface",
+      "title": "Hugging Face Hub",
+      "kind": "api_key",
+      "hosts": [
+        "huggingface.co",
+        "*.huggingface.co"
+      ]
+    },
+    {
+      "id": "molport",
+      "title": "MolPort",
+      "kind": "api_key",
+      "hosts": [
+        "api.molport.com",
+        "*.molport.com"
+      ]
+    },
+    {
+      "id": "ncbi",
+      "title": "NCBI E-utilities",
+      "kind": "api_key",
+      "hosts": [
+        "eutils.ncbi.nlm.nih.gov",
+        "*.ncbi.nlm.nih.gov"
+      ]
+    },
+    {
+      "id": "openai",
+      "title": "OpenAI API",
+      "kind": "api_key",
+      "hosts": [
+        "api.openai.com"
+      ]
+    },
+    {
+      "id": "openalex",
+      "title": "OpenAlex",
+      "kind": "api_key",
+      "hosts": [
+        "api.openalex.org"
+      ]
+    },
+    {
+      "id": "openfda",
+      "title": "openFDA",
+      "kind": "api_key",
+      "hosts": [
+        "api.fda.gov"
+      ]
+    },
+    {
+      "id": "openprotein",
+      "title": "OpenProtein",
+      "kind": "api_key",
+      "hosts": [
+        "api.openprotein.ai"
+      ]
+    },
+    {
+      "id": "tavily",
+      "title": "Tavily Search",
+      "kind": "api_key",
+      "hosts": [
+        "api.tavily.com"
       ]
     }
   ]

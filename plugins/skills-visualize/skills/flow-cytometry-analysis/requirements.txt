@@ -1,0 +1,9 @@
+# Requirements for flow-cytometry-analysis
+# R / Bioconductor packages: CATALYST, ComplexHeatmap, ConsensusClusterPlus, SingleCellExperiment, SummarizedExperiment, diffcyt, digest, flowCore, flowWorkspace, ggplot2, ggrepel, jsonlite, matrixStats, mclust, openCyto, optparse, readxl, svglite
+# System / CLI tools: R, Rscript
+
+pandas
+Pillow
+pypdf
+reportlab
+requests

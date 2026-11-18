@@ -1,0 +1,12 @@
+# Requirements for cell-therapy-qc-scorecard
+# System / CLI tools: R, muscle
+
+anndata
+GEOparse
+matplotlib
+numpy
+pandas
+Pillow
+pypdf
+reportlab
+scanpy

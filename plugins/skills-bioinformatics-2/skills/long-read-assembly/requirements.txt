@@ -1,0 +1,7 @@
+# Requirements for long-read-assembly
+# System / CLI tools: minimap2, pdftoppm
+
+matplotlib
+numpy
+Pillow
+pypdf

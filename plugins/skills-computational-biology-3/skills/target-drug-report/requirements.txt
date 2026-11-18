@@ -1,0 +1,2 @@
+# Requirements for target-drug-report
+# Python >= 3.10 (standard library only; no third-party pip packages required)

@@ -1,0 +1,13 @@
+# Requirements for cheminformatics-doc2mol
+# System / CLI tools: star
+
+beautifulsoup4>=4.12.0
+drfp>=0.3.7
+matplotlib
+numpy>=1.26.0
+ord-schema>=0.3.8
+pandas>=2.2.0
+polite-http
+protobuf
+pyarrow>=14.0.0
+rdkit>=2024.3.1

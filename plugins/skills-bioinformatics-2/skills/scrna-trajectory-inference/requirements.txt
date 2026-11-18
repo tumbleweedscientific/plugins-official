@@ -1,0 +1,12 @@
+# Requirements for scrna-trajectory-inference
+
+cellrank
+matplotlib
+numpy
+pandas
+reportlab
+scanpy
+scipy
+scvelo
+seaborn
+statsmodels

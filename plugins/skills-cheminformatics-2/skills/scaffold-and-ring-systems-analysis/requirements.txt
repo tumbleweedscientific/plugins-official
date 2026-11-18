@@ -1,0 +1,5 @@
+# Requirements for scaffold-and-ring-systems-analysis
+# System / CLI tools: Rscript
+
+Pillow
+rdkit

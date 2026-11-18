@@ -1,0 +1,4 @@
+# Requirements for bulk-rnaseq-counts-to-de-deseq2
+# R / Bioconductor packages: DESeq2, apeglm, ggplot2, ggprism, ggrepel, svglite
+# System / CLI tools: R, featureCounts, muscle
+# Python >= 3.10 (standard library only; no third-party pip packages required)

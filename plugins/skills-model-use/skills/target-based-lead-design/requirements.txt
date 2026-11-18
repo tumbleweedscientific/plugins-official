@@ -1,0 +1,6 @@
+# Requirements for target-based-lead-design
+# Hardware note: GPU (CUDA) recommended for model inference
+
+open-biomed @ git+https://github.com/PharMolix/OpenBioMed.git
+pytorch-lightning
+torch

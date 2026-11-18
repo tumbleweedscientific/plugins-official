@@ -1,0 +1,5 @@
+# Requirements for disease-drug-intelligence
+
+langchain-tavily
+requests
+urllib3

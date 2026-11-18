@@ -1,0 +1,9 @@
+# Requirements for rnaseq-fastq-to-counts
+# R / Bioconductor packages: DESeq2, GenomicFeatures, tximport
+# System / CLI tools: R, Rscript, fastqc, featureCounts, prefetch, salmon, samtools, seqkit, star
+
+matplotlib
+numpy
+Pillow
+pypdf
+reportlab

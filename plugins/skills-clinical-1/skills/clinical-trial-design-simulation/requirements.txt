@@ -1,0 +1,6 @@
+# Requirements for clinical-trial-design-simulation
+# R / Bioconductor packages: data.table, ggplot2, jsonlite, rpact, survival, svglite
+# System / CLI tools: R, Rscript
+
+pypdf
+reportlab

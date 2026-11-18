@@ -1,0 +1,9 @@
+# Requirements for clinical-trial-forecast
+# System / CLI tools: R
+
+markdown
+matplotlib
+numpy
+pandas
+pyarrow
+scipy

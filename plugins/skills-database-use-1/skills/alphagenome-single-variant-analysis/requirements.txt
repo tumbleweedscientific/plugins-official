@@ -1,0 +1,13 @@
+# Requirements for alphagenome-single-variant-analysis
+# System / CLI tools: muscle
+
+absl-py
+alphagenome>=0.6.1
+matplotlib
+numpy
+pandas
+pyarrow
+python-dotenv
+requests
+scipy
+seaborn

@@ -1,0 +1,7 @@
+# Requirements for single-cell-rna-qc
+
+anndata
+matplotlib
+numpy
+scanpy
+scipy

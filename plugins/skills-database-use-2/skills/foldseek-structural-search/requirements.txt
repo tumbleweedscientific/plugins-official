@@ -1,0 +1,3 @@
+# Requirements for foldseek-structural-search
+
+polite-http

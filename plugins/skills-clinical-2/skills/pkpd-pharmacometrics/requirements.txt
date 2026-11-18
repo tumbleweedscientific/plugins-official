@@ -1,0 +1,7 @@
+# Requirements for pkpd-pharmacometrics
+# R / Bioconductor packages: dplyr, ggplot2, nlmixr2, nlmixr2data, patchwork, rxode2
+# System / CLI tools: R, Rscript
+
+pandas
+Pillow
+reportlab

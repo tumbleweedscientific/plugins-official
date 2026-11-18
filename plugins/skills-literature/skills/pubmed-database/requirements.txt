@@ -1,0 +1,5 @@
+# Requirements for pubmed-database
+# System / CLI tools: efetch, esearch
+
+polite-http
+python-dotenv

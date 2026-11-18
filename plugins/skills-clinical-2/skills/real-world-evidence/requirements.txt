@@ -1,0 +1,8 @@
+# Requirements for real-world-evidence
+# R / Bioconductor packages: arrow, data.table, dplyr, ggplot2, jsonlite, patchwork, scales, survival
+# System / CLI tools: R, Rscript
+
+pandas
+Pillow
+pypdf
+reportlab

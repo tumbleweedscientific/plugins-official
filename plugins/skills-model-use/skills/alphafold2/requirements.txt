@@ -1,0 +1,4 @@
+# Requirements for alphafold2
+# Hardware note: GPU (CUDA) recommended for model inference
+
+biopython

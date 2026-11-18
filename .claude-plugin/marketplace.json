@@ -8,9 +8,392 @@
   },
   "plugins": [
     {
+      "name": "tumbleweed-research",
+      "source": "./plugins/tumbleweed-research",
+      "description": "Built-in research skills of the research agent.",
+      "category": "Research",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "builtin",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "pypi.org",
+              "files.pythonhosted.org",
+              "github.com",
+              "codeload.github.com",
+              "api.crossref.org",
+              "doi.org",
+              "api.openalex.org",
+              "eutils.ncbi.nlm.nih.gov",
+              "www.ebi.ac.uk",
+              "clinicaltrials.gov",
+              "files.ipd.uw.edu"
+            ],
+            "credentials": [],
+            "specialists": {},
+            "oauth": {},
+            "connectors": {},
+            "sandboxSkills": {
+              "proteinmpnn": true,
+              "ligandmpnn": true,
+              "solublempnn": true
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-06"
+          }
+        }
+      }
+    },
+    {
+      "name": "bifrost-bio-mcp",
+      "source": "./plugins/bifrost-bio-mcp",
+      "description": "23 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (literature, genomics, chemistry, structures, clinical, expression).",
+      "category": "Data",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "review": {
+            "network": [],
+            "credentials": [
+              {
+                "id": "bio-pubmed",
+                "variable": "BIFROST_BIO_PUBMED_API_KEY",
+                "kind": "api_key",
+                "label": "PubMed & Europe PMC API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-pubmed"
+                }
+              },
+              {
+                "id": "bio-chembl",
+                "variable": "BIFROST_BIO_CHEMBL_API_KEY",
+                "kind": "api_key",
+                "label": "ChEMBL API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-chembl"
+                }
+              },
+              {
+                "id": "bio-cellguide",
+                "variable": "BIFROST_BIO_CELLGUIDE_API_KEY",
+                "kind": "api_key",
+                "label": "CELLxGENE CellGuide API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-cellguide"
+                }
+              },
+              {
+                "id": "bio-clinical-genomics",
+                "variable": "BIFROST_BIO_CLINICAL_GENOMICS_API_KEY",
+                "kind": "api_key",
+                "label": "Clinical Genomics API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-clinical-genomics"
+                }
+              },
+              {
+                "id": "bio-clinical-trials",
+                "variable": "BIFROST_BIO_CLINICAL_TRIALS_API_KEY",
+                "kind": "api_key",
+                "label": "ClinicalTrials.gov API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-clinical-trials"
+                }
+              },
+              {
+                "id": "bio-biorxiv",
+                "variable": "BIFROST_BIO_BIORXIV_API_KEY",
+                "kind": "api_key",
+                "label": "bioRxiv & medRxiv API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-biorxiv"
+                }
+              },
+              {
+                "id": "bio-variants",
+                "variable": "BIFROST_BIO_VARIANTS_API_KEY",
+                "kind": "api_key",
+                "label": "Human Variants API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-variants"
+                }
+              },
+              {
+                "id": "bio-drug-regulatory",
+                "variable": "BIFROST_BIO_DRUG_REGULATORY_API_KEY",
+                "kind": "api_key",
+                "label": "FDA Drug Regulatory API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-drug-regulatory"
+                }
+              },
+              {
+                "id": "bio-zinc",
+                "variable": "BIFROST_BIO_ZINC_API_KEY",
+                "kind": "api_key",
+                "label": "ZINC22 API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-zinc"
+                }
+              },
+              {
+                "id": "bio-genes-ontologies",
+                "variable": "BIFROST_BIO_GENES_ONTOLOGIES_API_KEY",
+                "kind": "api_key",
+                "label": "Genes & Ontologies API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-genes-ontologies"
+                }
+              },
+              {
+                "id": "bio-rna",
+                "variable": "BIFROST_BIO_RNA_API_KEY",
+                "kind": "api_key",
+                "label": "RNA Families (Rfam) API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-rna"
+                }
+              },
+              {
+                "id": "bio-cancer-models",
+                "variable": "BIFROST_BIO_CANCER_MODELS_API_KEY",
+                "kind": "api_key",
+                "label": "Cancer Models API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-cancer-models"
+                }
+              },
+              {
+                "id": "bio-chemistry",
+                "variable": "BIFROST_BIO_CHEMISTRY_API_KEY",
+                "kind": "api_key",
+                "label": "Small-Molecule Chemistry API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-chemistry"
+                }
+              },
+              {
+                "id": "bio-structures-interactions",
+                "variable": "BIFROST_BIO_STRUCTURES_INTERACTIONS_API_KEY",
+                "kind": "api_key",
+                "label": "Structures & Interactions API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-structures-interactions"
+                }
+              },
+              {
+                "id": "bio-literature",
+                "variable": "BIFROST_BIO_LITERATURE_API_KEY",
+                "kind": "api_key",
+                "label": "Scholarly Literature API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-literature"
+                }
+              },
+              {
+                "id": "bio-protein-annotation",
+                "variable": "BIFROST_BIO_PROTEIN_ANNOTATION_API_KEY",
+                "kind": "api_key",
+                "label": "Protein Annotation API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-protein-annotation"
+                }
+              },
+              {
+                "id": "bio-research-resources",
+                "variable": "BIFROST_BIO_RESEARCH_RESOURCES_API_KEY",
+                "kind": "api_key",
+                "label": "Research Resources API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-research-resources"
+                }
+              },
+              {
+                "id": "bio-human-genetics",
+                "variable": "BIFROST_BIO_HUMAN_GENETICS_API_KEY",
+                "kind": "api_key",
+                "label": "Human Genetics API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-human-genetics"
+                }
+              },
+              {
+                "id": "bio-expression",
+                "variable": "BIFROST_BIO_EXPRESSION_API_KEY",
+                "kind": "api_key",
+                "label": "Gene & Tissue Expression API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-expression"
+                }
+              },
+              {
+                "id": "bio-omics-archives",
+                "variable": "BIFROST_BIO_OMICS_ARCHIVES_API_KEY",
+                "kind": "api_key",
+                "label": "Omics Archives API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-omics-archives"
+                }
+              },
+              {
+                "id": "bio-biomart",
+                "variable": "BIFROST_BIO_BIOMART_API_KEY",
+                "kind": "api_key",
+                "label": "Ensembl BioMart API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-biomart"
+                }
+              },
+              {
+                "id": "bio-genomes",
+                "variable": "BIFROST_BIO_GENOMES_API_KEY",
+                "kind": "api_key",
+                "label": "Genomes (Ensembl & UCSC) API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-genomes"
+                }
+              },
+              {
+                "id": "bio-regulation",
+                "variable": "BIFROST_BIO_REGULATION_API_KEY",
+                "kind": "api_key",
+                "label": "Gene Regulation API key",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-regulation"
+                }
+              }
+            ],
+            "connectors": {
+              "bio-pubmed": {
+                "title": "PubMed & Europe PMC",
+                "description": "Search PubMed, PMC full text, and Europe PMC biomedical literature and citations."
+              },
+              "bio-chembl": {
+                "title": "ChEMBL",
+                "description": "Query ChEMBL bioactive molecules, drug targets, bioactivity assays, and mechanisms."
+              },
+              "bio-cellguide": {
+                "title": "CELLxGENE CellGuide",
+                "description": "Explore canonical cell types, marker genes, and single-cell reference ontologies in CELLxGENE."
+              },
+              "bio-clinical-genomics": {
+                "title": "Clinical Genomics",
+                "description": "Query ClinGen gene-disease validity, CIViC somatic cancer variants, and Open Targets evidence."
+              },
+              "bio-clinical-trials": {
+                "title": "ClinicalTrials.gov",
+                "description": "Search registered clinical studies, eligibility criteria, endpoints, and trial status."
+              },
+              "bio-biorxiv": {
+                "title": "bioRxiv & medRxiv",
+                "description": "Search and retrieve life-science and medical preprints from bioRxiv and medRxiv."
+              },
+              "bio-variants": {
+                "title": "Human Variants",
+                "description": "Look up population allele frequencies, CADD deleteriousness, ClinVar classifications, and dbSNP rsIDs."
+              },
+              "bio-drug-regulatory": {
+                "title": "FDA Drug Regulatory",
+                "description": "Query openFDA drug approvals, prescribing labels, adverse events, and recalls."
+              },
+              "bio-zinc": {
+                "title": "ZINC22",
+                "description": "Search ZINC22 purchasable screening compounds, conformers, and vendor catalogs."
+              },
+              "bio-genes-ontologies": {
+                "title": "Genes & Ontologies",
+                "description": "Resolve gene annotations, GO terms, OLS ontologies, UniProt entries, and Reactome/KEGG pathways."
+              },
+              "bio-rna": {
+                "title": "RNA Families (Rfam)",
+                "description": "Query Rfam non-coding RNA families, covariance models, secondary structures, and alignments."
+              },
+              "bio-cancer-models": {
+                "title": "Cancer Models",
+                "description": "Explore DepMap CRISPR/RNAi dependencies, drug sensitivities, and cBioPortal cancer genomics cohorts."
+              },
+              "bio-chemistry": {
+                "title": "Small-Molecule Chemistry",
+                "description": "Query PubChem compounds, ChEBI chemical entities, Rhea biochemical reactions, and BindingDB affinities."
+              },
+              "bio-structures-interactions": {
+                "title": "Structures & Interactions",
+                "description": "Retrieve experimental and predicted 3D structures from PDB, AlphaFold DB, and EMDB plus IntAct and Complex Portal complexes."
+              },
+              "bio-literature": {
+                "title": "Scholarly Literature",
+                "description": "Search OpenAlex scholarly works, citation graphs, authors, and arXiv preprints."
+              },
+              "bio-protein-annotation": {
+                "title": "Protein Annotation",
+                "description": "Query InterPro/Pfam protein domains, Human Protein Atlas expression, and STRING interaction networks."
+              },
+              "bio-research-resources": {
+                "title": "Research Resources",
+                "description": "Search federal research funding opportunities on Grants.gov and validated antibodies in the Antibody Registry."
+              },
+              "bio-human-genetics": {
+                "title": "Human Genetics",
+                "description": "Explore GWAS Catalog associations, eQTL Catalogue summary statistics, and PheWeb phenome-wide associations."
+              },
+              "bio-expression": {
+                "title": "Gene & Tissue Expression",
+                "description": "Query GTEx multi-tissue RNA expression and eQTLs alongside PanglaoDB single-cell marker expression."
+              },
+              "bio-omics-archives": {
+                "title": "Omics Archives",
+                "description": "Search public multi-omics repositories across NCBI GEO, ArrayExpress, PRIDE proteomics, MetaboLights, and MGnify."
+              },
+              "bio-biomart": {
+                "title": "Ensembl BioMart",
+                "description": "Run cross-species gene, transcript, homolog, and identifier batch queries through Ensembl BioMart."
+              },
+              "bio-genomes": {
+                "title": "Genomes (Ensembl & UCSC)",
+                "description": "Fetch reference genome sequences, gene models, VEP consequences, and UCSC Genome Browser tracks."
+              },
+              "bio-regulation": {
+                "title": "Gene Regulation",
+                "description": "Query ENCODE SCREEN cis-regulatory elements, JASPAR transcription factor motifs, and UniBind TFBS datasets."
+              }
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
       "name": "bio-research",
       "source": "./plugins/bio-research",
-      "description": "Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D",
+      "description": "Connect to third-party life-sciences partner services (BioRender, Consensus, Synapse, Wiley Scholar Gateway, Owkin) via OAuth.",
       "category": "Life sciences",
       "metadata": {
         "tumbleweed": {
@@ -23,19 +406,7 @@
             "sha": "2574e29377c7173d0cecffef29a6ecbd7f8ccb5d"
           },
           "review": {
-            "network": [
-              "pypi.org",
-              "files.pythonhosted.org",
-              "download.pytorch.org",
-              "eutils.ncbi.nlm.nih.gov",
-              "ftp.ncbi.nlm.nih.gov",
-              "www.ebi.ac.uk",
-              "get.nextflow.io",
-              "github.com",
-              "nf-co.re",
-              "huggingface.co",
-              "cdn-lfs.huggingface.co"
-            ],
+            "network": [],
             "credentials": [
               {
                 "id": "biorender",
@@ -91,14 +462,6 @@
               "owkin": "owkin"
             },
             "connectors": {
-              "pubmed": {
-                "title": "PubMed",
-                "description": "Search biomedical literature indexed by NCBI PubMed."
-              },
-              "biorxiv": {
-                "title": "bioRxiv",
-                "description": "Search life-sciences preprints on bioRxiv and medRxiv."
-              },
               "consensus": {
                 "title": "Consensus",
                 "description": "Find answers in peer-reviewed research papers."
@@ -106,18 +469,6 @@
               "biorender": {
                 "title": "BioRender",
                 "description": "Find scientific illustrations and icons in your BioRender account."
-              },
-              "c-trials": {
-                "title": "ClinicalTrials.gov",
-                "description": "Search registered clinical studies."
-              },
-              "chembl": {
-                "title": "ChEMBL",
-                "description": "Look up bioactive molecules, targets and assay data."
-              },
-              "ot": {
-                "title": "Open Targets",
-                "description": "Explore target–disease associations and evidence."
               },
               "synapse": {
                 "title": "Synapse",
@@ -134,46 +485,712 @@
               }
             },
             "reviewedBy": "guchen",
-            "reviewedAt": "2026-11-05"
+            "reviewedAt": "2026-11-17"
           }
         }
       }
     },
     {
-      "name": "tumbleweed-research",
-      "source": "./plugins/tumbleweed-research",
-      "description": "Built-in research skills of the research agent.",
-      "category": "Research",
+      "name": "skills-bioinformatics-1",
+      "source": "./plugins/skills-bioinformatics-1",
+      "description": "Bioinformatics analysis, single-cell, transcriptomics, and genomics pipelines. (part 1/3)",
+      "category": "Bioinformatics",
       "metadata": {
         "tumbleweed": {
-          "origin": "builtin",
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "review": {
+            "network": [
+              "api.ncbi.nlm.nih.gov",
+              "api.platform.opentargets.org",
+              "cloud.r-project.org",
+              "ftp.1000genomes.ebi.ac.uk",
+              "ftp.ebi.ac.uk",
+              "gnomad.broadinstitute.org",
+              "grch37.rest.ensembl.org",
+              "gtexportal.org",
+              "main.genebass.org",
+              "mygene.info",
+              "rest.ensembl.org",
+              "screen-beta-api.wenglab.org",
+              "www.cbioportal.org",
+              "www.ebi.ac.uk"
+            ],
+            "credentials": [
+              {
+                "id": "ncbi",
+                "kind": "api_key",
+                "type": "ncbi",
+                "label": "NCBI API key",
+                "variable": "NCBI_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "eutils.ncbi.nlm.nih.gov",
+                  "header": "api-key"
+                }
+              }
+            ],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-bioinformatics-2",
+      "source": "./plugins/skills-bioinformatics-2",
+      "description": "Bioinformatics analysis, single-cell, transcriptomics, and genomics pipelines. (part 2/3)",
+      "category": "Bioinformatics",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
           "status": "listed",
           "featured": false,
           "review": {
             "network": [
-              "pypi.org",
-              "files.pythonhosted.org",
+              "api.colabfold.com",
+              "blast.ncbi.nlm.nih.gov",
+              "cloud.r-project.org",
+              "ftp.ebi.ac.uk",
               "github.com",
-              "codeload.github.com",
-              "api.crossref.org",
-              "doi.org",
-              "api.openalex.org",
-              "eutils.ncbi.nlm.nih.gov",
+              "raw.githubusercontent.com",
               "www.ebi.ac.uk",
-              "clinicaltrials.gov",
-              "files.ipd.uw.edu"
+              "www.ncbi.nlm.nih.gov"
             ],
             "credentials": [],
-            "specialists": {},
-            "oauth": {},
-            "connectors": {},
-            "sandboxSkills": {
-              "proteinmpnn": true,
-              "ligandmpnn": true,
-              "solublempnn": true
-            },
             "reviewedBy": "guchen",
-            "reviewedAt": "2026-11-06"
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-bioinformatics-3",
+      "source": "./plugins/skills-bioinformatics-3",
+      "description": "Bioinformatics analysis, single-cell, transcriptomics, and genomics pipelines. (part 3/3)",
+      "category": "Bioinformatics",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "www.10xgenomics.com"
+            ],
+            "credentials": [],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-cheminformatics-1",
+      "source": "./plugins/skills-cheminformatics-1",
+      "description": "Cheminformatics, docking, ADMET, and small-molecule discovery workflows. (part 1/2)",
+      "category": "Cheminformatics",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "review": {
+            "network": [
+              "api.chem-space.com",
+              "api.molport.com",
+              "cactus.nci.nih.gov",
+              "ccsb.scripps.edu",
+              "chem-space.com",
+              "data.rcsb.org",
+              "enamine.net",
+              "eutils.ncbi.nlm.nih.gov",
+              "files.rcsb.org",
+              "github.com",
+              "open-reaction-database.org",
+              "opsin.ch.cam.ac.uk",
+              "patents.google.com",
+              "pubchem.ncbi.nlm.nih.gov",
+              "raw.githubusercontent.com",
+              "search.rcsb.org",
+              "webbook.nist.gov",
+              "www.ebi.ac.uk",
+              "www.molport.com",
+              "www.rcsb.org"
+            ],
+            "credentials": [
+              {
+                "id": "chemspace",
+                "kind": "api_key",
+                "type": "chemspace",
+                "label": "Chemspace API key",
+                "variable": "CHEMSPACE_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "api.chem-space.com",
+                  "header": "Authorization"
+                }
+              },
+              {
+                "id": "molport",
+                "kind": "api_key",
+                "type": "molport",
+                "label": "MolPort API key",
+                "variable": "MOLPORT_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "api.molport.com",
+                  "header": "X-Api-Key"
+                }
+              }
+            ],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-cheminformatics-2",
+      "source": "./plugins/skills-cheminformatics-2",
+      "description": "Cheminformatics, docking, ADMET, and small-molecule discovery workflows. (part 2/2)",
+      "category": "Cheminformatics",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "files.rcsb.org",
+              "github.com",
+              "opsin.ch.cam.ac.uk",
+              "pubchem.ncbi.nlm.nih.gov",
+              "sourceforge.net",
+              "www.ebi.ac.uk"
+            ],
+            "credentials": [],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-clinical-1",
+      "source": "./plugins/skills-clinical-1",
+      "description": "Clinical trials, oncology genomics, precision medicine, and drug regulatory workflows. (part 1/2)",
+      "category": "Clinical",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "review": {
+            "network": [
+              "civicdb.org",
+              "clinicaltrials.gov",
+              "eutils.ncbi.nlm.nih.gov",
+              "pubmed.ncbi.nlm.nih.gov",
+              "rest.uniprot.org",
+              "www.ebi.ac.uk"
+            ],
+            "credentials": [
+              {
+                "id": "ncbi",
+                "kind": "api_key",
+                "type": "ncbi",
+                "label": "NCBI API key",
+                "variable": "NCBI_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "eutils.ncbi.nlm.nih.gov",
+                  "header": "api-key"
+                }
+              },
+              {
+                "id": "tavily",
+                "kind": "api_key",
+                "type": "tavily",
+                "label": "Tavily API key",
+                "variable": "TAVILY_API_KEY",
+                "required": true,
+                "inject": {
+                  "kind": "egress",
+                  "host": "api.tavily.com",
+                  "header": "Authorization"
+                }
+              }
+            ],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-clinical-2",
+      "source": "./plugins/skills-clinical-2",
+      "description": "Clinical trials, oncology genomics, precision medicine, and drug regulatory workflows. (part 2/2)",
+      "category": "Clinical",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "api.fda.gov",
+              "api.platform.opentargets.org",
+              "cloud.r-project.org",
+              "ftp.1000genomes.ebi.ac.uk",
+              "ftp.ebi.ac.uk",
+              "physionet.org",
+              "rest.kegg.jp",
+              "www.pgscatalog.org"
+            ],
+            "credentials": [],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-computational-biology-1",
+      "source": "./plugins/skills-computational-biology-1",
+      "description": "Computational biology, systems modeling, biophysics, and quantitative analysis. (part 1/3)",
+      "category": "Computational biology",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "files.rcsb.org",
+              "opig.stats.ox.ac.uk",
+              "rest.uniprot.org",
+              "tools-cluster-interface.iedb.org",
+              "www.iedb.org",
+              "www.ncbi.nlm.nih.gov"
+            ],
+            "credentials": [],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-computational-biology-2",
+      "source": "./plugins/skills-computational-biology-2",
+      "description": "Computational biology, systems modeling, biophysics, and quantitative analysis. (part 2/3)",
+      "category": "Computational biology",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "clinicaltrials.gov",
+              "www.informatics.jax.org"
+            ],
+            "credentials": [],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-computational-biology-3",
+      "source": "./plugins/skills-computational-biology-3",
+      "description": "Computational biology, systems modeling, biophysics, and quantitative analysis. (part 3/3)",
+      "category": "Computational biology",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "alphafold.ebi.ac.uk",
+              "api.platform.opentargets.org",
+              "data.rcsb.org",
+              "files.rcsb.org",
+              "ftp.ncbi.nlm.nih.gov",
+              "gtexportal.org",
+              "maayanlab.cloud",
+              "ngdc.cncb.ac.cn",
+              "platform-docs.opentargets.org",
+              "rest.uniprot.org",
+              "search.rcsb.org",
+              "www.ebi.ac.uk",
+              "www.ncbi.nlm.nih.gov"
+            ],
+            "credentials": [],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-database-use-1",
+      "source": "./plugins/skills-database-use-1",
+      "description": "Skills for querying public biomedical, genomic, protein, and chemical databases. (part 1/3)",
+      "category": "Biological databases",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "review": {
+            "network": [
+              "alphafold.ebi.ac.uk",
+              "api.ncbi.nlm.nih.gov",
+              "civicdb.org",
+              "clinicaltables.nlm.nih.gov",
+              "clinicaltrials.gov",
+              "deepmind.google.com",
+              "eutils.ncbi.nlm.nih.gov",
+              "grch37.rest.ensembl.org",
+              "ncbiinsights.ncbi.nlm.nih.gov",
+              "pheweb.jp",
+              "rest.ensembl.org",
+              "storage.googleapis.com",
+              "www.bgee.org",
+              "www.ebi.ac.uk",
+              "www.ncbi.nlm.nih.gov"
+            ],
+            "credentials": [
+              {
+                "id": "alphagenome",
+                "kind": "api_key",
+                "type": "alphagenome",
+                "label": "AlphaGenome API key",
+                "variable": "ALPHAGENOME_API_KEY",
+                "required": true,
+                "inject": {
+                  "kind": "egress",
+                  "host": "alphagenome.deepmind.com",
+                  "header": "X-Api-Key"
+                }
+              },
+              {
+                "id": "ncbi",
+                "kind": "api_key",
+                "type": "ncbi",
+                "label": "NCBI API key",
+                "variable": "NCBI_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "eutils.ncbi.nlm.nih.gov",
+                  "header": "api-key"
+                }
+              }
+            ],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-database-use-2",
+      "source": "./plugins/skills-database-use-2",
+      "description": "Skills for querying public biomedical, genomic, protein, and chemical databases. (part 2/3)",
+      "category": "Biological databases",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "api.ncbi.nlm.nih.gov",
+              "clinicaltables.nlm.nih.gov",
+              "eutils.ncbi.nlm.nih.gov",
+              "factorbook.api.wenglab.org",
+              "gnomad.broadinstitute.org",
+              "grch37.rest.ensembl.org",
+              "gtexportal.org",
+              "jaspar.elixir.no",
+              "main.genebass.org",
+              "purl.obolibrary.org",
+              "r12.finngen.fi",
+              "rest.ensembl.org",
+              "rest.kegg.jp",
+              "screen-v2.wenglab.org",
+              "search.foldseek.com",
+              "www.ebi.ac.uk",
+              "www.encodeproject.org",
+              "www.proteinatlas.org"
+            ],
+            "credentials": [
+              {
+                "id": "ncbi",
+                "kind": "api_key",
+                "type": "ncbi",
+                "label": "NCBI API key",
+                "variable": "NCBI_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "eutils.ncbi.nlm.nih.gov",
+                  "header": "api-key"
+                }
+              }
+            ],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-database-use-3",
+      "source": "./plugins/skills-database-use-3",
+      "description": "Skills for querying public biomedical, genomic, protein, and chemical databases. (part 3/3)",
+      "category": "Biological databases",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "api.fda.gov",
+              "api.genome.ucsc.edu",
+              "api.platform.opentargets.org",
+              "cdn.rcsb.org",
+              "data.rcsb.org",
+              "files-beta.rcsb.org",
+              "grch37.rest.ensembl.org",
+              "open.fda.gov",
+              "pheweb.ibms.sinica.edu.tw",
+              "pheweb.org",
+              "pubchem.ncbi.nlm.nih.gov",
+              "reactome.org",
+              "rest.ensembl.org",
+              "rest.uniprot.org",
+              "search.rcsb.org",
+              "sparql.uniprot.org",
+              "unibind.uio.no",
+              "www.ebi.ac.uk"
+            ],
+            "credentials": [
+              {
+                "id": "openfda",
+                "kind": "api_key",
+                "type": "openfda",
+                "label": "openFDA API key",
+                "variable": "OPENFDA_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "api.fda.gov",
+                  "header": "X-Api-Key"
+                }
+              }
+            ],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-general",
+      "source": "./plugins/skills-general",
+      "description": "General-purpose scientific scripting, document conversion, and automation skills.",
+      "category": "General research",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [],
+            "credentials": [],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-literature",
+      "source": "./plugins/skills-literature",
+      "description": "Scientific literature search, synthesis, grants, and manuscript writing.",
+      "category": "Literature & writing",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "review": {
+            "network": [
+              "api.biorxiv.org",
+              "api.openalex.org",
+              "arxiv.org",
+              "content.openalex.org",
+              "europepmc.org",
+              "eutils.ncbi.nlm.nih.gov",
+              "export.arxiv.org",
+              "github.com",
+              "openalex.org",
+              "pubmed.ncbi.nlm.nih.gov",
+              "www.biorxiv.org",
+              "www.ebi.ac.uk",
+              "www.ncbi.nlm.nih.gov"
+            ],
+            "credentials": [
+              {
+                "id": "ncbi",
+                "kind": "api_key",
+                "type": "ncbi",
+                "label": "NCBI API key",
+                "variable": "NCBI_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "eutils.ncbi.nlm.nih.gov",
+                  "header": "api-key"
+                }
+              },
+              {
+                "id": "openalex",
+                "kind": "api_key",
+                "type": "openalex",
+                "label": "OpenAlex API key",
+                "variable": "OPENALEX_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "api.openalex.org",
+                  "header": "Authorization"
+                }
+              }
+            ],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-methodology",
+      "source": "./plugins/skills-methodology",
+      "description": "Experimental design, statistical power, reporting standards, and hypothesis generation.",
+      "category": "Methodology",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "api.platform.opentargets.org",
+              "cloud.r-project.org"
+            ],
+            "credentials": [],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-model-use",
+      "source": "./plugins/skills-model-use",
+      "description": "Foundation models and deep learning tools for proteins, molecules, and genomics.",
+      "category": "AI4Science models",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "review": {
+            "network": [
+              "api.boltz.bio",
+              "api.platform.opentargets.org",
+              "data.pyg.org",
+              "download.pytorch.org",
+              "github.com"
+            ],
+            "credentials": [
+              {
+                "id": "boltz",
+                "kind": "api_key",
+                "type": "boltz",
+                "label": "Boltz API key",
+                "variable": "BOLTZ_API_KEY",
+                "required": true,
+                "inject": {
+                  "kind": "egress",
+                  "host": "api.boltz.bio",
+                  "header": "Authorization"
+                }
+              },
+              {
+                "id": "huggingface",
+                "kind": "api_key",
+                "type": "huggingface",
+                "label": "Hugging Face token",
+                "variable": "HF_TOKEN",
+                "required": false,
+                "inject": {
+                  "kind": "egress",
+                  "host": "huggingface.co",
+                  "header": "Authorization"
+                }
+              },
+              {
+                "id": "openprotein",
+                "kind": "api_key",
+                "type": "openprotein",
+                "label": "OpenProtein API key",
+                "variable": "OPENPROTEIN_API_KEY",
+                "required": true,
+                "inject": {
+                  "kind": "egress",
+                  "host": "api.openprotein.ai",
+                  "header": "X-Api-Key"
+                }
+              }
+            ],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-visualize",
+      "source": "./plugins/skills-visualize",
+      "description": "Publication plots, heatmaps, single-cell visualizations, and structural rendering.",
+      "category": "Visualization",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [
+              "api.crossref.org"
+            ],
+            "credentials": [],
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
           }
         }
       }
@@ -195,8 +1212,8 @@
                 "description": "Genes, variants and sequences: Ensembl, NCBI Gene and ClinVar, gnomAD, UCSC."
               }
             },
-            "reviewedBy": "tumbleweed",
-            "reviewedAt": "2026-11-06"
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
           }
         }
       }
@@ -218,8 +1235,8 @@
                 "description": "Proteins, domains and structures: UniProt, InterPro, RCSB PDB, AlphaFold DB."
               }
             },
-            "reviewedBy": "tumbleweed",
-            "reviewedAt": "2026-11-06"
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
           }
         }
       }
@@ -241,8 +1258,8 @@
                 "description": "Bioactive molecules, targets and assays from ChEMBL; compounds from PubChem."
               }
             },
-            "reviewedBy": "tumbleweed",
-            "reviewedAt": "2026-11-06"
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
           }
         }
       }
@@ -264,8 +1281,8 @@
                 "description": "PubMed and PMC, Europe PMC with preprints, bioRxiv/medRxiv, OpenAlex."
               }
             },
-            "reviewedBy": "tumbleweed",
-            "reviewedAt": "2026-11-06"
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
           }
         }
       }
@@ -278,13 +1295,8 @@
       "metadata": {
         "tumbleweed": {
           "origin": "official",
-          "status": "listed",
+          "status": "withdrawn",
           "featured": false,
-          "upstream": {
-            "repo": "google-deepmind/science-skills",
-            "path": "skills",
-            "sha": "4de6786171f1479026da5d3a00f110703c8ba35e"
-          },
           "review": {
             "network": [
               "pypi.org",
@@ -297,8 +1309,8 @@
               "grch37.rest.ensembl.org",
               "www.ncbi.nlm.nih.gov"
             ],
-            "reviewedBy": "tumbleweed",
-            "reviewedAt": "2026-11-06"
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
           }
         }
       }
@@ -311,7 +1323,7 @@
       "metadata": {
         "tumbleweed": {
           "origin": "builtin",
-          "status": "listed",
+          "status": "withdrawn",
           "featured": false,
           "review": {
             "network": [
@@ -324,8 +1336,8 @@
               "api.colabfold.com",
               "dl.fbaipublicfiles.com"
             ],
-            "reviewedBy": "tumbleweed",
-            "reviewedAt": "2026-11-06"
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-17"
           }
         }
       }

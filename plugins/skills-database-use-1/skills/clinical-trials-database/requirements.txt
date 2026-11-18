@@ -1,0 +1,4 @@
+# Requirements for clinical-trials-database
+
+polite-http
+requests

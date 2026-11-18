@@ -1,0 +1,23 @@
+{
+  "name": "skills-cheminformatics-1",
+  "version": "1.0.0",
+  "description": "Cheminformatics, docking, ADMET, and small-molecule discovery workflows. (part 1/2)",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "admet",
+        "cheminformatics",
+        "computational-chemistry",
+        "docking",
+        "literature",
+        "medicinal-chemistry",
+        "molecular-dynamics"
+      ]
+    }
+  }
+}

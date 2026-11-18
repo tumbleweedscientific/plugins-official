@@ -1,0 +1,8 @@
+# Requirements for immune-repertoire-airr
+# R / Bioconductor packages: dplyr, ggplot2, ggraph, immunarch, jsonlite, tidyr
+# System / CLI tools: R, Rscript
+
+pandas
+Pillow
+pypdf
+reportlab

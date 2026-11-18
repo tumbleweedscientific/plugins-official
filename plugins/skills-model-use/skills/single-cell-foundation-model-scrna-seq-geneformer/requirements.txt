@@ -1,0 +1,8 @@
+# Requirements for single-cell-foundation-model-scrna-seq-geneformer
+# Hardware note: GPU (CUDA) recommended for model inference
+
+anndata
+geneformer
+scanpy
+torch
+transformers

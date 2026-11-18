@@ -1,0 +1,4 @@
+# Requirements for uniprot-database
+
+polite-http
+requests

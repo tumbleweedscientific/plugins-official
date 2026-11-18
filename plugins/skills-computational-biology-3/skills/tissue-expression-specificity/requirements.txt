@@ -1,0 +1,8 @@
+# Requirements for tissue-expression-specificity
+
+gget
+matplotlib
+numpy
+pandas
+requests
+scipy

@@ -1,0 +1,5 @@
+# Requirements for antibody-design-iggm
+# Hardware note: GPU (CUDA) recommended for model inference
+
+biopython
+torch

@@ -1,0 +1,4 @@
+# Requirements for alphafold-database-fetch-and-analyze
+
+polite-http
+requests

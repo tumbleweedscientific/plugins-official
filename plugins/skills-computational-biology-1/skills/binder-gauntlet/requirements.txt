@@ -1,0 +1,3 @@
+# Requirements for binder-gauntlet
+# System / CLI tools: R
+# Python >= 3.10 (standard library only; no third-party pip packages required)

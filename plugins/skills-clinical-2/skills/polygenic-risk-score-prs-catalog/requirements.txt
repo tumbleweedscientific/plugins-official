@@ -1,0 +1,3 @@
+# Requirements for polygenic-risk-score-prs-catalog
+# R / Bioconductor packages: R.utils, bigsnpr, bigstatsr, data.table, dplyr, ggplot2, ggprism, jsonlite, svglite
+# Python >= 3.10 (standard library only; no third-party pip packages required)

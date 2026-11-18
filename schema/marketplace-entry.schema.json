@@ -79,6 +79,9 @@
                 "minLength": 1,
                 "maxLength": 80
               },
+              "required": {
+                "type": "boolean"
+              },
               "inject": {
                 "oneOf": [
                   {

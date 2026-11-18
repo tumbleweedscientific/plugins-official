@@ -1,0 +1,7 @@
+# Requirements for target-tractability-druggability
+
+matplotlib
+numpy
+pypdf
+reportlab
+requests

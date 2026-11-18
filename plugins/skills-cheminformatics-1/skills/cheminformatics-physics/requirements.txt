@@ -1,0 +1,27 @@
+# Requirements for cheminformatics-physics
+# System / CLI tools: smina, vina
+
+cachetools
+gemmi
+lxml
+matplotlib
+meeko
+networkx
+numpy
+openbabel-wheel
+openff-interchange
+openff-toolkit
+openff-units
+openmm
+openmmforcefields
+packaging
+pandas
+pdbfixer
+polite-http
+pydantic
+python-constraint
+rdkit
+scikit-learn
+scipy
+seaborn
+xmltodict

@@ -1,0 +1,6 @@
+# Requirements for esmfold2
+# Hardware note: GPU (CUDA) recommended for model inference
+
+fair-esm
+torch
+transformers

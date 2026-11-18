@@ -1,0 +1,5 @@
+# Requirements for drug-candidate-discovery
+# Hardware note: GPU (CUDA) recommended for model inference
+
+rdkit
+torch

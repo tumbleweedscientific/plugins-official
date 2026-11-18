@@ -1,0 +1,5 @@
+# Requirements for evo2
+# Hardware note: GPU (CUDA) recommended for model inference
+
+huggingface-hub
+torch

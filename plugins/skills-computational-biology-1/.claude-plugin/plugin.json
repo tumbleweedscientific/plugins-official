@@ -1,0 +1,20 @@
+{
+  "name": "skills-computational-biology-1",
+  "version": "1.0.0",
+  "description": "Computational biology, systems modeling, biophysics, and quantitative analysis. (part 1/3)",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "immunology",
+        "protein-design",
+        "single-cell",
+        "structural-biology"
+      ]
+    }
+  }
+}

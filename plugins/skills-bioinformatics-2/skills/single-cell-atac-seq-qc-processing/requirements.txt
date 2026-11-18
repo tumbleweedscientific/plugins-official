@@ -1,0 +1,3 @@
+# Requirements for single-cell-atac-seq-qc-processing
+# System / CLI tools: fastp, bowtie2, samtools, picard, deeptools (alignmentSieve)
+# Python >= 3.10: pysam, numpy, pandas, matplotlib

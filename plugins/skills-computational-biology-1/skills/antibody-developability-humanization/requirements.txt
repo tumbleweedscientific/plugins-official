@@ -1,0 +1,14 @@
+# Requirements for antibody-developability-humanization
+# System / CLI tools: R, hmmer, hmmscan
+
+abnumber
+anarci
+biopython
+matplotlib
+numpy
+pandas
+Pillow
+pypdf
+pyteomics
+reportlab
+requests

@@ -1,0 +1,4 @@
+# Requirements for chembl-database
+
+polite-http
+requests

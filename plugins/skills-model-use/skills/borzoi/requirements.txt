@@ -1,0 +1,5 @@
+# Requirements for borzoi
+# Hardware note: GPU (CUDA) recommended for model inference
+
+borzoi-pytorch
+torch
