@@ -98,7 +98,7 @@
               },
               "bio-genes-ontologies": {
                 "title": "Genes & Ontologies",
-                "description": "Resolve gene annotations, GO terms, OLS ontologies, UniProt entries, and Reactome/KEGG pathways."
+                "description": "Resolve gene annotations, GO terms, OLS ontologies, UniProt entries, and Reactome pathways."
               },
               "bio-rna": {
                 "title": "RNA Families (Rfam)",
@@ -1080,6 +1080,88 @@
             ],
             "reviewedBy": "guchen",
             "reviewedAt": "2026-11-17"
+          }
+        }
+      }
+    },
+    {
+      "name": "nvidia-bionemo",
+      "source": "./plugins/nvidia-bionemo",
+      "description": "Connect to hosted NVIDIA BioNeMo NIM endpoints (Boltz-2, OpenFold2/3, MSA Search, DiffDock, ProteinMPNN, RFdiffusion, GenMol, MolMIM, Evo 2) via Tumbleweed Bifrost Gateway with your own NVIDIA API key.",
+      "category": "AI4Science models",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "upstream": {
+            "repo": "NVIDIA-BioNeMo/bionemo-agent-toolkit",
+            "path": "workflows/generative-protein-binder-design/protein-binder-design",
+            "sha": "0e67a612e4045f007e38fa77adc8f3ebfc5616b6"
+          },
+          "review": {
+            "network": [],
+            "credentials": [
+              {
+                "id": "nvidia-nim",
+                "kind": "api_key",
+                "type": "nvidia-nim",
+                "label": "NVIDIA NIM API key",
+                "help": "Create an nvapi-* key at build.nvidia.com; requests run on NVIDIA's third-party platform under your account.",
+                "envVar": "NVIDIA_API_KEY",
+                "variable": "NVIDIA_API_KEY",
+                "required": true,
+                "inject": {
+                  "kind": "mcp",
+                  "server": "nvidia-bionemo"
+                }
+              }
+            ],
+            "connectors": {
+              "nvidia-bionemo": {
+                "title": "NVIDIA BioNeMo NIM",
+                "description": "Hosted BioNeMo structure prediction, protein design, docking, MSA search, and molecule generation (BYOK + per-task approval)."
+              }
+            },
+            "sandboxSkills": {
+              "bionemo-nims": false,
+              "bionemo-protein-binder-design": true
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-24"
+          }
+        }
+      }
+    },
+    {
+      "name": "skills-scientific-writing",
+      "source": "./plugins/skills-scientific-writing",
+      "description": "Citations & BibTeX verification, calibrated peer review, falsifiable hypothesis design, NSF/NIH/DOE/DARPA research grant writing, and scientific presentation decks.",
+      "category": "Literature & writing",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "upstream": {
+            "repo": "Synthetic-Sciences/openscience",
+            "path": "backend/cli/skills",
+            "sha": "dbb60cba76afa518941a70ec4c25febba3114f4b"
+          },
+          "review": {
+            "network": [
+              "api.crossref.org"
+            ],
+            "credentials": [],
+            "sandboxSkills": {
+              "citations": true,
+              "peer-review": false,
+              "hypotheses": false,
+              "research-grants": false,
+              "scientific-slides": true
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-24"
           }
         }
       }

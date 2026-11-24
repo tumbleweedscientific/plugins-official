@@ -1,0 +1,12 @@
+Tumbleweed Scientific — skills-scientific-writing plugin
+
+Derived from MIT-licensed scientific writing skills in:
+- K-Dense-AI / claude-scientific-writer (https://github.com/K-Dense-AI/claude-scientific-writer, MIT)
+- Synthetic Sciences / OpenScience reference adaptations (https://github.com/Synthetic-Sciences/openscience, pinned commit dbb60cba76afa518941a70ec4c25febba3114f4b)
+
+Bundled incremental skills:
+- citations (from core/citations)
+- peer-review (from core/peer-review)
+- hypotheses (from core/hypotheses)
+- research-grants (from research/research-grants)
+- scientific-slides (from writing/scientific-slides)

@@ -125,6 +125,14 @@
             "pattern": "^[a-z0-9][a-z0-9-]{0,62}$"
           }
         },
+        "connectors": {
+          "maxItems": 20,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,62}$"
+          }
+        },
         "network": {
           "maxItems": 64,
           "type": "array",

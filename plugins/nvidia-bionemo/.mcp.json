@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "nvidia-bionemo": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/bionemo",
+      "headers": {
+        "X-Nvidia-Api-Key": "${NVIDIA_API_KEY}"
+      }
+    }
+  }
+}

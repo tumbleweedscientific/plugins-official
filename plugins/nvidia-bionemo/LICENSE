@@ -1,0 +1,10 @@
+Creative Commons Attribution 4.0 International (CC-BY-4.0)
+
+The skills and documentation in plugins/nvidia-bionemo are adapted from:
+  NVIDIA BioNeMo Agent Toolkit
+  https://github.com/NVIDIA-BioNeMo/bionemo-agent-toolkit
+  Copyright (c) NVIDIA Corporation
+  Licensed under CC-BY-4.0 (skills and documentation).
+  Canonical legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Any Tumbleweed Scientific adaptation files are contributed under the same CC-BY-4.0 license terms.

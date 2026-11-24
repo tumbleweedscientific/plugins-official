@@ -435,6 +435,13 @@
       "description": "Nucleotide sequences from GenBank, RefSeq and partners."
     },
     {
+      "id": "nvidia-bionemo",
+      "title": "NVIDIA BioNeMo NIM",
+      "category": "proteins",
+      "homepage": "https://build.nvidia.com",
+      "description": "Managed GPU biomolecular structure prediction, protein design, molecular docking, and genomic generation endpoints on NVIDIA BioNeMo."
+    },
+    {
       "id": "ols",
       "title": "EMBL-EBI OLS",
       "category": "pathways",
@@ -2442,6 +2449,26 @@
       "hosts": [
         "eutils.ncbi.nlm.nih.gov",
         "*.ncbi.nlm.nih.gov"
+      ]
+    },
+    {
+      "id": "nvidia-nim",
+      "title": "NVIDIA NIM API key",
+      "kind": "api_key",
+      "homepage": "https://build.nvidia.com",
+      "help": "Create a personal or enterprise NVIDIA API key (nvapi-*) at build.nvidia.com to run BioNeMo NIM endpoints.",
+      "envVar": "NVIDIA_API_KEY",
+      "terms": {
+        "url": "https://build.nvidia.com/explore/biology",
+        "summary": {
+          "en": "NVIDIA BioNeMo NIM is a third-party cloud platform operated by NVIDIA. Submitting sequences, structures, or molecules sends payload data to NVIDIA without Tumbleweed data-privacy guarantees and may incur usage fees or consume credits on your NVIDIA account.",
+          "zh": "NVIDIA BioNeMo NIM 是由 NVIDIA 运营的第三方云平台。发起任务会将序列、结构或分子数据发送至 NVIDIA 平台，科学风滚草无法对其数据隐私性提供保障，且调用可能会消耗您的 NVIDIA 账户额度或产生费用。"
+        }
+      },
+      "hosts": [
+        "ai-gateway.tumbleweedscientific.com",
+        "health.api.nvidia.com",
+        "api.nvcf.nvidia.com"
       ]
     },
     {

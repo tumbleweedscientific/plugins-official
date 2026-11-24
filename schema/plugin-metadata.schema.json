@@ -81,6 +81,15 @@
               "eager"
             ]
           },
+          "approvalTools": {
+            "maxItems": 50,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 128
+            }
+          },
           "rateLimit": {
             "type": "string",
             "minLength": 1,

@@ -1,0 +1,45 @@
+{
+  "name": "nvidia-bionemo",
+  "displayName": "NVIDIA BioNeMo NIM",
+  "version": "1.0.0",
+  "description": "Hosted NVIDIA BioNeMo NIM connector and workflows (Boltz-2, OpenFold2/3, MSA Search, DiffDock, ProteinMPNN, RFdiffusion, GenMol, MolMIM, Evo 2) via Bifrost AI Gateway with personal NVIDIA API key pass-through and explicit per-task approval.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://build.nvidia.com/explore/biology",
+  "license": "CC-BY-4.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "structural-biology",
+        "protein-design",
+        "docking",
+        "genomics",
+        "cheminformatics"
+      ],
+      "maturity": "experimental",
+      "connectors": {
+        "nvidia-bionemo": {
+          "dataSources": [
+            "nvidia-bionemo"
+          ],
+          "domains": [
+            "structural-biology",
+            "protein-design",
+            "docking",
+            "genomics",
+            "cheminformatics"
+          ],
+          "homepage": "https://build.nvidia.com/explore/biology",
+          "toolLoading": "lazy",
+          "approvalTools": [
+            "bionemo-bionemo_submit",
+            "bionemo_submit"
+          ],
+          "terms": "https://build.nvidia.com/explore/biology",
+          "cost": "Billed to your personal NVIDIA API account; each job submission requires explicit approval."
+        }
+      }
+    }
+  }
+}
