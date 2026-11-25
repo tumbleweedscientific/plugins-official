@@ -145,11 +145,25 @@
       "title": "Biobankjapan"
     },
     {
+      "id": "biogrid",
+      "title": "BioGRID",
+      "category": "proteins",
+      "homepage": "https://thebiogrid.org",
+      "description": "Curated protein, genetic, and chemical interactions across major model organisms and humans."
+    },
+    {
       "id": "biorxiv",
       "title": "bioRxiv",
       "category": "literature",
       "homepage": "https://www.biorxiv.org",
       "description": "Preprints in the life sciences."
+    },
+    {
+      "id": "biosimulators",
+      "title": "BioSimulators & BioSimulations",
+      "category": "pathways",
+      "homepage": "https://biosimulators.org",
+      "description": "Standardized biosimulation engines and reproducible COMBINE/OMEX simulation archives."
     },
     {
       "id": "biostudies",
@@ -296,6 +310,13 @@
       "title": "Eva"
     },
     {
+      "id": "expression-atlas",
+      "title": "EMBL-EBI Expression Atlas",
+      "category": "expression",
+      "homepage": "https://www.ebi.ac.uk/gxa/home",
+      "description": "Baseline and differential bulk RNA-seq and microarray expression experiments across species and conditions."
+    },
+    {
       "id": "finngen",
       "title": "Finngen"
     },
@@ -334,6 +355,13 @@
       "category": "expression",
       "homepage": "https://gtexportal.org",
       "description": "Gene expression and eQTLs across human tissues."
+    },
+    {
+      "id": "gtopdb",
+      "title": "Guide to PHARMACOLOGY (GtoPdb)",
+      "category": "chemistry",
+      "homepage": "https://www.guidetopharmacology.org",
+      "description": "Expert-curated pharmacological targets, ligands, and quantitative affinity/potency interactions."
     },
     {
       "id": "gwas-catalog",
@@ -413,6 +441,13 @@
       "homepage": "https://mygene.info"
     },
     {
+      "id": "myvariant",
+      "title": "MyVariant.info",
+      "category": "genomes",
+      "homepage": "https://myvariant.info",
+      "description": "Aggregated human genetic variant annotations (ClinVar, gnomAD, CADD, dbNSFP, dbSNP)."
+    },
+    {
       "id": "ncbi-clinicaltables",
       "title": "Ncbi Clinicaltables"
     },
@@ -482,6 +517,13 @@
       "category": "proteins",
       "homepage": "https://www.rcsb.org",
       "description": "Experimentally determined 3D structures of proteins and nucleic acids."
+    },
+    {
+      "id": "pdbe",
+      "title": "PDBe",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/pdbe",
+      "description": "Protein Data Bank in Europe entry summaries, macromolecular entities, ligands, and validation scores."
     },
     {
       "id": "pfam",
@@ -562,6 +604,20 @@
       "title": "Rnacentral"
     },
     {
+      "id": "sifts",
+      "title": "SIFTS",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/pdbe/docs/sifts/",
+      "description": "Residue-level structure-to-sequence and domain mappings across PDB, UniProt, Pfam, InterPro, CATH, SCOP, and GO."
+    },
+    {
+      "id": "single-cell-atlas",
+      "title": "Single Cell Expression Atlas",
+      "category": "expression",
+      "homepage": "https://www.ebi.ac.uk/gxa/sc/home",
+      "description": "Curated single-cell RNA-seq expression studies and marker genes at EMBL-EBI."
+    },
+    {
       "id": "sra",
       "title": "SRA",
       "category": "expression",
@@ -574,6 +630,13 @@
       "category": "pathways",
       "homepage": "https://string-db.org",
       "description": "Known and predicted protein–protein interactions."
+    },
+    {
+      "id": "surechembl",
+      "title": "SureChEMBL",
+      "category": "chemistry",
+      "homepage": "https://www.surechembl.org",
+      "description": "Chemical structures and Leadmine biomedical entities extracted from global patent documents."
     },
     {
       "id": "synapse",
@@ -610,6 +673,13 @@
       "category": "proteins",
       "homepage": "https://www.uniprot.org",
       "description": "Protein sequences and curated function, domains and annotations."
+    },
+    {
+      "id": "wikipathways",
+      "title": "WikiPathways",
+      "category": "pathways",
+      "homepage": "https://www.wikipathways.org",
+      "description": "Open-science community-curated biological pathway diagrams and GPML models."
     },
     {
       "id": "zinc",
@@ -2382,6 +2452,18 @@
       ]
     },
     {
+      "id": "biogrid",
+      "title": "BioGRID Access Key",
+      "kind": "api_key",
+      "homepage": "https://webservice.thebiogrid.org",
+      "help": "Free registration access key required for the BioGRID REST API.",
+      "envVar": "BIOGRID_ACCESS_KEY",
+      "hosts": [
+        "ai-gateway.tumbleweedscientific.com",
+        "webservice.thebiogrid.org"
+      ]
+    },
+    {
       "id": "boltz",
       "title": "Boltz API",
       "kind": "api_key",
@@ -2413,6 +2495,18 @@
       "envVar": "GEMINI_API_KEY",
       "hosts": [
         "generativelanguage.googleapis.com"
+      ]
+    },
+    {
+      "id": "gtopdb",
+      "title": "Guide to PHARMACOLOGY (GtoPdb)",
+      "kind": "api_key",
+      "homepage": "https://www.guidetopharmacology.org/login.jsp",
+      "help": "Free registered API key (GTP-API-Key) for IUPHAR/BPS Guide to PHARMACOLOGY REST services.",
+      "envVar": "GTOPDB_API_KEY",
+      "hosts": [
+        "ai-gateway.tumbleweedscientific.com",
+        "www.guidetopharmacology.org"
       ]
     },
     {

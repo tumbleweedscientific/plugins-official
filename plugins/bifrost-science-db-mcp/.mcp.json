@@ -1,0 +1,50 @@
+{
+  "mcpServers": {
+    "bio-expression-atlas": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/expression-atlas"
+    },
+    "bio-single-cell-atlas": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/single-cell-atlas"
+    },
+    "bio-wikipathways": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/wikipathways"
+    },
+    "bio-biosimulators": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/biosimulators"
+    },
+    "bio-biogrid": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/biogrid",
+      "headers": {
+        "X-Biogrid-Access-Key": "${BIOGRID_ACCESS_KEY}"
+      }
+    },
+    "bio-gtopdb": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/gtopdb",
+      "headers": {
+        "GTP-API-Key": "${GTOPDB_API_KEY}"
+      }
+    },
+    "bio-surechembl": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/surechembl"
+    },
+    "bio-pdbe": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/pdbe"
+    },
+    "bio-sifts": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/sifts"
+    },
+    "bio-myvariant": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/myvariant"
+    }
+  }
+}

@@ -1167,6 +1167,121 @@
       }
     },
     {
+      "name": "skills-scientific-computing",
+      "source": "./plugins/skills-scientific-computing",
+      "description": "Biopython sequence/structure analysis, Datamol molecular standardization, matchms MS/MS spectral similarity, and statistical hypothesis testing with multiple-testing correction.",
+      "category": "Bioinformatics",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [],
+            "credentials": [],
+            "sandboxSkills": {
+              "biopython": true,
+              "datamol": true,
+              "matchms": true,
+              "statistical-analysis": true
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-24"
+          }
+        }
+      }
+    },
+    {
+      "name": "bifrost-science-db-mcp",
+      "source": "./plugins/bifrost-science-db-mcp",
+      "description": "10 additional scientific database MCP servers (Expression Atlas, Single Cell Expression Atlas, WikiPathways, BioSimulators, BioGRID, GtoPdb, SureChEMBL, PDBe, SIFTS, MyVariant) unified via Tumbleweed Bifrost AI Gateway.",
+      "category": "Data",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [],
+            "credentials": [
+              {
+                "id": "biogrid",
+                "kind": "api_key",
+                "type": "biogrid",
+                "label": "BioGRID Access Key",
+                "help": "Free registration access key required for BioGRID interaction queries.",
+                "envVar": "BIOGRID_ACCESS_KEY",
+                "variable": "BIOGRID_ACCESS_KEY",
+                "required": true,
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-biogrid"
+                }
+              },
+              {
+                "id": "gtopdb",
+                "kind": "api_key",
+                "type": "gtopdb",
+                "label": "GtoPdb API Key",
+                "help": "Free registered GTP-API-Key required for IUPHAR/BPS Guide to PHARMACOLOGY queries.",
+                "envVar": "GTOPDB_API_KEY",
+                "variable": "GTOPDB_API_KEY",
+                "required": true,
+                "inject": {
+                  "kind": "mcp",
+                  "server": "bio-gtopdb"
+                }
+              }
+            ],
+            "connectors": {
+              "bio-expression-atlas": {
+                "title": "Expression Atlas",
+                "description": "Search EMBL-EBI bulk baseline and differential gene expression experiments."
+              },
+              "bio-single-cell-atlas": {
+                "title": "Single Cell Expression Atlas",
+                "description": "Explore single-cell RNA-seq studies and marker genes at EMBL-EBI."
+              },
+              "bio-wikipathways": {
+                "title": "WikiPathways",
+                "description": "Search curated biological pathway models and cross-referenced genes/metabolites."
+              },
+              "bio-biosimulators": {
+                "title": "BioSimulators & BioSimulations",
+                "description": "Discover standardized systems-biology simulation tools and COMBINE archives."
+              },
+              "bio-biogrid": {
+                "title": "BioGRID",
+                "description": "Query protein, genetic, and chemical interaction records in BioGRID (BYOK)."
+              },
+              "bio-gtopdb": {
+                "title": "Guide to PHARMACOLOGY",
+                "description": "Query IUPHAR/BPS pharmacological targets, ligands, and affinity interactions (BYOK)."
+              },
+              "bio-surechembl": {
+                "title": "SureChEMBL",
+                "description": "Search patent chemical structures, patent bibliographic records, and Leadmine entities."
+              },
+              "bio-pdbe": {
+                "title": "PDBe",
+                "description": "Retrieve Protein Data Bank in Europe entry metadata, ligands, and quality validation scores."
+              },
+              "bio-sifts": {
+                "title": "SIFTS",
+                "description": "Resolve residue-level PDB-to-UniProt, Pfam, InterPro, CATH, SCOP, and GO mappings."
+              },
+              "bio-myvariant": {
+                "title": "MyVariant.info",
+                "description": "Query aggregated human variant annotations across ClinVar, gnomAD, CADD, and dbNSFP."
+              }
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-24"
+          }
+        }
+      }
+    },
+    {
       "name": "science-models",
       "source": "./plugins/science-models",
       "description": "AI4Science model skills (need a GPU; listed as unavailable until one exists).",

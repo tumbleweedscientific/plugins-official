@@ -1,0 +1,23 @@
+{
+  "name": "skills-scientific-computing",
+  "displayName": "Scientific Computing & Statistics",
+  "version": "1.0.0",
+  "description": "Gap-filling open-source Python skills for biological sequence parsing (Biopython), small-molecule standardization (Datamol), tandem mass spectrometry similarity scoring (matchms), and statistical hypothesis testing with multiple-testing correction.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "MIT",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "genomics",
+        "proteomics",
+        "cheminformatics",
+        "metabolomics",
+        "lab-data"
+      ],
+      "maturity": "stable"
+    }
+  }
+}

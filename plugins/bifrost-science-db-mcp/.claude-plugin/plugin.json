@@ -1,0 +1,87 @@
+{
+  "name": "bifrost-science-db-mcp",
+  "version": "1.0.0",
+  "description": "10 additional open & BYOK scientific database MCP servers (Expression Atlas, Single Cell Expression Atlas, WikiPathways, BioSimulators, BioGRID, GtoPdb, SureChEMBL, PDBe, SIFTS, MyVariant) unified via Tumbleweed Bifrost AI Gateway.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://ai-gateway.tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "cheminformatics",
+        "genomics",
+        "metabolomics",
+        "pharmacology",
+        "proteomics",
+        "single-cell",
+        "structural-biology",
+        "transcriptomics",
+        "variant-interpretation"
+      ],
+      "connectors": {
+        "bio-expression-atlas": {
+          "dataSources": ["expression-atlas"],
+          "domains": ["transcriptomics", "genomics"],
+          "homepage": "https://www.ebi.ac.uk/gxa/home",
+          "toolLoading": "lazy"
+        },
+        "bio-single-cell-atlas": {
+          "dataSources": ["single-cell-atlas"],
+          "domains": ["single-cell", "transcriptomics"],
+          "homepage": "https://www.ebi.ac.uk/gxa/sc/home",
+          "toolLoading": "lazy"
+        },
+        "bio-wikipathways": {
+          "dataSources": ["wikipathways"],
+          "domains": ["genomics", "transcriptomics", "metabolomics"],
+          "homepage": "https://www.wikipathways.org",
+          "toolLoading": "lazy"
+        },
+        "bio-biosimulators": {
+          "dataSources": ["biosimulators"],
+          "domains": ["genomics", "pharmacology"],
+          "homepage": "https://biosimulators.org",
+          "toolLoading": "lazy"
+        },
+        "bio-biogrid": {
+          "dataSources": ["biogrid"],
+          "domains": ["proteomics", "genomics"],
+          "homepage": "https://thebiogrid.org",
+          "toolLoading": "lazy"
+        },
+        "bio-gtopdb": {
+          "dataSources": ["gtopdb"],
+          "domains": ["pharmacology", "cheminformatics"],
+          "homepage": "https://www.guidetopharmacology.org",
+          "toolLoading": "lazy"
+        },
+        "bio-surechembl": {
+          "dataSources": ["surechembl"],
+          "domains": ["cheminformatics"],
+          "homepage": "https://www.surechembl.org",
+          "toolLoading": "lazy"
+        },
+        "bio-pdbe": {
+          "dataSources": ["pdbe"],
+          "domains": ["structural-biology", "proteomics"],
+          "homepage": "https://www.ebi.ac.uk/pdbe",
+          "toolLoading": "lazy"
+        },
+        "bio-sifts": {
+          "dataSources": ["sifts"],
+          "domains": ["structural-biology", "proteomics"],
+          "homepage": "https://www.ebi.ac.uk/pdbe/docs/sifts/",
+          "toolLoading": "lazy"
+        },
+        "bio-myvariant": {
+          "dataSources": ["myvariant"],
+          "domains": ["variant-interpretation", "genomics"],
+          "homepage": "https://myvariant.info",
+          "toolLoading": "lazy"
+        }
+      }
+    }
+  }
+}
