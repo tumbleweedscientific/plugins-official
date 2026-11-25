@@ -88,6 +88,10 @@
       "title": "Structural biology"
     },
     {
+      "id": "third-party-platforms",
+      "title": "Third-party platforms"
+    },
+    {
       "id": "transcriptomics",
       "title": "Transcriptomics"
     },
@@ -2424,6 +2428,13 @@
       "domains": [
         "lab-data",
         "imaging"
+      ]
+    },
+    {
+      "id": "third-party-platforms",
+      "title": "Third-party platforms",
+      "domains": [
+        "third-party-platforms"
       ]
     }
   ],

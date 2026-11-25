@@ -24,11 +24,7 @@
             "nvidia-bionemo"
           ],
           "domains": [
-            "structural-biology",
-            "protein-design",
-            "docking",
-            "genomics",
-            "cheminformatics"
+            "third-party-platforms"
           ],
           "homepage": "https://build.nvidia.com/explore/biology",
           "toolLoading": "lazy",
