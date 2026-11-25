@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "literature-openalex": {
+      "type": "native",
+      "url": "https://api.openalex.org/works",
+      "headers": {
+        "X-OpenAlex-Api-Key": "${OPENALEX_API_KEY}"
+      }
+    },
+    "literature-arxiv": {
+      "type": "native",
+      "url": "https://export.arxiv.org/api/query"
+    },
+    "literature-pubmed": {
+      "type": "native",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils",
+      "headers": {
+        "X-NCBI-Api-Key": "${NCBI_API_KEY}"
+      }
+    },
+    "literature-europepmc": {
+      "type": "native",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest"
+    },
+    "literature-biorxiv": {
+      "type": "native",
+      "url": "https://api.biorxiv.org/details"
+    },
+    "literature-crossref": {
+      "type": "native",
+      "url": "https://api.crossref.org/works"
+    },
+    "literature-semantic-scholar": {
+      "type": "native",
+      "url": "https://api.semanticscholar.org/graph/v1/paper",
+      "headers": {
+        "x-api-key": "${SEMANTIC_SCHOLAR_API_KEY}"
+      }
+    }
+  }
+}

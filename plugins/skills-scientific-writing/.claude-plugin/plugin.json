@@ -1,0 +1,20 @@
+{
+  "name": "skills-scientific-writing",
+  "displayName": "Scientific Writing & Review",
+  "version": "1.0.0",
+  "description": "Self-contained MIT skills for verified BibTeX citations, calibrated peer review, falsifiable hypotheses and discriminating experiment plans, federal research grant proposals (NSF/NIH/DOE/DARPA), and scientific presentation decks.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "MIT",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "writing",
+        "literature"
+      ],
+      "maturity": "stable"
+    }
+  }
+}

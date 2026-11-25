@@ -142,8 +142,7 @@
             "ols",
             "quickgo",
             "uniprot",
-            "reactome",
-            "kegg"
+            "reactome"
           ],
           "domains": [
             "genomics",

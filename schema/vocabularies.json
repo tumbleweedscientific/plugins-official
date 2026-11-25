@@ -88,6 +88,10 @@
       "title": "Structural biology"
     },
     {
+      "id": "third-party-platforms",
+      "title": "Third-party platforms"
+    },
+    {
       "id": "transcriptomics",
       "title": "Transcriptomics"
     },
@@ -145,11 +149,25 @@
       "title": "Biobankjapan"
     },
     {
+      "id": "biogrid",
+      "title": "BioGRID",
+      "category": "proteins",
+      "homepage": "https://thebiogrid.org",
+      "description": "Curated protein, genetic, and chemical interactions across major model organisms and humans."
+    },
+    {
       "id": "biorxiv",
       "title": "bioRxiv",
       "category": "literature",
       "homepage": "https://www.biorxiv.org",
       "description": "Preprints in the life sciences."
+    },
+    {
+      "id": "biosimulators",
+      "title": "BioSimulators & BioSimulations",
+      "category": "pathways",
+      "homepage": "https://biosimulators.org",
+      "description": "Standardized biosimulation engines and reproducible COMBINE/OMEX simulation archives."
     },
     {
       "id": "biostudies",
@@ -296,6 +314,13 @@
       "title": "Eva"
     },
     {
+      "id": "expression-atlas",
+      "title": "EMBL-EBI Expression Atlas",
+      "category": "expression",
+      "homepage": "https://www.ebi.ac.uk/gxa/home",
+      "description": "Baseline and differential bulk RNA-seq and microarray expression experiments across species and conditions."
+    },
+    {
       "id": "finngen",
       "title": "Finngen"
     },
@@ -334,6 +359,13 @@
       "category": "expression",
       "homepage": "https://gtexportal.org",
       "description": "Gene expression and eQTLs across human tissues."
+    },
+    {
+      "id": "gtopdb",
+      "title": "Guide to PHARMACOLOGY (GtoPdb)",
+      "category": "chemistry",
+      "homepage": "https://www.guidetopharmacology.org",
+      "description": "Expert-curated pharmacological targets, ligands, and quantitative affinity/potency interactions."
     },
     {
       "id": "gwas-catalog",
@@ -413,6 +445,13 @@
       "homepage": "https://mygene.info"
     },
     {
+      "id": "myvariant",
+      "title": "MyVariant.info",
+      "category": "genomes",
+      "homepage": "https://myvariant.info",
+      "description": "Aggregated human genetic variant annotations (ClinVar, gnomAD, CADD, dbNSFP, dbSNP)."
+    },
+    {
       "id": "ncbi-clinicaltables",
       "title": "Ncbi Clinicaltables"
     },
@@ -433,6 +472,13 @@
       "category": "genomes",
       "homepage": "https://www.ncbi.nlm.nih.gov/nuccore",
       "description": "Nucleotide sequences from GenBank, RefSeq and partners."
+    },
+    {
+      "id": "nvidia-bionemo",
+      "title": "NVIDIA BioNeMo NIM",
+      "category": "proteins",
+      "homepage": "https://build.nvidia.com",
+      "description": "Managed GPU biomolecular structure prediction, protein design, molecular docking, and genomic generation endpoints on NVIDIA BioNeMo."
     },
     {
       "id": "ols",
@@ -475,6 +521,13 @@
       "category": "proteins",
       "homepage": "https://www.rcsb.org",
       "description": "Experimentally determined 3D structures of proteins and nucleic acids."
+    },
+    {
+      "id": "pdbe",
+      "title": "PDBe",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/pdbe",
+      "description": "Protein Data Bank in Europe entry summaries, macromolecular entities, ligands, and validation scores."
     },
     {
       "id": "pfam",
@@ -555,6 +608,27 @@
       "title": "Rnacentral"
     },
     {
+      "id": "semantic-scholar",
+      "title": "Semantic Scholar",
+      "category": "literature",
+      "homepage": "https://www.semanticscholar.org",
+      "description": "AI-powered scholarly literature graph, citations, abstracts, and open-access PDFs."
+    },
+    {
+      "id": "sifts",
+      "title": "SIFTS",
+      "category": "proteins",
+      "homepage": "https://www.ebi.ac.uk/pdbe/docs/sifts/",
+      "description": "Residue-level structure-to-sequence and domain mappings across PDB, UniProt, Pfam, InterPro, CATH, SCOP, and GO."
+    },
+    {
+      "id": "single-cell-atlas",
+      "title": "Single Cell Expression Atlas",
+      "category": "expression",
+      "homepage": "https://www.ebi.ac.uk/gxa/sc/home",
+      "description": "Curated single-cell RNA-seq expression studies and marker genes at EMBL-EBI."
+    },
+    {
       "id": "sra",
       "title": "SRA",
       "category": "expression",
@@ -567,6 +641,13 @@
       "category": "pathways",
       "homepage": "https://string-db.org",
       "description": "Known and predicted protein–protein interactions."
+    },
+    {
+      "id": "surechembl",
+      "title": "SureChEMBL",
+      "category": "chemistry",
+      "homepage": "https://www.surechembl.org",
+      "description": "Chemical structures and Leadmine biomedical entities extracted from global patent documents."
     },
     {
       "id": "synapse",
@@ -603,6 +684,13 @@
       "category": "proteins",
       "homepage": "https://www.uniprot.org",
       "description": "Protein sequences and curated function, domains and annotations."
+    },
+    {
+      "id": "wikipathways",
+      "title": "WikiPathways",
+      "category": "pathways",
+      "homepage": "https://www.wikipathways.org",
+      "description": "Open-science community-curated biological pathway diagrams and GPML models."
     },
     {
       "id": "zinc",
@@ -2348,6 +2436,13 @@
         "lab-data",
         "imaging"
       ]
+    },
+    {
+      "id": "third-party-platforms",
+      "title": "Third-party platforms",
+      "domains": [
+        "third-party-platforms"
+      ]
     }
   ],
   "credentialTypes": [
@@ -2372,6 +2467,18 @@
       "envVar": "ANTHROPIC_API_KEY",
       "hosts": [
         "api.anthropic.com"
+      ]
+    },
+    {
+      "id": "biogrid",
+      "title": "BioGRID Access Key",
+      "kind": "api_key",
+      "homepage": "https://webservice.thebiogrid.org",
+      "help": "Free registration access key required for the BioGRID REST API.",
+      "envVar": "BIOGRID_ACCESS_KEY",
+      "hosts": [
+        "ai-gateway.tumbleweedscientific.com",
+        "webservice.thebiogrid.org"
       ]
     },
     {
@@ -2409,6 +2516,18 @@
       ]
     },
     {
+      "id": "gtopdb",
+      "title": "Guide to PHARMACOLOGY (GtoPdb)",
+      "kind": "api_key",
+      "homepage": "https://www.guidetopharmacology.org/login.jsp",
+      "help": "Free registered API key (GTP-API-Key) for IUPHAR/BPS Guide to PHARMACOLOGY REST services.",
+      "envVar": "GTOPDB_API_KEY",
+      "hosts": [
+        "ai-gateway.tumbleweedscientific.com",
+        "www.guidetopharmacology.org"
+      ]
+    },
+    {
       "id": "huggingface",
       "title": "Hugging Face Hub",
       "kind": "api_key",
@@ -2442,6 +2561,26 @@
       "hosts": [
         "eutils.ncbi.nlm.nih.gov",
         "*.ncbi.nlm.nih.gov"
+      ]
+    },
+    {
+      "id": "nvidia-nim",
+      "title": "NVIDIA NIM API key",
+      "kind": "api_key",
+      "homepage": "https://build.nvidia.com",
+      "help": "Create a personal or enterprise NVIDIA API key (nvapi-*) at build.nvidia.com to run BioNeMo NIM endpoints.",
+      "envVar": "NVIDIA_API_KEY",
+      "terms": {
+        "url": "https://build.nvidia.com/explore/biology",
+        "summary": {
+          "en": "NVIDIA BioNeMo NIM is a third-party cloud platform operated by NVIDIA. Submitting sequences, structures, or molecules sends payload data to NVIDIA without Tumbleweed data-privacy guarantees and may incur usage fees or consume credits on your NVIDIA account.",
+          "zh": "NVIDIA BioNeMo NIM 是由 NVIDIA 运营的第三方云平台。发起任务会将序列、结构或分子数据发送至 NVIDIA 平台，科学风滚草无法对其数据隐私性提供保障，且调用可能会消耗您的 NVIDIA 账户额度或产生费用。"
+        }
+      },
+      "hosts": [
+        "ai-gateway.tumbleweedscientific.com",
+        "health.api.nvidia.com",
+        "api.nvcf.nvidia.com"
       ]
     },
     {
@@ -2486,6 +2625,17 @@
       "envVar": "OPENPROTEIN_API_KEY",
       "hosts": [
         "api.openprotein.ai"
+      ]
+    },
+    {
+      "id": "semantic-scholar",
+      "title": "Semantic Scholar",
+      "kind": "api_key",
+      "homepage": "https://www.semanticscholar.org/product/api",
+      "help": "Optional: provides a dedicated Semantic Scholar API quota to avoid HTTP 429 rate limits.",
+      "envVar": "SEMANTIC_SCHOLAR_API_KEY",
+      "hosts": [
+        "api.semanticscholar.org"
       ]
     },
     {

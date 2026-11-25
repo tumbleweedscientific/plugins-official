@@ -275,6 +275,40 @@
             "type": "string",
             "pattern": "^[A-Z_][A-Z0-9_]{0,63}$"
           },
+          "terms": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "summary": {
+                "type": "object",
+                "properties": {
+                  "en": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 500
+                  },
+                  "zh": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 500
+                  }
+                },
+                "required": [
+                  "en",
+                  "zh"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "url",
+              "summary"
+            ],
+            "additionalProperties": false
+          },
           "hosts": {
             "minItems": 1,
             "type": "array",
