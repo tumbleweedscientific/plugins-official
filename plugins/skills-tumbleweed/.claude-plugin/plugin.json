@@ -1,0 +1,26 @@
+{
+  "name": "skills-tumbleweed",
+  "displayName": "Tumbleweed Modeling & Communication",
+  "version": "1.0.0",
+  "description": "First-party Tumbleweed Scientific methodology skills for Two-Culture statistical & machine-learning modeling across compbio/compchem and clear, exact cross-disciplinary science explanation.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://tumbleweedscientific.com",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "cheminformatics",
+        "computational-chemistry",
+        "genomics",
+        "transcriptomics",
+        "single-cell",
+        "clinical",
+        "lab-data",
+        "writing"
+      ],
+      "maturity": "stable"
+    }
+  }
+}

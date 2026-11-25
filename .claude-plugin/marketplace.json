@@ -1400,6 +1400,29 @@
           }
         }
       }
+    },
+    {
+      "name": "skills-tumbleweed",
+      "source": "./plugins/skills-tumbleweed",
+      "description": "Two-Culture statistical & machine-learning modeling across computational biology/chemistry and clear, exact cross-disciplinary science explanation.",
+      "category": "Methodology",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [],
+            "credentials": [],
+            "sandboxSkills": {
+              "two-cultures-modeling": false,
+              "easy-explain": false
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-24"
+          }
+        }
+      }
     }
   ]
 }
