@@ -1,0 +1,10 @@
+Boltz Cloud Plugin — Third-Party Attribution Notice
+===================================================
+
+- `logos/boltz.png` and workflow schema/metric conventions in
+  `skills/boltz-cloud/SKILL.md` incorporate MIT-licensed assets and reference
+  documentation from `boltz-bio/boltz-mcpb` (Copyright Boltz Bio, MIT License,
+  https://github.com/boltz-bio/boltz-mcpb).
+- The `packages/boltz-mcp` MCP HTTP sidecar and REST payload contract are
+  implemented cleanly from scratch against the public Boltz Compute API v1
+  (`https://api.boltz.bio`) and official `boltz-api` OpenAPI client types.

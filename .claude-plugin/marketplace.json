@@ -1456,6 +1456,55 @@
           }
         }
       }
+    },
+    {
+      "name": "boltz-cloud",
+      "source": "./plugins/boltz-cloud",
+      "description": "Connect your Boltz Bio API key to run hosted Boltz-2.1 structure & binding, ADME prediction, small-molecule screening/design, and protein binder design workflows via Tumbleweed Bifrost Gateway.",
+      "category": "AI4Science models",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "upstream": {
+            "repo": "boltz-bio/boltz-mcpb",
+            "path": "guidance",
+            "sha": "8197d5a8477b548dd64ca31db5cfa9fa114ad0ec"
+          },
+          "review": {
+            "network": [],
+            "credentials": [
+              {
+                "id": "boltz",
+                "kind": "api_key",
+                "type": "boltz",
+                "label": "Boltz API key",
+                "help": "Create an API key at boltz.bio; requests run on Boltz Bio's third-party compute platform under your account.",
+                "envVar": "BOLTZ_API_KEY",
+                "variable": "BOLTZ_API_KEY",
+                "required": true,
+                "inject": {
+                  "kind": "mcp",
+                  "server": "boltz-cloud"
+                }
+              }
+            ],
+            "connectors": {
+              "boltz-cloud": {
+                "title": "Boltz Cloud",
+                "description": "Hosted Boltz-2.1 folding & affinity, ADME scoring, molecule screening/design, and protein binder design (BYOK + cost estimation + per-task approval).",
+                "logo": "logos/boltz.png"
+              }
+            },
+            "sandboxSkills": {
+              "boltz-cloud": false
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-25"
+          }
+        }
+      }
     }
   ]
 }

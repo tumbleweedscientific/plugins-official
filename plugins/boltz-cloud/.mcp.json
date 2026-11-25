@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "boltz-cloud": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/boltz",
+      "headers": {
+        "X-Boltz-Api-Key": "${BOLTZ_API_KEY}"
+      }
+    }
+  }
+}

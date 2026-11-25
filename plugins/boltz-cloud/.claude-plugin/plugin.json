@@ -1,0 +1,46 @@
+{
+  "name": "boltz-cloud",
+  "displayName": "Boltz Cloud",
+  "version": "1.0.0",
+  "description": "Hosted Boltz Bio Compute API connector and workflows (Boltz-2.1 structure & binding, ADME prediction, small-molecule screening & design, protein screening & design) via Bifrost AI Gateway with personal Boltz API key pass-through and explicit per-task approval.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://boltz.bio",
+  "license": "MIT",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "structural-biology",
+        "protein-design",
+        "docking",
+        "cheminformatics",
+        "admet"
+      ],
+      "maturity": "experimental",
+      "connectors": {
+        "boltz-cloud": {
+          "dataSources": [
+            "boltz-cloud"
+          ],
+          "domains": [
+            "third-party-platforms"
+          ],
+          "requires": {
+            "skills": [
+              "boltz-cloud"
+            ]
+          },
+          "homepage": "https://boltz.bio",
+          "toolLoading": "lazy",
+          "approvalTools": [
+            "boltz-boltz_submit",
+            "boltz_submit"
+          ],
+          "terms": "https://boltz.bio/privacy",
+          "cost": "Billed to your personal Boltz Bio account; run boltz_estimate first and confirm before boltz_submit."
+        }
+      }
+    }
+  }
+}
