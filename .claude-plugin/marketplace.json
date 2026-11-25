@@ -1120,7 +1120,8 @@
             "connectors": {
               "nvidia-bionemo": {
                 "title": "NVIDIA BioNeMo NIM",
-                "description": "Hosted BioNeMo structure prediction, protein design, docking, MSA search, and molecule generation (BYOK + per-task approval)."
+                "description": "Hosted BioNeMo structure prediction, protein design, docking, MSA search, and molecule generation (BYOK + per-task approval).",
+                "logo": "logos/nvidia.png"
               }
             },
             "sandboxSkills": {
