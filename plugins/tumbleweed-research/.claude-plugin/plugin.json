@@ -2,7 +2,7 @@
   "name": "tumbleweed-research",
   "displayName": "Tumbleweed research",
   "version": "2.0.0",
-  "description": "Built-in research skills of the Tumbleweed Scientific research agent: literature review with verified citations, indication dossiers, long-PDF reading, publication-grade figures and paper narrative, protein inverse folding on CPU, figure deconstruction, and authoring new skills.",
+  "description": "Built-in research skills of the Tumbleweed Scientific research agent: literature review with verified citations, indication dossiers, long-PDF reading, publication-grade figures and paper narrative, protein inverse folding on CPU, and authoring new skills.",
   "author": {
     "name": "Tumbleweed Scientific"
   },

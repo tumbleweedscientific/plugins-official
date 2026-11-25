@@ -11,8 +11,6 @@ MODIFICATIONS.md:
 - The skill-creator skill (Anthropic, PBC); its own license text is kept in
   skills/skill-creator/LICENSE.txt.
 
-skills/bioinfo-figure-deconstruction is an original work of Tumbleweed
-Scientific.
 
 Third-party software and weights the skills install or download at run time
 keep their own licenses, which the skills name: ProteinMPNN, LigandMPNN and

@@ -25,11 +25,6 @@ Runs in the skill's own no-sub-agent mode; `scripts/run_eval.py`,
 section is replaced by "On Tumbleweed Scientific" (work in `/workspace`,
 package to `/workspace/<name>.skill`).
 
-## Tumbleweed Scientific's own
-
-`bioinfo-figure-deconstruction`: authoring metadata removed from the
-frontmatter; a section on viewing figures on this platform.
-
 ## 2026-11-05/06: moved to plugins-official (ADR 0041)
 
 - Every SKILL.md: `metadata.tumbleweed` (domains, requirements, data sources,
