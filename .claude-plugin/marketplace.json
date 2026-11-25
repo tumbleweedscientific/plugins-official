@@ -1283,6 +1283,98 @@
       }
     },
     {
+      "name": "tumbleweed-literature",
+      "source": "./plugins/tumbleweed-literature",
+      "description": "Pre-installed scholarly literature source connectors for OpenAlex, arXiv, PubMed, Europe PMC, bioRxiv/medRxiv, Crossref, and Semantic Scholar, with optional API keys.",
+      "category": "Literature & writing",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": false,
+          "review": {
+            "network": [],
+            "credentials": [
+              {
+                "id": "semantic-scholar",
+                "kind": "api_key",
+                "type": "semantic-scholar",
+                "label": "Semantic Scholar API key",
+                "help": "Optional: unlocks dedicated Semantic Scholar API quota to avoid HTTP 429 rate limits.",
+                "envVar": "SEMANTIC_SCHOLAR_API_KEY",
+                "variable": "SEMANTIC_SCHOLAR_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "mcp",
+                  "server": "literature-semantic-scholar"
+                }
+              },
+              {
+                "id": "openalex",
+                "kind": "api_key",
+                "type": "openalex",
+                "label": "OpenAlex API key",
+                "help": "Optional: unlocks higher polite-pool daily rate limits on OpenAlex.",
+                "envVar": "OPENALEX_API_KEY",
+                "variable": "OPENALEX_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "mcp",
+                  "server": "literature-openalex"
+                }
+              },
+              {
+                "id": "ncbi",
+                "kind": "api_key",
+                "type": "ncbi",
+                "label": "NCBI E-utilities API key",
+                "help": "Optional: raises PubMed/NCBI E-utilities limit from 3 to 10 requests/s.",
+                "envVar": "NCBI_API_KEY",
+                "variable": "NCBI_API_KEY",
+                "required": false,
+                "inject": {
+                  "kind": "mcp",
+                  "server": "literature-pubmed"
+                }
+              }
+            ],
+            "connectors": {
+              "literature-openalex": {
+                "title": "OpenAlex (Literature)",
+                "description": "Broad cross-disciplinary scholarly works, citation counts, DOIs, and open-access links via built-in literature_search and literature_read. Optional OpenAlex API key raises daily quota."
+              },
+              "literature-arxiv": {
+                "title": "arXiv (Literature)",
+                "description": "Physics, CS, quantitative biology, and bioinformatics preprints and open-access PDFs via built-in literature_search and literature_read."
+              },
+              "literature-pubmed": {
+                "title": "PubMed / NCBI (Literature)",
+                "description": "Biomedical citations, abstracts, and PMC open-access links via built-in literature_search. Optional NCBI API key raises rate limit to 10 req/s."
+              },
+              "literature-europepmc": {
+                "title": "Europe PMC (Literature)",
+                "description": "Life sciences abstracts, citation counts, and open-access full-text PDFs via built-in literature_search."
+              },
+              "literature-biorxiv": {
+                "title": "bioRxiv & medRxiv (Literature)",
+                "description": "Biology and clinical health sciences preprints and PDFs via built-in literature_search."
+              },
+              "literature-crossref": {
+                "title": "Crossref (Literature)",
+                "description": "Authoritative DOI metadata, journal records, and publisher PDF links via built-in literature_search and literature_read."
+              },
+              "literature-semantic-scholar": {
+                "title": "Semantic Scholar (Literature)",
+                "description": "Citation graph, abstracts, and open-access PDFs via built-in literature_search. Configure an optional Semantic Scholar API key to avoid HTTP 429 rate limits."
+              }
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-24"
+          }
+        }
+      }
+    },
+    {
       "name": "science-models",
       "source": "./plugins/science-models",
       "description": "AI4Science model skills (need a GPU; listed as unavailable until one exists).",

@@ -608,6 +608,13 @@
       "title": "Rnacentral"
     },
     {
+      "id": "semantic-scholar",
+      "title": "Semantic Scholar",
+      "category": "literature",
+      "homepage": "https://www.semanticscholar.org",
+      "description": "AI-powered scholarly literature graph, citations, abstracts, and open-access PDFs."
+    },
+    {
       "id": "sifts",
       "title": "SIFTS",
       "category": "proteins",
@@ -2618,6 +2625,17 @@
       "envVar": "OPENPROTEIN_API_KEY",
       "hosts": [
         "api.openprotein.ai"
+      ]
+    },
+    {
+      "id": "semantic-scholar",
+      "title": "Semantic Scholar",
+      "kind": "api_key",
+      "homepage": "https://www.semanticscholar.org/product/api",
+      "help": "Optional: provides a dedicated Semantic Scholar API quota to avoid HTTP 429 rate limits.",
+      "envVar": "SEMANTIC_SCHOLAR_API_KEY",
+      "hosts": [
+        "api.semanticscholar.org"
       ]
     },
     {

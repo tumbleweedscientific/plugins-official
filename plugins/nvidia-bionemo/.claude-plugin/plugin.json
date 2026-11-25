@@ -26,6 +26,11 @@
           "domains": [
             "third-party-platforms"
           ],
+          "requires": {
+            "skills": [
+              "bionemo-nims"
+            ]
+          },
           "homepage": "https://build.nvidia.com/explore/biology",
           "toolLoading": "lazy",
           "approvalTools": [

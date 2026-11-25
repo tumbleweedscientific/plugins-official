@@ -29,6 +29,57 @@
         "eager"
       ]
     },
+    "defaultInstalled": {
+      "type": "boolean"
+    },
+    "native": {
+      "type": "object",
+      "properties": {
+        "capability": {
+          "type": "string",
+          "const": "literature"
+        },
+        "source": {
+          "type": "string",
+          "enum": [
+            "openalex",
+            "arxiv",
+            "pubmed",
+            "europepmc",
+            "biorxiv",
+            "crossref",
+            "semantic-scholar"
+          ]
+        }
+      },
+      "required": [
+        "capability",
+        "source"
+      ],
+      "additionalProperties": false
+    },
+    "requires": {
+      "type": "object",
+      "properties": {
+        "skills": {
+          "maxItems": 20,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,62}$"
+          }
+        },
+        "connectors": {
+          "maxItems": 20,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{0,62}$"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
     "approvalTools": {
       "maxItems": 50,
       "type": "array",

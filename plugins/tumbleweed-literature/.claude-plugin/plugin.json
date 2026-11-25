@@ -1,0 +1,118 @@
+{
+  "name": "tumbleweed-literature",
+  "displayName": "Academic Literature Sources",
+  "version": "1.0.0",
+  "description": "Pre-installed scholarly literature search and reading sources powering built-in literature_search and literature_read across OpenAlex, arXiv, PubMed, Europe PMC, bioRxiv/medRxiv, Crossref, and Semantic Scholar with optional user API keys.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "license": "CC-BY-4.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "literature"
+      ],
+      "maturity": "stable",
+      "connectors": {
+        "literature-openalex": {
+          "dataSources": [
+            "openalex"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://openalex.org",
+          "defaultInstalled": true,
+          "native": {
+            "capability": "literature",
+            "source": "openalex"
+          }
+        },
+        "literature-arxiv": {
+          "dataSources": [
+            "arxiv"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://arxiv.org",
+          "defaultInstalled": true,
+          "native": {
+            "capability": "literature",
+            "source": "arxiv"
+          }
+        },
+        "literature-pubmed": {
+          "dataSources": [
+            "pubmed"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://pubmed.ncbi.nlm.nih.gov",
+          "defaultInstalled": true,
+          "native": {
+            "capability": "literature",
+            "source": "pubmed"
+          }
+        },
+        "literature-europepmc": {
+          "dataSources": [
+            "europe-pmc"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://europepmc.org",
+          "defaultInstalled": true,
+          "native": {
+            "capability": "literature",
+            "source": "europepmc"
+          }
+        },
+        "literature-biorxiv": {
+          "dataSources": [
+            "biorxiv"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://www.biorxiv.org",
+          "defaultInstalled": true,
+          "native": {
+            "capability": "literature",
+            "source": "biorxiv"
+          }
+        },
+        "literature-crossref": {
+          "dataSources": [
+            "crossref"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://www.crossref.org",
+          "defaultInstalled": true,
+          "native": {
+            "capability": "literature",
+            "source": "crossref"
+          }
+        },
+        "literature-semantic-scholar": {
+          "dataSources": [
+            "semantic-scholar"
+          ],
+          "domains": [
+            "literature"
+          ],
+          "homepage": "https://www.semanticscholar.org",
+          "defaultInstalled": true,
+          "native": {
+            "capability": "literature",
+            "source": "semantic-scholar"
+          }
+        }
+      }
+    }
+  }
+}
