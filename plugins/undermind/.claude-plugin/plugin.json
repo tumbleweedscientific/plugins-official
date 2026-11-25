@@ -1,0 +1,40 @@
+{
+  "name": "undermind",
+  "displayName": "Undermind",
+  "version": "1.0.0",
+  "description": "Connect your Undermind account via OAuth 2.0 for exhaustive multi-pass scientific literature search, citation-trail traversal, full-text PDF reading, and native literature display rendering.",
+  "author": {
+    "name": "Tumbleweed Scientific"
+  },
+  "homepage": "https://www.undermind.ai",
+  "license": "Apache-2.0",
+  "metadata": {
+    "tumbleweed": {
+      "domains": [
+        "literature",
+        "third-party-platforms"
+      ],
+      "maturity": "beta",
+      "connectors": {
+        "undermind": {
+          "dataSources": [
+            "undermind"
+          ],
+          "domains": [
+            "third-party-platforms",
+            "literature"
+          ],
+          "requires": {
+            "skills": [
+              "undermind"
+            ]
+          },
+          "homepage": "https://www.undermind.ai",
+          "toolLoading": "lazy",
+          "terms": "https://www.undermind.ai/terms",
+          "cost": "Uses your personal Undermind account quota and saved research workspaces."
+        }
+      }
+    }
+  }
+}

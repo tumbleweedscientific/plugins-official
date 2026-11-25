@@ -673,6 +673,13 @@
       "title": "Ukb Topmed"
     },
     {
+      "id": "undermind",
+      "title": "Undermind",
+      "category": "literature",
+      "homepage": "https://www.undermind.ai",
+      "description": "AI-powered deep scientific literature search, citation-trail traversal, and full-text PDF analysis."
+    },
+    {
       "id": "unibind",
       "title": "UniBind",
       "category": "genomes",

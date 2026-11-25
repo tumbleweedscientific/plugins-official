@@ -1423,6 +1423,47 @@
           }
         }
       }
+    },
+    {
+      "name": "undermind",
+      "source": "./plugins/undermind",
+      "description": "Connect your Undermind account via OAuth 2.0 for exhaustive multi-pass scientific literature search, citation-trail traversal, and full-text PDF reading.",
+      "category": "Literature & writing",
+      "metadata": {
+        "tumbleweed": {
+          "origin": "official",
+          "status": "listed",
+          "featured": true,
+          "review": {
+            "network": [],
+            "credentials": [
+              {
+                "id": "undermind",
+                "kind": "oauth2",
+                "label": "Undermind account",
+                "inject": {
+                  "kind": "mcp",
+                  "server": "undermind"
+                }
+              }
+            ],
+            "oauth": {
+              "undermind": "undermind"
+            },
+            "connectors": {
+              "undermind": {
+                "title": "Undermind",
+                "description": "Exhaustive multi-pass AI scientific literature search, citation-trail discovery, and full-text PDF analysis via your Undermind account."
+              }
+            },
+            "sandboxSkills": {
+              "undermind": false
+            },
+            "reviewedBy": "guchen",
+            "reviewedAt": "2026-11-24"
+          }
+        }
+      }
     }
   ]
 }
