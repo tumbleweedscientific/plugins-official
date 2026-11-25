@@ -49,7 +49,7 @@
     {
       "name": "bifrost-bio-mcp",
       "source": "./plugins/bifrost-bio-mcp",
-      "description": "20 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (genomics, chemistry, structures, clinical, expression).",
+      "description": "21 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (genomics, chemistry, structures, clinical, expression).",
       "category": "Data",
       "metadata": {
         "tumbleweed": {
@@ -70,7 +70,11 @@
               },
               "bio-clinical-genomics": {
                 "title": "Clinical Genomics",
-                "description": "Query ClinGen gene-disease validity, CIViC somatic cancer variants, and Open Targets evidence."
+                "description": "Query ClinGen gene-disease validity, dosage sensitivity, actionability, and CIViC somatic cancer variants."
+              },
+              "bio-open-targets": {
+                "title": "Open Targets",
+                "description": "Query Open Targets Platform for target-disease association scores, drug candidates, mechanisms of action, and GraphQL evidence."
               },
               "bio-clinical-trials": {
                 "title": "ClinicalTrials.gov",

@@ -12,6 +12,10 @@
       "type": "http",
       "url": "https://ai-gateway.tumbleweedscientific.com/mcp/clinical-genomics"
     },
+    "bio-open-targets": {
+      "type": "http",
+      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/open-targets"
+    },
     "bio-clinical-trials": {
       "type": "http",
       "url": "https://ai-gateway.tumbleweedscientific.com/mcp/clinical-trials"

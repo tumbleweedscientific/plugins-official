@@ -1,7 +1,7 @@
 {
   "name": "bifrost-bio-mcp",
   "version": "1.0.0",
-  "description": "20 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (genomics, chemistry, structures, clinical, expression).",
+  "description": "21 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (genomics, chemistry, structures, clinical, expression).",
   "author": {
     "name": "Tumbleweed Scientific"
   },
@@ -54,8 +54,7 @@
         "bio-clinical-genomics": {
           "dataSources": [
             "clingen",
-            "civic",
-            "open-targets"
+            "civic"
           ],
           "domains": [
             "clinical",
@@ -63,6 +62,18 @@
             "variant-interpretation"
           ],
           "homepage": "https://clinicalgenome.org",
+          "toolLoading": "lazy"
+        },
+        "bio-open-targets": {
+          "dataSources": [
+            "open-targets"
+          ],
+          "domains": [
+            "pharmacology",
+            "genomics",
+            "clinical"
+          ],
+          "homepage": "https://platform.opentargets.org",
           "toolLoading": "lazy"
         },
         "bio-clinical-trials": {
