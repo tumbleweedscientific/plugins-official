@@ -1,7 +1,7 @@
 {
   "name": "bifrost-bio-mcp",
   "version": "1.0.0",
-  "description": "23 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (literature, genomics, chemistry, structures, clinical, expression).",
+  "description": "20 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (genomics, chemistry, structures, clinical, expression).",
   "author": {
     "name": "Tumbleweed Scientific"
   },
@@ -17,7 +17,6 @@
         "genomics",
         "immunology",
         "lab-data",
-        "literature",
         "medicinal-chemistry",
         "metabolomics",
         "microbiome",
@@ -29,18 +28,6 @@
         "variant-interpretation"
       ],
       "connectors": {
-        "bio-pubmed": {
-          "dataSources": [
-            "pubmed",
-            "pmc",
-            "europe-pmc"
-          ],
-          "domains": [
-            "literature"
-          ],
-          "homepage": "https://pubmed.ncbi.nlm.nih.gov",
-          "toolLoading": "lazy"
-        },
         "bio-chembl": {
           "dataSources": [
             "chembl"
@@ -86,17 +73,6 @@
             "clinical"
           ],
           "homepage": "https://clinicaltrials.gov",
-          "toolLoading": "lazy"
-        },
-        "bio-biorxiv": {
-          "dataSources": [
-            "biorxiv",
-            "medrxiv"
-          ],
-          "domains": [
-            "literature"
-          ],
-          "homepage": "https://www.biorxiv.org",
           "toolLoading": "lazy"
         },
         "bio-variants": {
@@ -203,17 +179,6 @@
             "proteomics"
           ],
           "homepage": "https://www.rcsb.org",
-          "toolLoading": "lazy"
-        },
-        "bio-literature": {
-          "dataSources": [
-            "openalex",
-            "arxiv"
-          ],
-          "domains": [
-            "literature"
-          ],
-          "homepage": "https://openalex.org",
           "toolLoading": "lazy"
         },
         "bio-protein-annotation": {

@@ -44,7 +44,8 @@
         },
         "literature-pubmed": {
           "dataSources": [
-            "pubmed"
+            "pubmed",
+            "pmc"
           ],
           "domains": [
             "literature"
@@ -58,7 +59,8 @@
         },
         "literature-europepmc": {
           "dataSources": [
-            "europe-pmc"
+            "europe-pmc",
+            "pmc"
           ],
           "domains": [
             "literature"
@@ -72,7 +74,8 @@
         },
         "literature-biorxiv": {
           "dataSources": [
-            "biorxiv"
+            "biorxiv",
+            "medrxiv"
           ],
           "domains": [
             "literature"

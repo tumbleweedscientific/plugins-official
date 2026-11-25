@@ -49,7 +49,7 @@
     {
       "name": "bifrost-bio-mcp",
       "source": "./plugins/bifrost-bio-mcp",
-      "description": "23 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (literature, genomics, chemistry, structures, clinical, expression).",
+      "description": "20 Biomedical & Scientific MCP servers unified via Tumbleweed Scientific's Bifrost AI Gateway (genomics, chemistry, structures, clinical, expression).",
       "category": "Data",
       "metadata": {
         "tumbleweed": {
@@ -60,10 +60,6 @@
             "network": [],
             "credentials": [],
             "connectors": {
-              "bio-pubmed": {
-                "title": "PubMed & Europe PMC",
-                "description": "Search PubMed, PMC full text, and Europe PMC biomedical literature and citations."
-              },
               "bio-chembl": {
                 "title": "ChEMBL",
                 "description": "Query ChEMBL bioactive molecules, drug targets, bioactivity assays, and mechanisms."
@@ -79,10 +75,6 @@
               "bio-clinical-trials": {
                 "title": "ClinicalTrials.gov",
                 "description": "Search registered clinical studies, eligibility criteria, endpoints, and trial status."
-              },
-              "bio-biorxiv": {
-                "title": "bioRxiv & medRxiv",
-                "description": "Search and retrieve life-science and medical preprints from bioRxiv and medRxiv."
               },
               "bio-variants": {
                 "title": "Human Variants",
@@ -115,10 +107,6 @@
               "bio-structures-interactions": {
                 "title": "Structures & Interactions",
                 "description": "Retrieve experimental and predicted 3D structures from PDB, AlphaFold DB, and EMDB plus IntAct and Complex Portal complexes."
-              },
-              "bio-literature": {
-                "title": "Scholarly Literature",
-                "description": "Search OpenAlex scholarly works, citation graphs, authors, and arXiv preprints."
               },
               "bio-protein-annotation": {
                 "title": "Protein Annotation",
@@ -154,7 +142,7 @@
               }
             },
             "reviewedBy": "guchen",
-            "reviewedAt": "2026-11-17"
+            "reviewedAt": "2026-11-25"
           }
         }
       }

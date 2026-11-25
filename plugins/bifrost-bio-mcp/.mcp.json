@@ -1,9 +1,5 @@
 {
   "mcpServers": {
-    "bio-pubmed": {
-      "type": "http",
-      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/pubmed"
-    },
     "bio-chembl": {
       "type": "http",
       "url": "https://ai-gateway.tumbleweedscientific.com/mcp/chembl"
@@ -19,10 +15,6 @@
     "bio-clinical-trials": {
       "type": "http",
       "url": "https://ai-gateway.tumbleweedscientific.com/mcp/clinical-trials"
-    },
-    "bio-biorxiv": {
-      "type": "http",
-      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/biorxiv"
     },
     "bio-variants": {
       "type": "http",
@@ -55,10 +47,6 @@
     "bio-structures-interactions": {
       "type": "http",
       "url": "https://ai-gateway.tumbleweedscientific.com/mcp/structures-interactions"
-    },
-    "bio-literature": {
-      "type": "http",
-      "url": "https://ai-gateway.tumbleweedscientific.com/mcp/literature"
     },
     "bio-protein-annotation": {
       "type": "http",
